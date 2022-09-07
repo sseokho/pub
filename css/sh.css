@@ -88,3 +88,36 @@
 .util--3 p{
     padding:3px 5px;
 }
+
+.nav{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+    border:1px solid #ebebeb;
+}
+
+.nav__left{
+    float:left;
+}
+
+.logo{
+    border:1px solid #000;
+    width:100%;
+    background:url(./img/h1_logo.gif);
+}
+
+.nav__right{
+    float:right;
+}
+.gnb{display:flex; align-items:center;}
+.gnb li{float:left; font-weight:bold; color:#000; padding-right:30px;}
+.gnb li:last-child{padding-right:0;}
+.gnb li a{font-size:15px;}
+
+.search{border:1px solid #ebebeb; border-radius:20px; overflow:hidden; display:flex; align-items:center;}
+.search input{border:none; margin-left:20px;   height:25px;  line-height:25px;}
+.search button{margin-right:20px; background: url('/img/bg_search.png') 50% 50% no-repeat; width:24px; 
+    height:24px; border:none; margin:0 20px 0 0;  display:inline-block; vertical-align:middle;}
