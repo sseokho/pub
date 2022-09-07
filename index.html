@@ -51,8 +51,21 @@
       </div>
 
       <div class="nav__right">
-        <div class="logo">
-        </div>
+        <ul class="logo">
+          <li><a href="">사이버창구</a></li>
+          <li><a href="">보험상품</a></li>
+          <li><a href="">라이나+</a></li>
+          <li><a href="">고객광장</a></li>
+          <li>
+            <form name="frmSearch" method="post" action="/search/search_detail.htm" onsubmit="return frmSearchSubmit()">
+              <label for="paramSearch" class="blind">검색어 입력</label> 
+              <input type="text" name="paramSearch" id="paramSearch" class="gnb_search_inp" maxlength="10" placeholder="보장분석"> 
+              <button>검색</button> 
+            </form>
+          </li>
+        </ul>
+
+        
       </div>
     </nav>
 
