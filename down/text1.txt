@@ -1,0 +1,21 @@
+<div class="meeting_info row" style="margin-top: 3vw">
+<p class="info1 f_bold" style="margin-left: 3vw; width: 21vw">개요</p>
+
+<ul class="info2" style="width: 33vw">
+	<li>
+	<p><span class="f_bold">일시</span>2022년 8월 12일(금) 오후 2시</p>
+	</li>
+	<li>
+	<p><span class="f_bold">장소</span>이음센터 회의실</p>
+	</li>
+</ul>
+
+<div class="info3" style="width: 38vw"><span class="f_bold">참석자</span>
+
+<dl class="row">
+	<dt style="width: 0">&nbsp;</dt>
+	<dd style="width: 100%">이지현 EBS 유아어린이특임국 PD<br>
+	홍윤희 협동조합 무의 이사장</dd>
+</dl>
+</div>
+</div>

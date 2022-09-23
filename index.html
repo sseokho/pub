@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link type="text/css" rel="stylesheet" href="./css/sh.css" />
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
@@ -64,18 +65,72 @@
             </form>
           </li>
         </ul>
-
-        
       </div>
     </nav>
 
 
+    <section class="main">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/main1.png"></div>
+          <div class="swiper-slide"><img src="./img/main2.png"></div>
+          <div class="swiper-slide"><img src="./img/main3.png"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination">
+          
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script>
+   
 
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+          delay: 2500,
+        },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        
+      });
+
+       
+
+      $(".swiper-pagination").prepend('<button type="button" class="btn_pause">dsad</button>');
+
+      var sw = 0;
+      $('.btn_pause').click(function(){
+          if(sw==0){
+              $('.btn_pause').addClass('on');
+              swiper.autoplay.stop();
+              sw = 1;
+          }else{
+              $('.btn_pause').removeClass('on');
+              swiper.autoplay.start();
+              sw = 0;
+          }
+      });
+
+      
+      
+
+
+      
+  </script>
   <!-- //script -->
 </body>
 

@@ -3,6 +3,7 @@
     text-decoration:none;
     padding:0;
     margin:0;
+    color:#000;
 }
 
 #wrap{
@@ -121,3 +122,113 @@
 .search input{border:none; margin-left:20px;   height:25px;  line-height:25px;}
 .search button{margin-right:20px; background: url('/img/bg_search.png') 50% 50% no-repeat; width:24px; 
     height:24px; border:none; margin:0 20px 0 0;  display:inline-block; vertical-align:middle;}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+
+.mySwiper{height:500px;}
+
+.mySwipe img{object-fit:cover;}
+
+
+.btn_paus{position:absolute; bottom:0;left:0; border:1px solid red; z-index:99; width:300px; height:200px; cursor:pointer}
+
+
+/*  이음가이드  */
+
+.ieum_title{
+    margin-top:2.3vw;
+    margin-bottom: 4vw;
+    font-size: 2.2vw;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align:center;
+    word-break: keep-all;
+    color: #000;
+}
+.d-flex{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:0 30px;
+}
+
+.ieum_img{
+    width:1200px;
+    overflow:hidden;
+}
+
+.ieum_img img{
+    width:100%;
+    object-fit:contain;
+    display:block;
+    margin:0 auto;
+}
+
+.ieum_view{
+    text-align:center;
+    
+}
+
+.ieum_view a.view{
+    width:200px;
+    margin:0 auto;
+    border:1px solid #000;
+    padding:13px 13px;
+    font-weight:600;
+    display:block;
+    border-radius:6px;
+    background-color:rgb(73, 65, 211);
+    color:#fff;
+    font-size:18px;
+    
+}
+.ieum_sub_title+.ieum_sub_title{
+   
+} 
+.ieum_sub_title{
+    margin-bottom:30px;
+    text-align:left;
+    font-size:20px;
+    padding:10px 30px;
+    font-weight:600;
+}
+.flex-none{
+    flex:none;
+}
+
+.flex-1{
+    flex:1;
+    
+}
