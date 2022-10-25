@@ -1,0 +1,8 @@
+<div class="row justify_between align_end">
+<div class="from_vol">
+<p class="from"><span>정리.</span> 프로젝트 궁리<br>
+<span>사진 제공.</span> 강보람, 김은설, 김인경</p>
+
+<p class="vol_tag">2022년 6월 (31호)</p>
+</div>
+</div>

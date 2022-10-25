@@ -1,0 +1,38 @@
+<div class="profile row" style="margin-top:3vw;">
+<div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/31/img_profile_boram.jpg"></div>
+
+<div class="info">
+<p class="name">강보람</p>
+
+<p class="cont">극단애인 단원으로 연기와 움직임 작업을 주로 한다. &lt;방에서 나오기만 해&gt; &lt;푸른색으로 우리가 쓸 수 있는 것&gt; &lt;인정투쟁; 예술가 편&gt; &lt;어느 마을&gt; 외 다수 작품에서 연기했고, &lt;놓다&gt; &lt;21° 11’&gt; &lt;나는 인간&gt; 등에서 움직임 작업을 했다.<br>
+<a class="underline" href="mailto:kbr0308@hanmail.net">kbr0308@hanmail.net</a></p>
+</div>
+</div>
+
+
+
+<div class="profile row">
+<div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/31/img_profile_eunsul.jpg"></div>
+
+<div class="info">
+<p class="name">김은설</p>
+
+<p class="cont">어렸을 때 접했던 풀(접착제)의 붙이고 떼는 것에서 느낀 것을 형상화하여 드로잉, 설치 매체를 아우르며 작업한다. 요즘 보청기로 듣는 소리와 귀로 듣는 방식이어야만 하는지 고민하면서 자신만의 감각을 번역하고자 다양한 사람과 만나며 탐구하고 있다.<br>
+<a class="underline" href="mailto:odd_dreamer@naver.com">odd_dreamer@naver.com</a></p>
+</div>
+</div>
+
+
+
+
+<div class="profile row">
+<div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/31/img_profile_inkyung.jpg"></div>
+
+<div class="info">
+<p class="name">김인경</p>
+
+<p class="cont">시각예술가, 기획자, 밝은방 공동대표. 입시미술 제도를 경험하면서 예술과 교육에 대한 근본적인 질문을 품게 되었다. 제도권 밖의 다양한 창작방식과 직관적인 예술표현에 대한 관심으로 발달장애 및 정신장애 창작자들과 작업하며 워크숍, 전시, 출판물을 기획하고 있다. 개인 작업으로는 깨진 언어와 어두컴컴한 빛을 재료로 하는 비주얼사운드 퍼포먼스를 진행하고 있다.<br>
+<a class="underline" href="mailto:brightworkroom@gmail.com">brightworkroom@gmail.com</a><br>
+밝은방 홈페이지 <a class="underline" href="https://brightworkroom.modoo.at/" target="_blank">바로가기(링크)</a></p>
+</div>
+</div>

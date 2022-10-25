@@ -1,0 +1,24 @@
+<div class="poster row" style="margin-top:2vw;">
+<div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/32/img_review_20220629_0701.jpg"></div>
+
+<div class="info">
+<p class="tit" style="margin-top:0">집으로 가는, 길 - 시설사회를 멈추다</p>
+
+<p class="custom">홍은전 홍세미 이호연 이정하 박희정 강곤(지은이) | 오월의봄 | 2022</p>
+
+<p class="cont" style="line-height:1.5em;">오직 스스로의 의지로 문을 닫은 최초의 시설이 되기까지, ‘향유의집’ 거주인과 임직원이 함께 통과한 놀랍고, 치열하고, 아름답고, 험난했던 연대의 기록. 한 장애 당사자 거주인이 시설 내부의 비리를 최초로 고발하고 공론화한 사건에서 시작되어, 비리·인권 침해 고발에서 탈시설 운동과 집을 만드는 싸움을 시작한 이들의 시설-탈시설의 이분법을 넘어서는 시설 직원들과 당사자의 탈시설 이야기를 담고 있다.</p>
+</div>
+</div>
+
+
+<div class="poster row" style="margin-top:2vw;">
+<div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/32/img_review_20220629_0702.jpg"></div>
+
+<div class="info">
+<p class="tit" style="margin-top:0">치유라는 이름의 폭력 - 근현대 한국에서 장애·젠더·성의 재활과 정치</p>
+
+<p class="custom">김은정(지은이) | 강진경 강진영(옮긴이) | 후마니타스 | 2022</p>
+
+<p class="cont" style="line-height:1.5em;">근현대 한국에서 장애를 다룬 소설, 영화, 신문 기사, 정책 문건, 활동가의 글 등을 텍스트 삼아 ‘치유’를 명분으로 장애와 질병을 가진 사람/삶을 파괴하는 ‘폭력’을 들여다보고 사회적·정치적 맥락 안에서 분석함으로써, 장애와 질병에 관한 사회적 경험과 문화적 재현의 다른 상상력을 제안한다. 「심청전」&nbsp;「노처녀가」&nbsp;「백치 아다다」 등의 작품을 통해 여성주의 장애학의 관점에서 분석하고 장애학적 문화 비평의 새로운 방법론을 제시한다.</p>
+</div>
+</div>

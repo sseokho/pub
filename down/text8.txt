@@ -1,0 +1,4 @@
+<ul class="img_list row" style="margin-top:2vw !important">
+	<li style="width:50%;"><img alt="2021 서울국제도서전 유튜브 영상 중 한 장면. 왼쪽에는 배리어프리 웹툰 관련 자료가 나가고, 이에 관해 설명하는 필자의 모습이 오른쪽에 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20220928_1001.jpg" style="width:100%;border: 1px solid #ddd;"> <span class="caption ta_c" style="display: block">‘2021 서울국제도서전 디지털북 책캐스트_배리어프리 웹툰은 가능할까’<br>
+	이미지 출처. <a href="https://youtu.be/zWcPl5Ggv8Y" style="text-decoration: underline" target="_blank">서울국제도서전 유튜브 채널(링크)</a> </span></li>
+</ul>

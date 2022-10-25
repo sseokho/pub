@@ -1,3 +1,11 @@
-<div class="gray_box" style="margin-top: 2vw">
-<p class="txt">최근 미디어를 통해 장애인, 장애와 연관된 이야기와 이슈를 자주 접할 수 있다. 콘텐츠의 양적 증가는 물론이고, 작지 않은 비중으로 다뤄지는 점도 눈에 띈다. 이를 조명하는 관점과 방식도 다양해지면서 대중의 관심이 높아지고 동시에 다양한 의견과 공론의 장이 펼쳐지고 있다. 미디어 속에서는 장애를 어떻게 바라보고 어떻게 다루고 있을까. 바람직한 기능과 역할은 무엇일까. 긍정적인 효과와 의미 있는 담론을 불러일으킬 수 있으려면 어떠한 노력과 변화가 있어야 할까. 이지현 EBS PD와 홍윤희 협동조합 무의 이사장이 만나 이야기를 나눴다.</p>
+<div class="gray_box">
+<p class="txt" style="line-height: 2em;">코로나19로 바뀐 팬데믹 세상은 어느덧 엔데믹을 준비하며 일상을 새롭게 재편한다. 접촉이 제한되었던 시간 동안 온라인을 통한 접속은 시행착오를 거치며 조금씩 또 다른 방식의 소통 경험을 제공하고 새로운 감각의 연결을 제안한다. 온라인은 장애예술에 어떻게 영향을 미치고 새로운 변화를 가져왔을까? 도전하고 실험하며 새로운 가상세계로 확장하는 다양한 활동을 해온 일곱 명의 예술가에게 온라인 예술활동의 의미와 가능성에 관해 서면으로 이야기를 들어보았다.</p>
+
+<div class="row" style="justify-content: center;margin-top: 2vw;align-items: center;">
+<p class="txt underline" style="line-height: 2em;">① 더 자유로운 창작의 장</p>
+
+<p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
+
+<p class="txt"><a href="https://ieum.or.kr/user/webzine/view.do?idx=388" style="line-height: 2em;" target="_blank">② 더 넓은 발표의 장</a></p>
+</div>
 </div>

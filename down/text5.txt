@@ -1,0 +1,10 @@
+<div style="margin-top:2vw;">
+<ul class="img_list row" style="width:100%;margin:0 auto;">
+	<li><img alt="남성이 시각장애인 여성을 등에 업고 가로등 불빛만 비추는 어두운 골목길을 걷고 있다." src="/template/cms/user/images/sub/webzine/34/img_issue_20220824_0101.jpg"></li>
+	<li><img alt="남성이 시각장애인 여성을 등에 업고 너른 들판의 길을 걷고 있다." src="/template/cms/user/images/sub/webzine/34/img_issue_20220824_0102.jpg"></li>
+</ul>
+
+<p class="caption ta_c">장애여성을 다루는 많은 영화에서 장애여성이 비장애남성에게 업혀 있는 장면이 빈번하게 등장한다.<br>
+(왼쪽) 영화 <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=82219" style="text-decoration:underline;" target="_blank">&lt;오직 그대만&gt;(2011)(링크)</a>, (오른쪽) 영화 <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=199393" style="text-decoration:underline;" target="_blank">&lt;조제&gt;(2020)(링크)</a><br>
+사진 출처. 네이버영화</p>
+</div>

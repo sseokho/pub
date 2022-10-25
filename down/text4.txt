@@ -1,0 +1,10 @@
+<div style="margin-top: 2vw">
+<ul class="img_list row" style="width: 100%; margin: 0 auto">
+	<li><img alt="필자의 그림. 어두운 공간에 긴머리 여성이 뒤돌아 서 있다. 여성의 상체는 커다란 얼음덩어리 안에 갇혀 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0201.jpg">
+	<p class="caption ta_c">우울은 육체와 정신을 액체로 만든다</p>
+	</li>
+	<li><img alt="필자의 그림. 한 여성이 우울과 분노에 뒤덮여 있음을 괴로운 표정과 파란색, 빨간색 물감의 어른거림으로 표현했다. " src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0202.jpg">
+	<p class="caption ta_c">우울의 돌덩이를 들어낸 곳엔 용암 같은 분노가 있다</p>
+	</li>
+</ul>
+</div>

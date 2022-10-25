@@ -1,0 +1,14 @@
+<div class="explain" style="margin-top:2vw;">
+<p class="txt f_bold" style="margin-bottom:1vw;">[관련 링크]</p>
+
+<ul class="lists dot">
+	<li>2022 오키나와 문화제(제37회 국민문화제·제22회 전국장애인문화예술제) <a class="underline" href="https://okinawa-bunkasai2022.jp/" target="_blank">&nbsp;바로가기(링크)</a></li>
+	<li>톳테오키음악제<a class="underline" href="https://r.goope.jp/totteoki" target="_blank"> 바로가기(링크)</a></li>
+	<li>트루컬러페스티벌 <a class="underline" href="https://truecolorsfestival.com/jp/" target="_blank"> 바로가기(링크)</a></li>
+	<li>곤니치와, 공생사회&nbsp;<a class="underline" href="https://hello-diversity.tumblr.com/" target="_blank">바로가기(링크)</a></li>
+	<li>NPO법인 씨어터 액세서빌리티 네트워크<a class="underline" href="https://ta-net.org" target="_blank"> 바로가기(링크)</a></li>
+	<li>국제장애인교류센터 빅아이 <a class="underline" href="https://www.big-i.jp/" target="_blank"> 바로가기(링크)</a></li>
+	<li>프레코그<a class="underline" href="https://precog-jp.net/en/about/" target="_blank"> 바로가기(링크)</a></li>
+	<li>씨어터포올 <a class="underline" href="https://theatreforall.net " target="_blank"> 바로가기(링크)</a></li>
+</ul>
+</div>

@@ -1,0 +1,16 @@
+<div style="margin-top: 2vw">
+<ul class="img_list row" style="width: 90%; margin: 0 auto;margin-top:-1vw;">
+	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 화면의 절반에는 여러 작품이 썸네일처럼 늘어서 있고, 나머지 반에는 선택한 작품의 수어해설을 언어 옵션으로 선택할 수 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0101.jpg"></li>
+	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 벨기에-프랑스 수어(LSFB), 플랑드르 수어(VGT), 국제 수어(ISL) 선택 옵션이 보인다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0102.jpg"></li>
+</ul>
+</div>
+
+
+<div style="margin-top: 1vw">
+<ul class="img_list row" style="width: 90%; margin: 0 auto;margin-top:-1vw;">
+	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 작품을 배경으로 왼편에 수어해설사 모습이 나타나있다. 하단에는 선택할 수 있는 다른 메뉴가 떠 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0103.jpg"></li>
+	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 작품을 배경으로 왼편에 수어해설사 모습. '눈을 감았다'를 설명하고 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0104.jpg"></li>
+</ul>
+
+<p class="caption ta_c">벨기에왕립미술관의 수어해설 비디오 가이드 (사진. 필자)</p>
+</div>

@@ -1,0 +1,4 @@
+<p class="tit f_bold underline" style="margin-top: 3vw"></p>
+<p class="txt ta_l">.</p>
+<p class="txt ta_l f_bold"></p>
+<p class="txt ta_l" style="margin-top:0"></p>

@@ -1,0 +1,13 @@
+<div style="margin-top:3vw;">
+<ul class="img_list row" style="width:100%;margin:0 auto;">
+	<li style="width:33.3%"><img alt="" src="/template/cms/user/images/sub/webzine/31/img_issue_20220602_0101.jpg">
+	<div class="caption-gray">&lt;장애배우의 훈련법과 연기방법론 구축을 위한 연구모임&gt; 온라인 결과 공유회(2021)</div>
+	</li>
+	<li style="width:33.3%"><img alt="" src="/template/cms/user/images/sub/webzine/31/img_issue_20220602_0102.jpg">
+	<div class="caption-gray">온·오프라인 소통 경험을 통해 제작한 영상 작품 &lt;보고 있지만 보이지 않는 언어&gt;(김은설, 2021)</div>
+	</li>
+	<li style="width:33.3%"><img alt="" src="/template/cms/user/images/sub/webzine/31/img_issue_20220602_0103.jpg">
+	<div class="caption-gray" style="height:6vw;">밝은방이&nbsp;창작자의 작업세계를 기록하고 연구하기 위한 온라인 인터뷰 화면&nbsp;</div>
+	</li>
+</ul>
+</div>

@@ -1,0 +1,8 @@
+<div style="margin-top:3vw;">
+<ul class="img_list row" style="width:80%;margin:0 auto;">
+	<li style="width:100%;margin: 0 auto;"><object data="https://www.youtube.com/embed/lLVqWLHTaG4" style="height:30vw;" type=""></object></li>
+</ul>
+
+<p class="caption ta_c">기획영상 키아라 베르사니: 또다른 시각을 포착하는 작품 창작<br>
+[출처] <a class="underline" href="https://youtu.be/lLVqWLHTaG4" target="_blank">한국장애인문화예술원 유튜브(링크)</a></p>
+</div>
