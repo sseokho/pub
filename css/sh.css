@@ -123,7 +123,42 @@
 .search button{margin-right:20px; background: url('/img/bg_search.png') 50% 50% no-repeat; width:24px; 
     height:24px; border:none; margin:0 20px 0 0;  display:inline-block; vertical-align:middle;}
 
+.mySwiper{
+    position:relative;
+}
+.swiper-bottom--section{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.swiper-bottom--section > div > p{
+    color:#fff;
+    font-weight:600;
+    display:flex;
+}
 
+.swiper-bottom--section > div span{
+    width:400px;
+    color:#fff;
+    margin-left:30px;
+    font-weight:400;
+    display:inline-block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.swiper-bottom{
+    
+    position:absolute;
+    z-index:2;
+    bottom:0;
+    width:100%;
+    background-color:rgb(0, 0, 0, 20%);
+}
 .swiper {
     width: 100%;
     height: 100%;
@@ -164,7 +199,214 @@
 
 .btn_paus{position:absolute; bottom:0;left:0; border:1px solid red; z-index:99; width:300px; height:200px; cursor:pointer}
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 66px;
+   
+}
 
+
+
+.content--1{
+    display:flex;
+}
+
+.content--2{
+    display:flex;
+}
+.con-left-inner,.con-right-inner{
+    flex: 1;
+    padding:30px 0;
+    display: flex;
+}
+.con-left-inner{
+   
+    background-color: #f2f2f2;
+    justify-content: flex-end;
+}
+.con-right-inner{
+    background-color: #f7f7f7;
+    justify-content: flex-start;
+}
+.con-left-section,.con-right-section{
+    display:flex;
+    
+    margin-top:10px;
+}
+.con-left-section div img,.con-right-section div img{
+   
+    display: block;
+    margin: 0 auto;
+}
+
+.con-left-section div button,.con-right-section div button,.con-right--btn button{
+    border:1px solid #000;
+    border-radius:20px;
+    padding:5px 10px;
+    font-size:16px;
+    font-weight:600;
+    margin-top:25px;
+}
+.con-right--btn{
+    text-align:center;
+    margin-top:35px;
+}
+.con-right--btn button{
+    padding:8px 10px;
+}
+
+.con-left-section div,.con-right-section div{
+    margin-right:65px;
+    flex:1;
+}
+
+.con-left-section div:last-child,.con-right-section div:last-child{
+    margin-right:0;
+}
+
+.con-right--btn
+.con-left-section div img{
+    width: 80px;
+    height: 80px;
+}
+.con-right-section div img{
+    width: 63px;
+    height: 66px;
+}
+.con-left > p,.con-right > p{
+    width:70%;
+    margin:0 auto;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+}
+.con-right > p{
+    margin-bottom:30px;
+}
+.con-left-section div,.con-right-section div{
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    
+}
+.con-right-section div{
+    position:relative;
+}
+.con-right-section div:after{
+    content: '';
+    position: absolute;
+    right: -36px;
+    top: 50%;
+    width: 11px;
+    height: 19px;
+    background: url(../img/ra_con_arrow.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.con-right-section div:last-child:after{
+    display:none;
+}
+.con-left-section div span,.con-right-section div span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 10px auto 0 auto;
+    color:#686765;
+}
+
+.con-right-section div span > b{
+    margin-right:5px;
+}
+.con-left{
+    flex:0.65;
+    margin-right:30px;
+}
+
+.con-right{
+    flex:0.72;
+    margin-left:30px;
+}
+
+.content--2 .con-left-inner{
+   
+    background-color: #014886;
+}
+.content--2 .con-left p{
+    color:#fff;
+    font-weight:400;
+}
+.content--2 .con-left p:nth-of-type(1){
+    font-size:21px;
+}
+
+.content--2 .con-left p:nth-of-type(2){
+    margin-top:20px;
+    font-size:25px;
+}
+
+.content--2 .con-left button{
+    margin-top:20px;
+    padding:7px 30px;
+    font-size:15px;
+    background:none;
+    color:#fff;
+    border:1px solid #fff;
+    border-radius:20px;
+}
+.content--2 .con-left--btn{
+    font-size:20px;
+}
+.content--2 .con-left p > span{
+    color:#a5faff;
+    font-weight:600;
+}
+.content--2 .con-left{
+    
+    background:url(../img/ra_con_8.png) no-repeat;
+    background-position:center right;
+    
+}
+.content--2 .con-left > p{
+    width:100%;
+    text-align:left;
+}
+
+.content--2 .con-right-inner{
+    background-color: #198ccd;
+}
+
+.content--2 .con-right p{
+    width:100%;
+    font-size:22px;
+    color:#fff;
+    font-weight: 600;
+    text-align:left;
+}
+
+.content--2 .con-right-section{
+    position:relative;
+    height:50px;
+}
+.content--2 .con-right-section input{
+    outline:none;
+    border:none;
+}
+.content--2 .con-right-section:after{
+    content:'';
+    position:absolute;
+    right:0;
+    width:50px;
+    height:50px;
+    background: url(../img/ra_con_9.png) no-repeat;
+}
+.content--2 .con-right input{
+    
+    width:100%;
+    background-color:#fff;
+}
+
+.content--2 .con-right input{
+    background-color:#fff;
+}
 /*  이음가이드  */
 
 .ieum_title{
