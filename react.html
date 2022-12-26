@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>리액트</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <h2 id="hello"> 안녕하세요</h2>
+</body>
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script>
+   
+
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+          delay: 2500,
+        },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        
+      });
+
+       
+
+      $(".swiper-pagination").prepend('<button type="button" class="btn_pause">dsad</button>');
+
+      var sw = 0;
+      $('.btn_pause').click(function(){
+          if(sw==0){
+              $('.btn_pause').addClass('on');
+              swiper.autoplay.stop();
+              sw = 1;
+          }else{
+              $('.btn_pause').removeClass('on');
+              swiper.autoplay.start();
+              sw = 0;
+          }
+      });
+
+      
+      
+
+
+      
+  </script>
+  <!-- //script -->
+
+
+</html>
