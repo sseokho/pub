@@ -1,24 +1,30 @@
 <div class="poster row" style="margin-top:2vw;">
-<div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/32/img_review_20220629_0701.jpg"></div>
-
-<div class="info">
-<p class="tit" style="margin-top:0">집으로 가는, 길 - 시설사회를 멈추다</p>
-
-<p class="custom">홍은전 홍세미 이호연 이정하 박희정 강곤(지은이) | 오월의봄 | 2022</p>
-
-<p class="cont" style="line-height:1.5em;">오직 스스로의 의지로 문을 닫은 최초의 시설이 되기까지, ‘향유의집’ 거주인과 임직원이 함께 통과한 놀랍고, 치열하고, 아름답고, 험난했던 연대의 기록. 한 장애 당사자 거주인이 시설 내부의 비리를 최초로 고발하고 공론화한 사건에서 시작되어, 비리·인권 침해 고발에서 탈시설 운동과 집을 만드는 싸움을 시작한 이들의 시설-탈시설의 이분법을 넘어서는 시설 직원들과 당사자의 탈시설 이야기를 담고 있다.</p>
-</div>
+    <div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/32/img_review_20220629_0604.jpg"></div>
+    
+    <div class="info">
+    <p class="tit" style="margin-top:0">렛츠 버딩!</p>
+    
+    <p class="custom">이성직 | 2022.5.19.~5.22. | 노들장애인야학-창경궁-노들장애인야학</p>
+    
+    <p class="cont" style="line-height:1.5em;">[2021년 예술텃밭 예술가 레지던시-기후변화]에서 쇼케이스로 개발한 프로그램을 듣고 보는 감각으로 나누어 관객을 만난다. 새에 관한 생각과 경험을 공유하고, 새의 몸을 흉내 내본다. 새를 찾기 위해 이동하거나 기다리고, 새를 보거나 듣거나 촬영하거나 녹음한다. 새의 이름을 조류도감에서 찾아보고, 새에 관해 글을 쓰거나 그림을 그리고, 찰흙으로 새를 만들어보기도 한다. 새와 우리를 연결하기 위한 이 모든 노력이 바로 ‘새 하는 중’이다. 관객이 다양한 감각으로 참여할 수 있는 공연을 만드는 예술가 이성직이 제작했다. 대표작으로 &lt;렛츠 버딩!&gt; &lt;만성탈수 간병하기&gt; &lt;감자전 www.gamja-geon.com&gt; &lt;김장하다&gt; &lt;아프면 낫는다 건강백세!&gt;가 있다.</p>
+    
+    <p class="cont" style="line-height:1.5em;">전시정보. &lt;렛츠 버딩!&gt; <a href="https://www.ieum.or.kr/user/show/view.do?idx=537"><u>바로가기(링크</u>)</a><br>
+    &lt;렛츠 버딩!&gt; <a class="underline" href="https://www.youtube.com/watch?v=4f9qKaL19gw" target="_blank">영상 보기(링크)</a></p>
+    </div>
 </div>
 
 
 <div class="poster row" style="margin-top:2vw;">
-<div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/32/img_review_20220629_0702.jpg"></div>
-
-<div class="info">
-<p class="tit" style="margin-top:0">치유라는 이름의 폭력 - 근현대 한국에서 장애·젠더·성의 재활과 정치</p>
-
-<p class="custom">김은정(지은이) | 강진경 강진영(옮긴이) | 후마니타스 | 2022</p>
-
-<p class="cont" style="line-height:1.5em;">근현대 한국에서 장애를 다룬 소설, 영화, 신문 기사, 정책 문건, 활동가의 글 등을 텍스트 삼아 ‘치유’를 명분으로 장애와 질병을 가진 사람/삶을 파괴하는 ‘폭력’을 들여다보고 사회적·정치적 맥락 안에서 분석함으로써, 장애와 질병에 관한 사회적 경험과 문화적 재현의 다른 상상력을 제안한다. 「심청전」&nbsp;「노처녀가」&nbsp;「백치 아다다」 등의 작품을 통해 여성주의 장애학의 관점에서 분석하고 장애학적 문화 비평의 새로운 방법론을 제시한다.</p>
-</div>
+    <div class="img_wrap"><img alt="" src="/template/cms/user/images/sub/webzine/32/img_review_20220629_0604.jpg"></div>
+    
+    <div class="info">
+    <p class="tit" style="margin-top:0">렛츠 버딩!</p>
+    
+    <p class="custom">이성직 | 2022.5.19.~5.22. | 노들장애인야학-창경궁-노들장애인야학</p>
+    
+    <p class="cont" style="line-height:1.5em;">[2021년 예술텃밭 예술가 레지던시-기후변화]에서 쇼케이스로 개발한 프로그램을 듣고 보는 감각으로 나누어 관객을 만난다. 새에 관한 생각과 경험을 공유하고, 새의 몸을 흉내 내본다. 새를 찾기 위해 이동하거나 기다리고, 새를 보거나 듣거나 촬영하거나 녹음한다. 새의 이름을 조류도감에서 찾아보고, 새에 관해 글을 쓰거나 그림을 그리고, 찰흙으로 새를 만들어보기도 한다. 새와 우리를 연결하기 위한 이 모든 노력이 바로 ‘새 하는 중’이다. 관객이 다양한 감각으로 참여할 수 있는 공연을 만드는 예술가 이성직이 제작했다. 대표작으로 &lt;렛츠 버딩!&gt; &lt;만성탈수 간병하기&gt; &lt;감자전 www.gamja-geon.com&gt; &lt;김장하다&gt; &lt;아프면 낫는다 건강백세!&gt;가 있다.</p>
+    
+    <p class="cont" style="line-height:1.5em;">전시정보. &lt;렛츠 버딩!&gt; <a href="https://www.ieum.or.kr/user/show/view.do?idx=537"><u>바로가기(링크</u>)</a><br>
+    &lt;렛츠 버딩!&gt; <a class="underline" href="https://www.youtube.com/watch?v=4f9qKaL19gw" target="_blank">영상 보기(링크)</a></p>
+    </div>
 </div>

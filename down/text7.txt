@@ -1,2 +1,2 @@
-<p class="txt f_bold underline">장애라는 구획</p>
+<p class="tit f_bold underline">장애라는 구획</p>
 <p class="txt">.</p>
