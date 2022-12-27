@@ -1,14 +1,19 @@
-<div class="explain" style="margin-top:2vw;">
-<p class="txt f_bold" style="margin-bottom:1vw;">[참고자료]</p>
+<div class="explain">
+<p class="txt f_bold" style="margin-bottom:1vw;">이음온라인 이용자 설문조사</p>
 
 <ul class="lists dot">
-	<li>주1: &lt;차별없는가게&gt; 홈페이지 <a class="underline" href="https://wewelcomeall.net" target="_blank"> 바로가기(링크)</a></li>
-	<li>주2: 이 이야기는 당시 함께 쫓겨났던 강혜민 [비마이너] 편집장이 잘 정리한 칼럼이 있다. “불가능한 약속의 선언, ‘차별 없는 가게가 되자”([비마이너], 2020.10.26.)칼럼 <a class="underline" href="https://www.beminor.com/news/articleView.html?idxno=20075" target="_blank"><u>바로가기(링크)</u></a></li>
+	<li>조사기간 : 2021.11.24.(수)~12.9.(목) (16일간)</li>
+	<li>조사대상 : 이음온라인 이용자, 한국장애인문화예술원 SNS 이용자 등</li>
+	<li>응답자수 : 1,303명</li>
+	<li>조사방법 : 온라인 설문조사</li>
 </ul>
 
-<div class="row justify_between align_end" style="margin-top: 3vw;">
-<div class="from_vol" style=" margin: 0;">
-<p class="from" style=" margin: 0;"><span>썸네일 및 사진 출처. </span>《흘러가는 진 퍼레이드》 전시 연계 퍼포먼스 영상 캡쳐</p>
-</div>
-</div>
+<p class="txt f_bold" style="margin-bottom:1vw; margin-top:2vw;">전문가 패널조사</p>
+
+<ul class="lists dot">
+	<li>조사기간 : 2021.11.17.(수)~11.30.(화) (14일간)</li>
+	<li>조사대상 : 한국장애인문화예술원 이음온라인 기획위원 및 지원사업 평가위원</li>
+	<li>응답자수 : 29명</li>
+	<li>조사방법 : 이메일 조사</li>
+</ul>
 </div>
