@@ -2,8 +2,8 @@ $(document).ready(function () {
 
 
     time();
-
-
+	ready();
+	alert("ffdf");
 });
 
 
@@ -37,7 +37,7 @@ function time() {
 		console.log(idx);
 
 
-		if(text.indexOf(findString) != 0) { /*존재하지 않으면 */
+		if(text.indexOf(findString) != 0) { /*존재하면 */
 			$(".pic").eq(idx).hide();
 		}
 		
@@ -78,5 +78,11 @@ function time() {
 
 
     
+
+}
+
+function ready(){
+	alert("ffdf");
+	
 
 }

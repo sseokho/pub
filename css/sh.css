@@ -615,3 +615,17 @@ table tbody td.b-td-left{text-align:left !important;}
 
 
 
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.swiper-slide video{
+    width: 100%;
+        height: 100%;
+   
+}
+
+

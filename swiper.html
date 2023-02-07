@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>법무부 - u Guard</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+<style>
+  .swiper{width:600px;}
+  .aa{width:1200px;}
+  .aa .swiper-slide{height:300px; }
+  .aa .swiper-slide.swiper-slide-active{border:1px solid red}
+  .aa .swiper-pagination-bullet{width:30px; height:30px;}
+</style>
+<body>
+  <div class="swiper-container swiper mySwiper">
+    <!-- Additional required wrapper -->
+    <ul class="swiper-wrapper">
+      <!-- Slides -->
+      <li class="swiper-slide">
+        <div>
+          <h3>Slide 1 - <small>reset video and play when slide change</small></h3>
+          <video 
+                 width="320" height="240" controls muted loop>
+            <source src="https://ak2.picdn.net/shutterstock/videos/34123252/preview/stock-footage-coworkers-discussing-in-the-future-of-their-company-over-several-charts-and-graphs-business.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div>
+          <h3>Slide 2 - <small>reset video and play when slide change</small></h3>
+          <video width="320" height="240" controls muted loop>
+            <source src="https://ak1.picdn.net/shutterstock/videos/25348301/preview/stock-footage--business-new-customers-sale-and-people-concept-thousands-of-people-formed-qr-code-crowd-flight.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+  
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div>
+          <h3>Slide 3 - <small>reset video and play when slide change</small></h3>
+          <video width="320" height="240" controls muted loop>
+            <source src="https://ak4.picdn.net/shutterstock/videos/17795644/preview/stock-footage-receiving-email-e-mail-sign-on-holographic-screen-the-person-received-the-email-and-opens-it-with.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div>
+          <h3>Slide 4 - <small>reset video and play when slide change</small></h3>
+          <video 
+                 width="320" height="240" controls muted loop>
+            <source src="https://ak2.picdn.net/shutterstock/videos/34123252/preview/stock-footage-coworkers-discussing-in-the-future-of-their-company-over-several-charts-and-graphs-business.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div>
+          <h3>Slide 5 - <small>reset video and play when slide change</small></h3>
+          <video width="320" height="240" controls muted loop>
+            <source src="https://ak1.picdn.net/shutterstock/videos/25348301/preview/stock-footage--business-new-customers-sale-and-people-concept-thousands-of-people-formed-qr-code-crowd-flight.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+  
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div>
+          <h3>Slide 6 - <small>reset video and play when slide change</small></h3>
+          <video width="320" height="240" controls muted loop>
+            <source src="https://ak4.picdn.net/shutterstock/videos/17795644/preview/stock-footage-receiving-email-e-mail-sign-on-holographic-screen-the-person-received-the-email-and-opens-it-with.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </li>
+    </ul>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <button onclick="test()">3번 슬라이드로 이동하기</button>
+
+
+
+  <div class="swiper aa">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
+      <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></div>
+      <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></div>
+      <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-4.jpg" /></div>
+      <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-5.jpg" /></div>
+      <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-6.jpg" /></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+
+  <!-- script -->
+  
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+
+  <script>
+
+
+var swiper2 = new Swiper(".aa", {
+      slidesPerView: 2,
+      loop:false,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      on: {
+
+      activeIndexChange: function () {
+        swiper.slideTo(this.realIndex, 100, false)
+      }
+
+      },
+
+      
+    });
+
+   
+
+   var swiper = new Swiper('.mySwiper', {
+  loop: true,
+  autoplay: true,
+  freeMode: true,
+      watchSlidesProgress: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  /* ON INIT AUTOPLAY THE FIRST VIDEO */
+ 
+  on: {
+
+    
+
+
+    init: function () {
+      console.log('swiper initialized');
+      var currentVideo =  $("[data-swiper-slide-index=" + this.realIndex + "]").find("video");
+      currentVideo.trigger('play');
+    },
+
+
+    
+
+
+  },
+  
+});
+
+
+
+/* GET ALL VIDEOS */
+var sliderVideos = $(".swiper-slide video");
+
+/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+swiper.on('slideChange', function () {
+  console.log('slide changed');
+  /* stop all videos  */
+  sliderVideos.each(function( index ) {
+    this.currentTime = 0;
+  });
+
+  /* SWIPER GET CURRENT AND PREV SLIDE (AND The VIDEO INSIDE) */
+  var prevVideo =  $(`[data-swiper-slide-index="${this.previousIndex}]"`).find("video");
+  var currentVideo =  $(`[data-swiper-slide-index="${this.realIndex}"]`).find("video");
+  prevVideo.trigger('stop');
+  currentVideo.trigger('play');
+});
+
+
+$('.aa .swiper-slide:nth-child(1)').click(function(){
+      swiper.slideTo(0, 100, false)
+      prevVideo.trigger('stop');
+    });
+
+    $('.aa .swiper-slide:nth-child(2)').click(function(){
+      swiper.slideTo(1, 100, false)
+      prevVideo.trigger('stop');
+    });
+
+    $('.aa .swiper-slide:nth-child(3)').click(function(){
+      swiper.slideTo(2, 100, false)
+      prevVideo.trigger('stop');
+    });
+
+    $('.aa .swiper-slide:nth-child(4)').click(function(){
+      swiper.slideTo(0, 100, false)
+      prevVideo.trigger('stop');
+    });
+
+    $('.aa .swiper-slide:nth-child(5)').click(function(){
+      swiper.slideTo(1, 100, false)
+      prevVideo.trigger('stop');
+    });
+
+    $('.aa .swiper-slide:nth-child(6)').click(function(){
+      swiper.slideTo(2, 100, false)
+      prevVideo.trigger('stop');
+    });
+
+
+
+
+  </script>
+  <!-- //script -->
+</body>
+
+</html>
