@@ -67,14 +67,14 @@ h3 {
         <div class="slider slider-single main-slider">
 
             <div class="item video">
-              <video class="slide-video slide-media" loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
+              <video class="slide-video slide-media" controls loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
                 <source src="https://ak2.picdn.net/shutterstock/videos/34123252/preview/stock-footage-coworkers-discussing-in-the-future-of-their-company-over-several-charts-and-graphs-business.mp4" type="video/mp4" />
               </video>
               <p class="caption">HTML 5 Video</p>
             </div>
 
             <div class="item video">
-              <video class="slide-video slide-media" loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
+              <video class="slide-video slide-media" controls loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
                 <source src="https://ak1.picdn.net/shutterstock/videos/25348301/preview/stock-footage--business-new-customers-sale-and-people-concept-thousands-of-people-formed-qr-code-crowd-flight.webm" type="video/mp4" />
               </video>
               <p class="caption">HTML 5 Video</p>
@@ -114,7 +114,7 @@ $('.slider-single').slick({
  	adaptiveHeight: true,
  	infinite: false,
 	useTransform: true,
- 	speed: 400,
+ 	speed: 100,
  	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
  });
 
@@ -250,15 +250,18 @@ function playPauseVideo(slick, control){
 
     var vi = $('.slick-active').find('video');
 
-
+    
     if (video != null) {
       if (control === "play"){
-        video.play();
+        vi.get(0).currentTime = 0;
+          vi.get(0).play();
+
       } else {
+
+
         vi.get(0).currentTime = 0;
         vi.get(0).play();
-
-
+        
       }
     }
   }
