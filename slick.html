@@ -65,36 +65,25 @@ h3 {
       <div class="column small-11 small-centered">
         <h2>Slick Slider Syncing</h2>
         <div class="slider slider-single main-slider">
-          <div class="item vimeo">
-            <iframe class="embed-player slide-media" src="https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=0&id=217885864" width="980" height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p class="caption">Vimeo</p>
-          </div>
-          <div class="item vimeo" data-video-start="4">
-            <iframe class="embed-player slide-media" src="https://player.vimeo.com/video/217885864?api=1&byline=0&portrait=0&title=0&background=1&mute=1&loop=1&autoplay=0&id=217885864" width="980" height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p class="caption">Vimeo</p>
-          </div>
-          <div class="item video">
-            <video class="slide-video slide-media" controls loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
-              <source src="https://www.jbedu.or.kr/img/sub/video_230113.mp4" type="video/mp4" />
-            </video>
-            <p class="caption">HTML 5 Video</p>
-          </div>
-          <div class="item video">
-            <video class="slide-video slide-media" controls loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
-              <source src="https://www.jbedu.or.kr/img/sub/video_230113.mp4" type="video/mp4" />
-            </video>
-            <p class="caption">HTML 5 Video</p>
-          </div>
+
+            <div class="item video">
+              <video class="slide-video slide-media" loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
+                <source src="https://ak2.picdn.net/shutterstock/videos/34123252/preview/stock-footage-coworkers-discussing-in-the-future-of-their-company-over-several-charts-and-graphs-business.mp4" type="video/mp4" />
+              </video>
+              <p class="caption">HTML 5 Video</p>
+            </div>
+
+            <div class="item video">
+              <video class="slide-video slide-media" loop muted preload="metadata" poster="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
+                <source src="https://ak1.picdn.net/shutterstock/videos/25348301/preview/stock-footage--business-new-customers-sale-and-people-concept-thousands-of-people-formed-qr-code-crowd-flight.webm" type="video/mp4" />
+              </video>
+              <p class="caption">HTML 5 Video</p>
+            </div>
+
         </div>
         <div class="slider slider-nav">
           <div><h3><span>1</span></h3></div>
           <div><h3><span>2</span></h3></div>
-          <div><h3><span>3</span></h3></div>
-          <div><h3><span>4</span></h3></div>
-          <div><h3><span>5</span></h3></div>
-          <div><h3><span>6</span></h3></div>
-          <div><h3><span>7</span></h3></div>
-
         </div>
       </div>
     </div>
@@ -176,9 +165,6 @@ $('.slider-single').slick({
 
 
 
- /* ----------------------------------------------------- */
-
-
  var slideWrapper = $(".main-slider"),
     iframes = slideWrapper.find('.embed-player'),
     lazyImages = slideWrapper.find('.slide-image'),
@@ -198,7 +184,6 @@ function playPauseVideo(slick, control){
   slideType = currentSlide.attr("class").split(" ")[1];
   player = currentSlide.find("iframe").get(0);
   startTime = currentSlide.data("video-start");
-
 
   if (slideType === "vimeo") {
     switch (control) {
@@ -262,13 +247,16 @@ function playPauseVideo(slick, control){
     }
   } else if (slideType === "video") {
     video = currentSlide.children("video").get(0);
-    var vi = $('.item').find('video');
+
+    var vi = $('.slick-active').find('video');
+
 
     if (video != null) {
       if (control === "play"){
         video.play();
       } else {
         vi.get(0).currentTime = 0;
+        vi.get(0).play();
 
 
       }
@@ -347,7 +335,6 @@ $(function() {
 $(window).on("resize.slickVideoPlayer", function(){  
   resizePlayer(iframes, 16/9);
 });
-
   </script>
 </body>
 
