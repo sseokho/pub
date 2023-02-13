@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>dd</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+</head>
+<style>
+  body { background-color: #aacccc }
+
+
+
+h3 {
+	background: #f0f0f0;
+	color: #3498db;
+	font-size: 2.25rem;
+	margin: .5rem;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
+
+.slider-single h3 {
+	line-height: 10rem;
+}
+
+
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active h3 {
+	color: #c00;
+	background-color: #fff
+}
+
+
+
+.small-centered .slider-single .slick-track .slick-slide a img{width: 100% !important; display: inline-block !important;}
+.small-centered .slider-single .slick-track .slick-slide a{    width: 100%;
+    display: block;
+    overflow: hidden;
+    height: 420px;}
+
+    .small-centered .slick-slide{height:300px !important;}
+
+
+.slider-nav{    
+    width: auto !important;
+    background-color: #2f2f2f;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;}
+
+
+
+.slider-nav .slick-list{
+    width: 873px !important;
+height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;}
+
+
+
+.slider-nav .slick-track{      
+    width: 873px !important;
+    display: flex;
+    justify-content: space-around;}
+.slider-nav .slick-track > div{width:40% !important; height:228px;}
+.slider-nav .slick-track > div img{    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;}
+
+    .slick-track:before, .slick-track:after{display: none;}  
+
+
+
+
+
+
+.tab{float:left; width:600px; height:290px;}
+.tabnav{font-size:0; width:600px; border:1px solid #ddd;}
+.tabnav li{display: inline-block;  height:46px; text-align:center; border-right:1px solid #ddd;}
+.tabnav li a:before{content:""; position:absolute; left:0; top:0px; width:100%; height:3px; }
+.tabnav li a.active:before{background:#7ea21e;}
+.tabnav li a.active{border-bottom:1px solid #fff;}
+.tabnav li a{ position:relative; display:block; background: #f8f8f8; color: #000; padding:0 30px; line-height:46px; text-decoration:none; font-size:16px;}
+.tabnav li a:hover,
+.tabnav li a.active{background:#fff; color:#7ea21e; }
+.tabcontent{padding: 20px;  border:1px solid #ddd; border-top:none;}
+
+
+</style>
+
+
+<body>
+    
+    <div class="tab">
+        <ul class="tabnav">
+          <li><a href="#tab01">학과소개</a></li>
+          <li><a href="#tab02">교육생인터뷰</a></li>
+        </ul>
+        <div class="tabcontent">
+          <div id="tab01">
+
+
+            <div id="video_slide" class="sw_gallery" style="width:100%; margin-bottom: 2.5em;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oMHhoughBZA?autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+          </div>
+          <div id="tab02">
+
+            <div class="column small-11 small-centered">
+                <div class="slider slider-single">
+                    <div><a href="https://www.youtube.com/watch?v=fDk94fBDwak" target="_blank"><img src="/img/sub/go_sum.jpg"></a></div>
+                    <div><a href="https://www.youtube.com/watch?v=Fm5bsITsQg0" target="_blank"><img src="/img/sub/kim_sum.jpg"></a></div>
+                </div>
+                <div class="slider slider-nav">
+                    <div><img src="/img/sub/go_sum.jpg"></div>
+                    <div><img src="/img/sub/kim_sum.jpg"></div>
+        
+                </div>
+            </div>
+
+
+            
+          </div>
+        </div>
+    </div>
+
+
+   
+
+
+     
+</body>
+
+
+<script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+  <script>
+
+$('.slider-single').slick({
+ 	slidesToShow: 1,
+ 	slidesToScroll: 1,
+ 	arrows: false,
+ 	fade: false,
+ 	adaptiveHeight: true,
+ 	infinite: false,
+	useTransform: true,
+ 	speed: 400,
+ 	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+ });
+
+ $('.slider-nav')
+ 	.on('init', function(event, slick) {
+ 		$('.slider-nav .slick-slide.slick-current').addClass('is-active');
+ 	})
+ 	.slick({
+ 		slidesToShow: 7,
+ 		slidesToScroll: 7,
+ 		dots: false,
+ 		focusOnSelect: false,
+ 		infinite: false,
+ 		responsive: [{
+ 			breakpoint: 1024,
+ 			settings: {
+ 				slidesToShow: 5,
+ 				slidesToScroll: 5,
+ 			}
+ 		}, {
+ 			breakpoint: 640,
+ 			settings: {
+ 				slidesToShow: 4,
+ 				slidesToScroll: 4,
+			}
+ 		}, {
+ 			breakpoint: 420,
+ 			settings: {
+ 				slidesToShow: 3,
+ 				slidesToScroll: 3,
+		}
+ 		}]
+ 	});
+
+ $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+ 	$('.slider-nav').slick('slickGoTo', currentSlide);
+ 	var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+ 	$('.slider-nav .slick-slide.is-active').removeClass('is-active');
+ 	$(currrentNavSlideElem).addClass('is-active');
+ });
+
+ $('.slider-nav').on('click', '.slick-slide', function(event) {
+ 	event.preventDefault();
+ 	var goToSingleSlide = $(this).data('slick-index');
+
+ 	$('.slider-single').slick('slickGoTo', goToSingleSlide);
+ });
+
+
+$(function(){
+
+    $('.tabnav a').eq(0).click(function(){
+        var div = document.getElementById("video_slide");
+        var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+        iframe.postMessage('{"event":"command","func":"playVideo","args":""}','*');
+    })
+
+    $('.tabnav a').eq(1).click(function(){
+        var div = document.getElementById("video_slide");
+        var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+        iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+    })
+
+
+
+  
+
+
+    $(function(){
+    $('.tabcontent > div').hide();
+    $('.tabnav a').click(function () {
+        
+        $('.tabcontent > div').hide().filter(this.hash).fadeIn();
+        $('.tabnav a').removeClass('active');
+        $(this).addClass('active');
+        $('.slider-single').get(0).slick.setPosition();
+        return false;
+        }).filter(':eq(0)').click();
+    });
+
+
+
+
+
+});
+
+
+
+  </script>
+</html>

@@ -1,10 +1,12 @@
-$(document).ready(function () {
+$(document).ready(function(){
 
 
     time();
 	ready();
-	alert("ffdf");
+
 });
+
+
 
 
 
@@ -43,18 +45,6 @@ function time() {
 		
 	
 	});
-		
-
-
-		
-
-
-	
-
-
-
-	
-
 
 
 	var telValue = $(".ced").val();
@@ -83,6 +73,4 @@ function time() {
 
 function ready(){
 	alert("ffdf");
-	
-
 }

@@ -1,9 +1,9 @@
 <div style="margin-top:3vw;">
 <ul class="img_list row" style="width:100%;margin:0 auto;">
-	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_220223_0102.jpg"> <span class="caption ta_c" style="display:block;">박지선</span></li>
-	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_220223_0104.jpg"> <span class="caption ta_c" style="display:block;">오세형</span></li>
-	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_220223_0103.jpg"> <span class="caption ta_c" style="display:block;">이진희</span></li>
-	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_220223_0105.jpg"> <span class="caption ta_c" style="display:block;">문영민</span></li>
-	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_220223_0106.jpg"> <span class="caption ta_c" style="display:block;">최선영</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0102.jpg"> <span class="caption ta_c" style="display:block;">박지선</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0104.jpg"> <span class="caption ta_c" style="display:block;">오세형</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0103.jpg"> <span class="caption ta_c" style="display:block;">이진희</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0105.jpg"> <span class="caption ta_c" style="display:block;">문영민</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0106.jpg"> <span class="caption ta_c" style="display:block;">최선영</span></li>
 </ul>
 </div>

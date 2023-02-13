@@ -9,6 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link type="text/css" rel="stylesheet" href="./css/sh.css" />
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -16,208 +22,249 @@
 </head>
 
 <body>
-  <div id="wrap">
+
+  <!-- Tab을 구성할 영역 설정-->
+  <div style="margin:10px;">
+    <!-- Tab 영역 태그는 ul이고 클래스는 nav와 nav-tabs를 설정한다. -->
+    <ul class="nav nav-tabs">
+      <!-- Tab 아이템이다. 태그는 li과 li > a이다. li태그에 active는 현재 선택되어 있는 탭 메뉴이다. -->
+      <li class="active"><a href="#home" data-toggle="tab">일반기사</a></li>
+      <!-- a 태그의 href는 아래의 tab-content 영역의 id를 설정하고 data-toggle 속성을 tab으로 설정한다. -->
+      <li><a href="#profile" data-toggle="tab">큐레이션</a></li>
+      <li><a href="#messages" data-toggle="tab">Messages</a></li>
+      <li><a href="#settings" data-toggle="tab">Settings</a></li>
+    </ul>
+    
+    <div class="tab-content">
+      <!---home--->
+      <div class="tab-pane fade in active" id="home">
+
+        <div id="wrap">
     
 
 
-    <section class="main">
-      <div class="ieum_title">이음가이드</div>
-
-      <div class="ieum_sub_title">파란글씨</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_21.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text21.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">사이사이 굵은글씨</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_23.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text23.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-
-      <div class="ieum_sub_title">굵은 글씨 + 오른쪽 글씨</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_18.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text18.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-
-      <div class="ieum_sub_title">굵은 글씨 + 인터뷰</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_14.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text14.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">일반 글씨 + 밑줄 글씨</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_13.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text13.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-
-
-      <div class="ieum_sub_title">밑줄 글씨 + 내용</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_5.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text6.txt" class="view" download>코드 1</a>
-          <a href="down/text7.txt" class="view" download>코드 2</a>
-        </div>
-      </div>
-
-
-
-      <div class="ieum_sub_title">인터뷰</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_1.png"></div>
-        <div class="ieum_view flex-1">
-          <a href="down/text1.txt" class="view" download>코드보기</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">graybox</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_2.png"></div>
-        <div class="ieum_view flex-1">
-          <a href="down/text2.txt" class="view" download>코드보기</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">graybox2</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_22.png"></div>
-        <div class="ieum_view flex-1">
-          <a href="down/text22.txt" class="view" download>코드보기</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">graybox3</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_24.png"></div>
-        <div class="ieum_view flex-1">
-          <a href="down/text24.txt" class="view" download>코드보기</a>
-        </div>
-      </div>
-     
-      <div class="ieum_sub_title">주 1 + 참고자료</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_3.png"></div>
-        <div class="ieum_view flex-1">
-          <a href="down/text3.txt" class="view" download>코드보기</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">설문조사 ul</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_19.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text19.txt" class="view" download>코드보기</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">영상 삽입</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_7.png"></div>
-        <div class="ieum_view flex-1">
-          <a href="down/text9.txt" class="view" download>코드보기</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">이미지 1개 + 캡션</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_6.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text8.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">이미지 2개 + 캡션</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_4.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text4.txt" class="view" download>코드 1</a>
-          <a href="down/text5.txt" class="view" download>코드 2</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">이미지 3개 + 그레이 박스 + 캡션</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_15.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text15.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">이미지 4개 + 캡션</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_20.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text20.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">이미지 5개 + 캡션</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_10.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text10.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">하단 책 표지</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_11.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text11.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-      <div class="ieum_sub_title">하단 링크</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_12.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text12.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-
-      <div class="ieum_sub_title">저자</div>
-      <div class="d-flex">
-        <div class="ieum_img"><img src="img/ieum_16.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text16.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
-
-
-      <div class="ieum_sub_title">저자 표시</div>
-      <div class="d-flex">
-        <div class="ieum_img width-ini"><img src="img/ieum_17.png"></div>
-        <div class="ieum_view flex-1 d-flex">
-          <a href="down/text17.txt" class="view" download>코드 1</a>
-        </div>
-      </div>
+          <section class="main">
+            <div class="ieum_title">이음가이드</div>
       
-    </section>
+            <div class="ieum_sub_title">파란글씨</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_21.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text21.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">사이사이 굵은글씨</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_23.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text23.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+      
+            <div class="ieum_sub_title">굵은 글씨 + 오른쪽 글씨</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_18.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text18.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+      
+            <div class="ieum_sub_title">굵은 글씨 + 인터뷰</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_14.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text14.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">일반 글씨 + 밑줄 글씨</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_13.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text13.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+      
+      
+            <div class="ieum_sub_title">밑줄 글씨 + 내용</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_5.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text6.txt" class="view" download>코드 1</a>
+                <a href="down/text7.txt" class="view" download>코드 2</a>
+              </div>
+            </div>
+      
+      
+      
+            <div class="ieum_sub_title">인터뷰</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_1.png"></div>
+              <div class="ieum_view flex-1">
+                <a href="down/text1.txt" class="view" download>코드보기</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">graybox</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_2.png"></div>
+              <div class="ieum_view flex-1">
+                <a href="down/text2.txt" class="view" download>코드보기</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">graybox2</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_22.png"></div>
+              <div class="ieum_view flex-1">
+                <a href="down/text22.txt" class="view" download>코드보기</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">graybox3</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_24.png"></div>
+              <div class="ieum_view flex-1">
+                <a href="down/text24.txt" class="view" download>코드보기</a>
+              </div>
+            </div>
+           
+            <div class="ieum_sub_title">주 1 + 참고자료</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_3.png"></div>
+              <div class="ieum_view flex-1">
+                <a href="down/text3.txt" class="view" download>코드보기</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">설문조사 ul</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_19.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text19.txt" class="view" download>코드보기</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">영상 삽입</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_7.png"></div>
+              <div class="ieum_view flex-1">
+                <a href="down/text9.txt" class="view" download>코드보기</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">이미지 1개 + 캡션</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_6.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text8.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">이미지 2개 + 캡션</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_4.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text4.txt" class="view" download>코드 1</a>
+                <a href="down/text5.txt" class="view" download>코드 2</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">이미지 3개 + 그레이 박스 + 캡션</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_15.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text15.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">이미지 4개 + 캡션</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_20.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text20.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">이미지 5개 + 캡션</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_10.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text10.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">하단 책 표지</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_11.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text11.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+            <div class="ieum_sub_title">하단 링크</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_12.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text12.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+      
+            <div class="ieum_sub_title">저자</div>
+            <div class="d-flex">
+              <div class="ieum_img"><img src="img/ieum_16.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text16.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+      
+      
+            <div class="ieum_sub_title">저자 표시</div>
+            <div class="d-flex">
+              <div class="ieum_img width-ini"><img src="img/ieum_17.png"></div>
+              <div class="ieum_view flex-1 d-flex">
+                <a href="down/text17.txt" class="view" download>코드 1</a>
+              </div>
+            </div>
+            
+          </section>
+      
+        </div>
 
+
+
+      </div>
+      <!---home end--->
+
+      <!---Profile--->
+      <div class="tab-pane fade" id="profile">
+        <div id="wrap">
+          <section class="main">
+          </section>
+        </div>
+
+      </div>
+      <!---Profile end--->
+      
+      <div class="tab-pane fade" id="messages">Messages 메뉴</div>
+      <div class="tab-pane fade" id="settings">Settings 메뉴</div>
+    </div>
   </div>
 
-  <!-- script -->
+
+  
+  
+
+  
+  
+</body>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/ui-script.js"></script>
-
-</body>
-
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </html>
