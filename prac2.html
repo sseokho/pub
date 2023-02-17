@@ -83,20 +83,33 @@ button{width:300px; padding:30px;}
     justify-content: space-around;
 }
 #example_wrapper,
-#example2_wrapper{width:40%;}
+#example2_wrapper{width:40%; height: max-content;}
 
+#example_wrapper .dataTables_scroll{    
+    height: max-content;
+    
+    overflow: hidden;}
 #example_wrapper .dataTables_scrollFootInner{width:100% !important;}
+#example_filter{margin-right:20px;}
 
-
+#example_wrapper .dataTables_paginate{margin-right:15px;}
 #example_wrapper .dataTables_scrollHeadInner{width:100% !important;}
-#example_wrapper .dataTables_scrollHeadInner .table.table-striped.table-bordered.dataTable{width:97.4% !important;}
-
+#example_wrapper .dataTables_scrollHeadInner .table.table-striped.table-bordered.dataTable{    width: 97.5% !important;
+    margin: 0 !important;}
+table#example tr.odd td{background-color: rgba(82, 157, 255, 0.158);}
+#example_wrapper .dataTables_scrollFoot{display:none;} 
+table.dataTable tbody tr:last-child{border-bottom: 1px solid red;}
 #example_wrapper .dataTables_scrollFoot .table.table-striped.table-bordered.dataTable{width:97.4% !important;}
+
+#example_wrapper .dataTables_scrollBody{overflow-x:hidden !important; overflow-y:auto !important;}
 #example_wrapper .dataTables_scrollBody::-webkit-scrollbar {
+  position: relative;
   width: 20px;
+  border-left: 1px solid #000;
 }
 #example_wrapper .dataTables_scrollBody::-webkit-scrollbar-track {
-  background: transparent;
+  background: rgb(255, 255, 255);
+  border-left: 1px solid #f0f0f0;
 }
 #example_wrapper .dataTables_scrollBody::-webkit-scrollbar-thumb {
   background: rgb(165, 165, 165);
@@ -1099,19 +1112,24 @@ $(document).ready(function () {
     $('#example').DataTable({
         ordering: false,        
         searching: true,
-        scrollX: true,
-        scrollY: false,
-	    scrollY: 200,
+        scrollX: false,
+        scrollY: true,
+	    scrollY: 500,
 
         
 
     });
 
     $('#example2').DataTable({
-
+        ordering: false,        
+        searching: true,
+        scrollX: false,
+        scrollY: "100%",
+        scrollY: true,
+	    scrollY: 500,
         // 현재 상태를 보존
 	    stateSave: true,
-        
+
         // 표시 건수를 10건 단위로 설정
 	    lengthMenu: [ 10, 20, 30, 40, 50 ],
 
