@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>법무부 - u Guard</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap4.min.css">
+</head>
+<style>
+  body { background-color: #aacccc }
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+h3 {
+	background: #f0f0f0;
+	color: #3498db;
+	font-size: 2.25rem;
+	margin: .5rem;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
+
+.slider-single h3 {
+	line-height: 10rem;
+}
+
+.slider-nav h3::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+
+.slider-nav h3 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active h3 {
+	color: #c00;
+	background-color: #fff
+}
+
+/*tab css*/
+.tab{float:left; width:600px; height:290px;}
+.tabnav{font-size:0; width:600px; border:1px solid #ddd;}
+.tabnav li{display: inline-block;  height:46px; text-align:center; border-right:1px solid #ddd;}
+.tabnav li a:before{content:""; position:absolute; left:0; top:0px; width:100%; height:3px; }
+.tabnav li a.active:before{background:#7ea21e;}
+.tabnav li a.active{border-bottom:1px solid #fff;}
+.tabnav li a{ position:relative; display:block; background: #f8f8f8; color: #000; padding:0 30px; line-height:46px; text-decoration:none; font-size:16px;}
+.tabnav li a:hover,
+.tabnav li a.active{background:#fff; color:#7ea21e; }
+.tabcontent{padding: 20px; height:244px; border:1px solid #ddd; border-top:none;}
+
+button{width:300px; padding:30px;}
+.row{width:500px; height:70px; border:1px solid #000;}
+.row input{width:50px; height:50px;}
+</style>
+
+
+<body>
+    <div>
+        <select id="select">
+          <option>11</option>
+          <option>22</option>
+          <option>33</option>
+        </select>
+        <button class="btn" onclick="myfunction()">fff</button>
+    </div>
+    <div class="view" name="view">
+      <div class="row">
+          <input type="checkbox">
+      </div>
+    </div>
+  <!-- script -->
+  
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- //script -->
+
+
+
+  <script>
+
+
+
+function myfunction() {
+
+
+
+var x = document.getElementById("select").value;
+
+document.getElementByClassName("view").innerHTML += `<div class="row"><a>${x}</a></div>`;
+
+$('.row').click(function(){
+  const $this = $(this);
+    $('.row').removeClass('sel');
+    $this.addClass('sel');
+});
+
+$("#del").click(function() {
+
+    //체크된 행이 없을 경우.
+    
+    $('.row.sel').remove();
+});
+
+}
+
+
+
+
+$(".btn").click(function(){
+    
+
+})
+$(function(){
+  $('.tabcontent > div').hide();
+  $('.tabnav a').click(function () {
+    $('.tabcontent > div').hide().filter(this.hash).show();
+    $('.tabnav a').removeClass('active');
+    $(this).addClass('active');
+    return false;
+  }).filter(':eq(0)').click();
+});
+
+
+
+
+$('.slider-single').slick({
+ 	slidesToShow: 1,
+ 	slidesToScroll: 1,
+ 	arrows: true,
+ 	fade: false,
+ 	adaptiveHeight: true,
+ 	infinite: false,
+	useTransform: true,
+ 	speed: 100,
+ 	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+ });
+
+ $('.slider-nav')
+ 	.on('init', function(event, slick) {
+ 		$('.slider-nav .slick-slide.slick-current').addClass('is-active');
+ 	})
+ 	.slick({
+ 		slidesToShow: 7,
+ 		slidesToScroll: 7,
+ 		dots: false,
+ 		focusOnSelect: false,
+ 		infinite: false,
+ 		responsive: [{
+ 			breakpoint: 1024,
+ 			settings: {
+ 				slidesToShow: 5,
+ 				slidesToScroll: 5,
+ 			}
+ 		}, {
+ 			breakpoint: 640,
+ 			settings: {
+ 				slidesToShow: 4,
+ 				slidesToScroll: 4,
+			}
+ 		}, {
+ 			breakpoint: 420,
+ 			settings: {
+ 				slidesToShow: 3,
+ 				slidesToScroll: 3,
+		}
+ 		}]
+ 	});
+
+ $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+ 	$('.slider-nav').slick('slickGoTo', currentSlide);
+ 	var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+ 	$('.slider-nav .slick-slide.is-active').removeClass('is-active');
+ 	$(currrentNavSlideElem).addClass('is-active');
+ });
+
+ $('.slider-nav').on('click', '.slick-slide', function(event) {
+ 	event.preventDefault();
+ 	var goToSingleSlide = $(this).data('slick-index');
+
+ 	$('.slider-single').slick('slickGoTo', goToSingleSlide);
+ });
+
+
+
+ var slideWrapper = $(".main-slider"),
+    iframes = slideWrapper.find('.embed-player'),
+    lazyImages = slideWrapper.find('.slide-image'),
+    lazyCounter = 0;
+
+// POST commands to YouTube or Vimeo API
+function postMessageToPlayer(player, command){
+  if (player == null || command == null) return;
+  player.contentWindow.postMessage(JSON.stringify(command), "*");
+}
+
+// When the slide is changing
+function playPauseVideo(slick, control){
+  var currentSlide, slideType, startTime, player, video;
+
+  currentSlide = slick.find(".slick-current");
+  slideType = currentSlide.attr("class").split(" ")[1];
+  player = currentSlide.find("iframe").get(0);
+  startTime = currentSlide.data("video-start");
+
+  if (slideType === "vimeo") {
+    switch (control) {
+      case "play":
+        if ((startTime != null && startTime > 0 ) && !currentSlide.hasClass('started')) {
+          currentSlide.addClass('started');
+          postMessageToPlayer(player, {
+            "method": "setCurrentTime",
+            "value" : startTime
+          });
+        }
+        postMessageToPlayer(player, {
+          "method": "play",
+          "value" : 1
+        });
+        break;
+      case "pause":
+        postMessageToPlayer(player, {
+          "method": "pause",
+          "value": 1
+        });
+        break;
+    }
+  } else if (slideType === "youtube-sound") {
+    switch (control) {
+      case "play":
+        postMessageToPlayer(player, {
+          "event": "command",
+          // "func": "mute"
+        });
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "playVideo"
+        });
+        break;
+      case "pause":
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "pauseVideo"
+        });
+        break;
+    }
+  }  else if (slideType === "youtube") {
+    switch (control) {
+      case "play":
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "mute"
+        });
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "playVideo"
+        });
+        break;
+      case "pause":
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "pauseVideo"
+        });
+        break;
+    }
+  } else if (slideType === "video") {
+    video = currentSlide.children("video").get(0);
+
+    var vi = $('.slick-active').find('video');
+
+    
+    if (video != null) {
+      if (control === "play"){
+        vi.get(0).currentTime = 0;
+          vi.get(0).play();
+
+      } else {
+
+
+        vi.get(0).currentTime = 0;
+        vi.get(0).play();
+        
+      }
+    }
+  }
+}
+
+// Resize player
+function resizePlayer(iframes, ratio) {
+  if (!iframes[0]) return;
+  var win = $(".main-slider"),
+      width = win.width(),
+      playerWidth,
+      height = win.height(),
+      playerHeight,
+      ratio = ratio || 16/9;
+
+  iframes.each(function(){
+    var current = $(this);
+    if (width / ratio < height) {
+      playerWidth = Math.ceil(height * ratio);
+      current.width(playerWidth).height(height).css({
+        left: (width - playerWidth) / 2,
+         top: 0
+        });
+    } else {
+      playerHeight = Math.ceil(width / ratio);
+      current.width(width).height(playerHeight).css({
+        left: 0,
+        top: (height - playerHeight) / 2
+      });
+    }
+  });
+}
+
+// DOM Ready
+$(function() {
+  // Initialize
+  slideWrapper.on("init", function(slick){
+    slick = $(slick.currentTarget);
+    setTimeout(function(){
+      playPauseVideo(slick,"play");
+    }, 1000);
+    resizePlayer(iframes, 16/9);
+  });
+  slideWrapper.on("beforeChange", function(event, slick) {
+    slick = $(slick.$slider);
+    playPauseVideo(slick,"pause");
+  });
+  slideWrapper.on("afterChange", function(event, slick) {
+    slick = $(slick.$slider);
+    playPauseVideo(slick,"play");
+  });
+  slideWrapper.on("lazyLoaded", function(event, slick, image, imageSource) {
+    lazyCounter++;
+    if (lazyCounter === lazyImages.length){
+      lazyImages.addClass('show');
+      // slideWrapper.slick("slickPlay");
+    }
+  });
+
+  //start the slider
+  slideWrapper.slick({
+    // fade:true,
+    autoplaySpeed:4000,
+    autoplay: true,
+    lazyLoad:"progressive",
+    speed:600,
+    arrows:false,
+    dots:true,
+    cssEase:"cubic-bezier(0.87, 0.03, 0.41, 0.9)"
+  });
+});
+
+// Resize event
+$(window).on("resize.slickVideoPlayer", function(){  
+  resizePlayer(iframes, 16/9);
+});
+  </script>
+</body>
+
+</html>
