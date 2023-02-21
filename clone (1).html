@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <meta charset="utf-8">
+  <style>
+     table {width:300px; border-collapse:collapse}
+     table, td {border: 2px solid black}
+  </style>
+  <script>
+    $(document).ready(function () {
+    
+
+      var cloneEle = $(".testTd").clone(); //선택한 요소를 복사.
+      cloneEle.text("B1"); //복사한 요소의 text를 변경
+      //cloneEle.attr("name","testName")      
+      $(".testTr").append(cloneEle); //복사한 요소를 tr의 자식 요소로 추가
+    
+
+      /* 테이블의 행에 hover 이벤트를 부착 */ 
+      $(".testTr").hover(function(){
+        $(this).css("background","#c9c9c9");
+      },function(){
+        $(this).css("background","#fff");
+      });
+      
+      
+      $('#btnAction').on("click",function(e){    
+        /*  
+            clone() :DOM요소를 카피해 새롭게 작성.
+            clone(true) : DOM요소를, 그 요소가 가지는 이벤트도 포함해 카피한다.    
+        */
+        var c1 = $('#t1 tr:eq(0)').clone(true); 
+        $("#t1").append(c1);
+        
+      });
+      
+      
+    });
+    
+  </script>
+  <title>JS Bin</title>
+</head>
+<body>
+  <table id="t1">
+    <tr class="testTr">
+      <td class="testTd">A1</td>
+    </tr>
+  </table>
+  <br/>
+  <input type="button" value="행추가" id="btnAction">
+  
+</body>
+</html>

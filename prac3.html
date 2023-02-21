@@ -25,7 +25,7 @@
 .js .slider-single > div:nth-child(1n+2) { display: none }
 
 .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
-
+*{background-color: #fff;}
 h3 {
 	background: #f0f0f0;
 	color: #3498db;
@@ -71,35 +71,39 @@ h3 {
 .tabnav li a:hover,
 .tabnav li a.active{background:#fff; color:#7ea21e; }
 .tabcontent{padding: 20px; height:244px; border:1px solid #ddd; border-top:none;}
-
-button{width:300px; padding:30px;}
+.btn{border:1px solid #000;}
+button{width:300px; padding:30px; }
 .row{width:500px; height:70px; border:1px solid #000;}
 .row input{width:50px; height:50px;}
+
 </style>
 
 
 <body>
-    <div>
-        <select id="select">
-          <option>11</option>
-          <option>22</option>
-          <option>33</option>
-        </select>
-        <button class="btn" onclick="myfunction()">fff</button>
-    </div>
-    <div class="view" name="view">
-      <div class="row">
-          <input type="checkbox">
-      </div>
-    </div>
-  <!-- script -->
-  
-  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
-  <script type="text/javascript" src="./js/script.js"></script>
+  <div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<input type="file" class="ob">
+
+	
+
+	</div>
+
+	<h1>최대 5개까지 추가 가능</h1>
+
+	<button id="add">ADD</button>
+
+	<button id="remove">REMOVE</button>
+
+
+
+</body>
+  
+ 
+
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  
 
   <!-- //script -->
 
@@ -109,33 +113,43 @@ button{width:300px; padding:30px;}
 
 
 
-function myfunction() {
+$(function() {
 
+  
 
-
-var x = document.getElementById("select").value;
-
-document.getElementByClassName("view").innerHTML += `<div class="row"><a>${x}</a></div>`;
-
-$('.row').click(function(){
-  const $this = $(this);
-    $('.row').removeClass('sel');
-    $this.addClass('sel');
-});
-
-$("#del").click(function() {
-
-    //체크된 행이 없을 경우.
+  $('#add').click(function(){
+    var n = $( '.ob' ).length;
+    console.log(n);
     
-    $('.row.sel').remove();
+      if (n >= 4) return;
+
+
+      $('div').append('<input type="file" class="ob">');
+
+
+
+  });
+
+  
+
+  $('#remove').click(function() {
+
+    var b = $( '.ob' ).length;
+    console.log(b);
+
+          if (b > 1) 
+
+
+          $('input:last-child').remove(); 
+
+          return;
+
+  })
+
 });
 
-}
 
+</script>
 
-
-
-  </script>
-</body>
 
 </html>
