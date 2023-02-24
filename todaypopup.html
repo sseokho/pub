@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>법무부 - u Guard</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap4.min.css">
+
+  <!-- //script -->
+
+  
+
+
+</head>
+<style>
+
+</style>
+
+
+<body>
+  
+  <div class="main_popup">
+    <div class="layer_cont">
+      <div class="img_wrap">
+        <img src="https://ggyouth.or.kr/cmm/fms/getImage.do;jsessionid=0192A0A924012179113C90BBC419DED0?atchFileId=FILE_000000000012703&fileSn=0" alt="해당파일이미지">
+      </div>
+      <div class="btn_wrap">
+        <!-- 오늘 하루 보지 않기 --->
+        <button class="btn_today_close"><span>오늘 하루 보지 않기</span></button>
+        <!-- 그냥 닫기 --->
+        <button class="btn_close">닫기</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+  
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+ <!-- 헤더부분에 삽입 -->
+ <script type="text/javascript">
+  
+  var toggleMainPopup = function() {
+  
+  /* 스토리지 제어 함수 정의 */
+  var handleStorage = {
+    // 스토리지에 데이터 쓰기(이름, 만료일)
+    setStorage: function (name, exp) {
+      // 만료 시간 구하기(exp를 ms단위로 변경)
+      var date = new Date();
+      date = date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+
+      // 로컬 스토리지에 저장하기
+      // (값을 따로 저장하지 않고 만료 시간을 저장)
+      localStorage.setItem(name, date)
+    },
+    // 스토리지 읽어오기
+    getStorage: function (name) {
+      var now = new Date();
+      now = now.setTime(now.getTime());
+      // 현재 시각과 스토리지에 저장된 시각을 각각 비교하여
+      // 시간이 남아 있으면 true, 아니면 false 리턴
+      return parseInt(localStorage.getItem(name)) > now
+    }
+  };
+  
+  
+  // 쿠키 읽고 화면 보이게
+  if (handleStorage.getStorage("today")) {
+    $(".main_popup").removeClass("on");
+  } else {
+    $(".main_popup").addClass("on");
+  }
+
+  // 오늘하루 보지 않기 버튼
+  $(".main_popup").on("click", ".btn_today_close", function () {
+    // 로컬 스토리지에 today라는 이름으로 1일(24시간 뒤) 동안 보이지 않게
+    handleStorage.setStorage("today", 1);
+    $(this).parents(".main_popup.on").removeClass("on");
+  });
+
+  // 일반 닫기 버튼
+  $(".main_popup").on("click", ".btn_close", function () {
+    $(this).parents(".main_popup.on").removeClass("on");
+  });
+}
+
+$(function() {
+  toggleMainPopup();
+});
+  </script>
+  <!-- 헤더부분에 삽입 -->
+
+
+  
+
+  
+
+
+</html>
