@@ -26,11 +26,11 @@ time, mark, audio, video {
 	font-weight:300;
     font-style:normal;
     vertical-align: baseline;
-    line-height: 100%;
 }
 
 select{-webkit-appearance: none;appearance: none;-moz-appearance: none;background: url('../images/common/search_select_arrow.png') no-repeat right 18px center;color: #888888;}
 select::-ms-expand {display:none}
+img {max-width:100%; max-height:100%; border:0 none; vertical-align:top;}
 input, select{height: 50px;padding: 0;margin: 0;box-sizing: border-box;color: #000;vertical-align: middle; border:none; text-indent: 10px;}
 legend{font-size: 0;text-indent: -100000px;left: -10000px;top: auto;height: 0;overflow: hidden;}
 
@@ -71,3 +71,12 @@ a{text-decoration:none; color: #000;}
 button, input[type="submit"], select{cursor:pointer}
 button{border:none}
 a.button {cursor: pointer;vertical-align: middle;}
+
+/* 에디터 삽입 컨텐츠 리셋스타일 제거. */
+.editor_view ol, .editor_view ol > li {list-style-type:decimal;}
+
+.editor_view ol, .editor_view ul {padding-left:19px;}
+.editor_view i, .editor_view em {font-style:italic;}
+.editor_view b, .editor_view strong {font-weight:bold;}
+
+.sns_list .editor_view img:fist-child {width:32px !important;height:32px;}
