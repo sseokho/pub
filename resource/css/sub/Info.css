@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.content {
+  padding-bottom: 7.8rem;
+  /* 센터소개 */
+  /* 설립목적 */
+  /* 비전 및 목표 */
+}
+
+.content .introTitle {
+  font-weight: 600;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.content .introTitle span {
+  font-weight: 600;
+  color: #005aab;
+}
+
+.content .grayBox {
+  padding: 5rem 10rem;
+  margin-top: 5.3rem;
+  background-color: #f3f4f6;
+}
+
+.content .grayBox img {
+  display: inline-block;
+}
+
+.content .grayBox .info {
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 815px);
+  margin-left: 11rem;
+  vertical-align: top;
+}
+
+.content .grayBox .info::before {
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  width: 1px;
+  height: 52.8rem;
+  background-color: #fff;
+  content: '';
+}
+
+.content .grayBox .info p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  word-break: keep-all;
+  line-height: 3rem;
+  letter-spacing: -0.5px;
+}
+
+.content .grayBox .info p + p {
+  padding-top: 4.8rem;
+}
+
+.content .est {
+  position: relative;
+  margin-bottom: 10rem;
+  padding: 5rem;
+  width: 1401px;
+  height: 657px;
+  background: url(../../image/sub/estBg.jpg) no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .est .top img {
+  display: inline-block;
+  padding: 2.5rem 0 2.5rem 10rem;
+}
+
+.content .est .top .right {
+  display: inline-block;
+  margin-left: 12rem;
+  width: calc(100% - 680px);
+  vertical-align: top;
+}
+
+.content .est .top .right div {
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.content .est .top .right p {
+  font-size: 1.8rem;
+  word-break: keep-all;
+  line-height: 2.8rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.content .est .top .right p + p {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.content .est .bottom {
+  position: absolute;
+  bottom: -8rem;
+  right: 0;
+  width: 135rem;
+  height: 22.5rem;
+  background-color: #fff;
+}
+
+.content .est .bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .est .bottom ul li {
+  padding: 4rem 3rem;
+  width: 16.66%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .est .bottom ul li + li + li {
+  border-left: 1px solid #eee;
+}
+
+.content .est .bottom ul li:nth-child(1) {
+  background: #005aab url(../../image/sub/estIcon1.png) no-repeat 90% 90%;
+  height: 22.5rem;
+}
+
+.content .est .bottom ul li:nth-child(1) div {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.content .est .bottom ul li:nth-child(1) p {
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 3rem;
+}
+
+.content .est .bottom ul li:nth-child(2) {
+  background: url(../../image/sub/estIcon2.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(3) {
+  background: url(../../image/sub/estIcon3.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(4) {
+  background: url(../../image/sub/estIcon4.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(5) {
+  background: url(../../image/sub/estIcon5.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li:nth-child(6) {
+  background: url(../../image/sub/estIcon6.png) no-repeat 90% 90%;
+}
+
+.content .est .bottom ul li div {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.content .est .bottom ul li p {
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.content .est .bottom ul li span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 2.2rem;
+}
+
+.content .vision {
+  width: 100%;
+}
+
+/* 조직도 */
+.groupTit {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.groupTable {
+  margin-top: 3rem;
+  border-top: 1px solid #005aab;
+}
+
+.groupTable table thead th {
+  background-color: #f2f7fb;
+  border: 0 !important;
+}
+
+.groupTable table thead th + th {
+  border-left: 1px solid #ddd !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.groupTable table tbody td {
+  text-align: left;
+  color: #000 !important;
+  border: 0 !important;
+}
+
+.groupTable table tbody td + td {
+  border-left: 1px solid #ddd !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.groupWrap {
+  display: none;
+}
+
+.groupWrap.on {
+  display: block;
+}

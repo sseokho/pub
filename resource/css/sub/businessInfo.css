@@ -1,0 +1,94 @@
+.sub-visual {
+  height: 24rem;
+}
+
+.sub-visual.businessInfo {
+  background: url(../../image/sub/sub-visual__02.jpg) no-repeat center;
+}
+
+.sub-visual__inner {
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 140rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.sub-container__inner {
+  max-width: 140rem;
+  width: 100%;
+  margin: 6rem auto 10rem auto;
+}
+
+.sub-title {
+  margin-bottom: 5rem;
+  font-size: 4.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sub-tab__inner {
+  padding: 3.5rem 0;
+  margin-bottom: 5rem;
+  border-radius: .5rem;
+  border: .2rem solid #e0e3e8;
+}
+
+.sub-tab ul {
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sub-tab ul li.on a {
+  color: #005aab;
+}
+
+.sub-tab ul li a {
+  padding: 0 5.5rem;
+  color: #747478;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.sub-tab ul li + li {
+  position: relative;
+}
+
+.sub-tab ul li + li::before {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #bbbbbb;
+  content: "";
+}
+
+.contFlex {
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.contFlex p {
+  width: 50%;
+  vertical-align: top;
+}
+
+.contFlex p + p {
+  margin-left: 1rem;
+  margin-top: 0 !important;
+}

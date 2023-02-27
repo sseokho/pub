@@ -1,0 +1,32 @@
+<style>
+@media screen and (max-width: 480px){
+	.meeting_info .info1.f_bold{
+		font-size:4.5vw !important;
+
+	}
+}
+</style>
+<div class="meeting_info row" style="margin-top:3vw;">
+		<p class="info1 f_bold" style="width:20vw">개요</p>
+		
+		<ul class="info2" style="width: 33vw">
+			<li>
+			<p><span class="f_bold">일시</span>2023년 1월 31일(화) 오전 10:30</p>
+			</li>
+			<li>
+			<p><span class="f_bold">장소</span>서울 용산역 회의실(itx 1)</p>
+			</li>
+		</ul>
+		
+		<div class="info3"><span class="f_bold">참석자</span>
+		
+		<dl class="row">
+			<dt>좌장.</dt>
+			<dd>최선영 유구리최실장, 이음온라인 기획위원</dd>
+			<dt>패널.</dt>
+			<dd>송보민 강남장애인복지관 가족문화팀장<br />
+				양민정 실로암시각장애인복지관 음악점역팀장<br />
+				이경도 소화누리 팀장장</dd>
+		</dl>
+		</div>
+	</div>

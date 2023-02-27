@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* 청소년기관 현황 */
+.area-wrap > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; }
+
+.area-select { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; background: #f3f4f6; padding: 0 5rem; }
+
+.area-select .cho_place .tit { margin-bottom: 3rem; font-size: 3rem; font-weight: 500; }
+
+.area-select .cho_place .des { margin-bottom: 5rem; font-size: 2rem; font-weight: 500; line-height: normal; }
+
+.area-img { width: 62rem; border: 1px solid #dfdfdf; }
+
+.area-img .list img { display: none; }
+
+.area-img .list.active img { display: block; }
+
+.cho_place .form-select { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; height: 5rem; }
+
+.cho_place .form-select select { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; font-size: 1.8rem; color: #555555; background-color: #ffffff; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8'%3E%3Cpath fill-rule='evenodd' fill='rgb(85, 85, 85)' d='M4.994 8.003-.001-.003h9.99L4.994 8.003Z'/%3E%3C/svg%3E"); border: 1px solid #dddddd; }
+
+.cho_place .form-select select + select { margin-left: 4px; }
+
+.cho_place .form-search { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; margin-top: 1rem; border: 1px solid #dddddd; }
+
+.cho_place .form-search input { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.cho_place .form-search input::-webkit-input-placeholder { font-size: 1.8rem; color: #b5b5b5; }
+
+.cho_place .form-search input:-ms-input-placeholder { font-size: 1.8rem; color: #b5b5b5; }
+
+.cho_place .form-search input::-ms-input-placeholder { font-size: 1.8rem; color: #b5b5b5; }
+
+.cho_place .form-search input::placeholder { font-size: 1.8rem; color: #b5b5b5; }
+
+.cho_place .form-search .btn-search { width: 11.9rem; color: #ffffff; background: #555555; font-size: 1.8rem; }
+
+.hidden { position: absolute; left: -99999px; top: -99999px; width: 1px; height: 1px; }
+
+.youthPop__inner { font-size: 2.2rem; }
+
+.youthPop__inner * { font-size: 2.2rem; line-height: 4rem; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 1400px) { .sub-tab ul li a { padding: 0 3rem; } }
+
+@media screen and (max-width: 1024px) { .area-img { width: 100%; }
+  .area-img img { margin: 0 auto; }
+  .area-select { padding: 5rem; }
+  .area-wrap > div { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
+@media screen and (max-width: 720px) { .youthPop__inner .img-wrap img { width: 100%; }
+  .area-img .list img { width: 100%; }
+  .cho_place .form-select { height: 100%; } }

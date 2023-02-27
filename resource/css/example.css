@@ -1,0 +1,90 @@
+#wrap{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header{
+    display:flex;
+}
+.blind{
+    display: block;
+    overflow: hidden;
+    position: absolute !important;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+.wonder #header{
+    height:8rem;
+    border:1px solid #000;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.wonder #header .h_logo{
+    margin-left:10%;
+}
+
+.wonder #header .gnb{
+    margin-right:10%;
+ 
+}
+.gnb ul{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.gnb{
+    width:26%;
+    position: absolute;
+    right:0;
+}
+
+.gnb ul li{
+    font-size:1.8rem;
+    
+}
+.gnb ul li + li{
+    margin-left:5rem;
+}
+.gnb ul li a{
+    color:#131313;
+    font-weight: 600;
+}
+.gnb .hg_btn{
+    position: absolute;
+    right:0;
+    width:40px;
+    height:40px;
+}
+
+.gnb i{
+    position: absolute;
+    background-color: #000;
+    width:20px;
+    height:5px;
+}
+
+.gnb i:before{
+    content:'';
+    position:absolute;
+    background-color: #000;
+    width:20px;
+    height:30px;
+    top:0;
+}
+
+.gnb i:after{
+    content:'';
+    position:absolute;
+    background-color: #ca2525;
+    width:20px;
+    height:30px;
+    top:0;
+}

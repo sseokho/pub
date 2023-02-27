@@ -1,0 +1,62 @@
+/* modal */
+.modal { padding-right: 0 !important; }
+
+.modal-content { min-width: 45rem; width: auto; margin: auto; padding: 6rem 5rem; font-size: 1.8rem; font-weight: 500; }
+
+.modal-content .etc input { max-width: 49.2rem; }
+
+.modal-content .form-group input, .modal-content .form-group select { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; width: 100%; }
+
+.modal-content .form-group.flex3 > div { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.modal-content .text-notice__inner { margin-bottom: 3rem; padding: 3rem; font-size: 1.8rem; line-height: normal; }
+
+.modal-large { max-width: 100rem; width: 100%; max-height: 80vh; overflow-y: scroll; }
+
+.modal-body { padding: 0; }
+
+.modal-title { margin-bottom: 3rem; font-size: 4.4rem; font-weight: 600; line-height: 100%; }
+
+.modal-title.font_18 { font-size: 1.8rem; font-weight: 500; }
+
+.modal-receipt .modal-content { width: 80.8rem; max-height: none; min-height: 116rem; padding: 9.3rem 8.5rem; background: url(../../image/sub/bg-receipt.jpg) no-repeat center; background-size: cover; overflow-y: hidden; }
+
+.modal-receipt .modal-title { margin-bottom: 6.5rem; }
+
+.modal-receipt .button-wrap { padding-top: 2rem; border-top: 1px dashed #dddddd; }
+
+.modal-receipt .button-wrap button { width: 15.2rem; font-weight: 400; }
+
+.modal .button-wrap { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.modal .button-wrap.mt_50 { margin-top: 4.75rem; }
+
+.modal .button-wrap button { height: 5rem !important; }
+
+.modal .button-wrap button.button-blue { background: #005aab; color: #ffffff; }
+
+.modal .button-wrap button.button-gray { background: #dfdfdf; color: #000000; border: 0; }
+
+.modal .button-wrap button.button-deepgray { background: #ababab; color: #ffffff; }
+
+.modal .button-wrap button + button { margin-left: .5rem; }
+
+.modal .button-wrap.same button { max-width: 12rem; width: 100%; font-weight: 300; }
+
+.receipt-header { padding: 3rem; font-size: 1.8rem; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; color: #555555; line-height: 3rem; }
+
+.receipt-content { min-height: 46rem; padding: 4rem 3rem; font-size: 1.8rem; font-weight: 500; }
+
+.receipt-content ul li { line-height: 4.5rem; }
+
+.receipt-content .tit { display: inline-block; width: 17.5rem; font-weight: 600; }
+
+.receipt-footer { margin-top: 2rem; padding-bottom: 5rem; text-align: center; }
+
+.receipt-footer img { display: inline-block; width: 35.6rem; height: 4.6rem; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .modal-content { padding: 3rem; }
+  .modal-receipt .modal-content { background-size: 100% 100%; } }

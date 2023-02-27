@@ -1,8 +1,7 @@
-$(document).ready(function(){
-
-
+$(function(){
     time();
 	ready();
+
 
 });
 
@@ -64,13 +63,8 @@ function time() {
 	// 	alert("존재하지 않음")
 	// }
 	
-	
-
-
-    
-
 }
 
 function ready(){
-	alert("ffdf");
+	
 }

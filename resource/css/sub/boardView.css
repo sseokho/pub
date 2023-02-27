@@ -1,0 +1,75 @@
+.board-view__inner .view-header { border-top: 2px solid #000000; border-bottom: 1px solid #dddddd; padding: 5rem 0; text-align: center; }
+
+.board-view__inner .view-title { font-size: 3.6rem; font-weight: 500; }
+
+.board-view__inner .view-title__wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.board-view__inner .view-title__wrap .badge { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 9rem; height: 4rem; margin-left: 1rem; font-size: 1.8rem; color: #ffffff; border-radius: .5rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+
+.board-view__inner .view-title__wrap .badge.ing { background: #005aab; }
+
+.board-view__inner .view-title__wrap .badge.soon { background: #8fb7da; }
+
+.board-view__inner .view-title__wrap .badge.end { background: #cdcdcd; }
+
+.board-view__inner .view-info { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 3rem; }
+
+.board-view__inner .view-date { margin-right: 3rem; }
+
+.board-view__inner .view-date .tit, .board-view__inner .view-target .tit { font-size: 2rem; font-weight: 500; color: #000000; }
+
+.board-view__inner .view-date span, .board-view__inner .view-target span { font-size: 2rem; font-weight: 500; color: #555555; }
+
+.board-view__inner .view-file { border-bottom: 1px solid #dddddd; }
+
+.board-view__inner .view-file * { font-size: 1.8rem; font-weight: 400; }
+
+.board-view__inner .view-file .file-list { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1rem 0; width: 100%; }
+
+.board-view__inner .view-file .file-list a { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: .5rem 1.4rem; padding-left: 2.4rem; font-weight: 500; background: url(../../image/sub/icon-file.png) no-repeat left center; background-size: 1.8rem 1.4rem; }
+
+.board-view__inner .view-content { padding: 5rem 6rem; font-size: 2rem; color: #555555; line-height: 3.2rem; border-bottom: 1px solid #dddddd; }
+
+.board-view__inner .view-content * { font-size: 2rem; color: #555555; line-height: 3.2rem; }
+
+.board-view__inner .view-content img { max-width: 100%; }
+
+.board-bottom .button-wrap { -webkit-box-flex: 0; -ms-flex: none; flex: none; margin-top: 5rem; text-align: center; }
+
+.board-bottom button { width: 16.4rem; height: 6rem; font-size: 1.8rem; font-weight: 500; color: #005aab; border: 1px solid #005aab; background: #ffffff; letter-spacing: -1px; }
+
+.board-prevnext { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.board-prevnext .badge { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 11.6rem; height: 5rem; margin-right: 3rem; font-size: 1.8rem; font-weight: 400; color: #555555; border-radius: .3rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+
+.board-prevnext .next .badge { background: #e9e9e9; }
+
+.board-prevnext .prev .badge { background: #e1e5ee; }
+
+.board-prevnext > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: .5rem 3rem; border-bottom: 1px solid #e4e4e4; }
+
+.board-prevnext > div a { font-size: 1.8rem; color: #555555; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.board-answer__inner { margin-top: 5rem; padding: 5rem 3rem 7.5rem 3rem; border-top: 1px dashed #cfd6e2; border-bottom: 1px solid #dddddd; }
+
+.answer-header { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3rem; }
+
+.answer-title { font-size: 2.4rem; font-weight: 600; }
+
+.answer-date { margin-left: auto; color: #555555; font-size: 1.8rem; }
+
+.answer-date span { color: #000000; font-weight: 600; }
+
+.answer-content { color: #555555; font-size: 1.8rem; font-weight: 400; line-height: 3.2rem; }
+
+.table-wrap + .board-prevnext { margin-top: 5rem; border-top: 1px solid #e4e4e4; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 720px) { .board-view__inner .view-header { padding: 3rem 0; }
+  .board-view__inner .view-title__wrap { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+  .board-view__inner .view-title__wrap .badge { margin-left: 0; margin-bottom: 3rem; }
+  .board-view__inner .view-info { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .board-view__inner .view-date { margin-right: 0; margin-bottom: 1rem; }
+  .board-view__inner .view-content { padding: 3rem; } }

@@ -1,0 +1,55 @@
+.button-wrap { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; margin: -.25rem; }
+
+.button-wrap button { width: 16.4rem; height: 6rem; margin: .25rem; font-size: 1.8rem; font-weight: 400; line-height: 100%; }
+
+.button-wrap button.button-blue { background: #005aab; color: #ffffff; }
+
+.button-wrap button.button-deepblue { background: #00294e; color: #ffffff; }
+
+.button-wrap button.button-gray { background: #dfdfdf; color: #000000; border: 0; }
+
+.button-wrap button.button-deepgray { background: #ababab; color: #ffffff; }
+
+.button-wrap button.button-deepgray2 { background: #464646; color: #ffffff; }
+
+.button-wrap button.button-darkgray { background: #464646; color: #ffffff; }
+
+.button-wrap button.button-black { background: #000000; color: #ffffff; }
+
+.button-wrap button.button-orange { background: #e17c02; color: #ffffff; }
+
+.button-wrap button.button-green { background: #6cac63; color: #ffffff; }
+
+.button-wrap button.button-write { color: #000000; font-weight: 500; background: #eff4ff; border: 1px solid #000000; }
+
+.button-wrap button.button-list { color: #005aab; border: 1px solid #005aab; background: #ffffff; letter-spacing: -1px; }
+
+.button-wrap button.button-modify { background: #e3e8f1; color: #005aab; border: 0; }
+
+.button-wrap button.button-delete { background: #f1dce2; color: #ed174f; border: none; }
+
+.button-wrap button.button-viewer { width: 12rem; height: 5rem; background: #555555; color: #ffffff !important; font-size: 1.8rem; font-weight: 300; }
+
+.button-wrap button.button-url { background: #dfdfdf; color: #005aab !important; }
+
+.button-wrap button.button-border__green { border: 1px solid #6cac63; color: #6cac63; background: #ffffff; }
+
+.button-wrap button.button-border__orange { border: 1px solid #e17c02; color: #e17c02; background: #ffffff; }
+
+.button-wrap button.button-print { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 0 2rem; background: #555555; color: #ffffff; }
+
+.button-wrap button.button-print i { display: inline-block; width: 1.8rem; height: 1.7rem; background: url(../../image/sub/icon-print.png); }
+
+.button-small button { width: 11.9rem !important; height: 4.9rem !important; font-weight: 400; }
+
+.button-small button.w-auto { width: auto !important; padding: 0 3rem; }
+
+.button-large button { width: 64rem; height: 8rem; border-radius: .5rem; font-size: 2.2rem; -webkit-box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.28); box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.28); }
+
+.button-url { width: 9rem; height: 4rem; margin-left: auto; background: #dfdfdf; color: #005aab !important; }
+
+.button-down button { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 7rem; border-radius: .5rem; font-size: 1.8rem; -webkit-box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.28); box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.28); }
+
+.button-down button a { color: #ffffff; }
+
+.button-down.w-640 button { width: 64rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; }

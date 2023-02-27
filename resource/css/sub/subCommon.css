@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* 서브 공통 */
+p { margin-bottom: 0; }
+
+.py_2 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+
+.pl_20 { padding-left: 2rem; }
+
+.p-0 { padding-top: 0 !important; padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; }
+
+.ml-0 { margin-left: 0 !important; }
+
+.ml-auto { margin-left: auto; }
+
+.mr-auto { margin-right: auto; }
+
+.align-items-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.justify-content-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.justify-content-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.flex { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+button, select, input { font-family: 'notokr', sans-serif; }
+
+.font-18 { font-size: 1.8rem; }
+
+.text-center { text-align: center !important; text-indent: 0 !important; }
+
+.text-center input { text-align: center !important; text-indent: 0 !important; }
+
+.color-orange { color: #fd7201; }
+
+.color-blue { color: #005aab !important; }
+
+.sub-visual { height: 24rem; background-repeat: no-repeat; background-position: center; }
+
+.sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__02.jpg); }
+
+.sub-visual__inner { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 140rem; width: 100%; height: 100%; margin: 0 auto; font-size: 5rem; font-weight: 600; }
+
+.sub-container__inner { max-width: 140rem; width: 100%; margin: 6rem auto 10rem auto; }
+
+.sub-title { margin-bottom: 5rem; font-size: 4.4rem; font-weight: 600; text-align: center; }
+
+.sub-title2 { margin-bottom: 3rem; font-size: 2.4rem; font-weight: 600; }
+
+.sub-title2__color--blue { margin-bottom: 3rem; font-size: 3rem; font-weight: 600; color: #005aab; }
+
+.sub-title3 { margin-bottom: 3rem; font-size: 2.2rem; font-weight: 600; text-align: left; }
+
+.sub-des { font-size: 2rem; font-weight: 500; line-height: normal; margin-bottom: 5rem; }
+
+.sub-tab__inner { padding: 3.5rem 0; margin-bottom: 5rem; border-radius: .5rem; border: .2rem solid #e0e3e8; }
+
+.sub-tab ul { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 0; }
+
+.sub-tab ul li.on a { color: #005aab; font-weight: 600; }
+
+.sub-tab ul li a { padding: 0 5rem; color: #747478; font-size: 2.2rem; font-weight: 500; }
+
+.sub-tab ul li + li { position: relative; }
+
+.sub-tab ul li + li::before { position: absolute; width: 1px; height: 100%; background: #bbbbbb; content: ""; }
+
+.cont-title { margin-bottom: 5rem; text-align: center; font-size: 3.6rem; font-weight: 600; }
+
+.w-50 { width: 50%; }
+
+.w-100 { width: 100%; }
+
+.text-notice { background: #f5f8f9; }
+
+.text-notice__inner { margin-bottom: 5rem; padding: 4rem 0; font-size: 2.2rem; font-weight: 400; line-height: 4rem; text-align: center; }
+
+dl { font-size: 1.8rem; }
+
+dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; }
+
+.border-box__inner { padding: 5rem 0; border: 1px solid #dfdfdf; }
+
+.top-des { background-color: #f5f8f9; background-repeat: no-repeat; }
+
+.top-des.program { background-image: url(../../image/sub/bg-programApplySch.png); background-position: right 14.3rem bottom; background-size: 45.3rem 29.9rem; }
+
+.top-des.visitProgram { padding-left: 47.5rem; background-image: url(../../image/sub/bg-program.png); background-position: left 9.6rem center; }
+
+.top-des.visitProgram .top-des__inner { padding-top: 6rem; padding-bottom: 6rem; padding-left: 0; }
+
+.top-des.visitProgram .top-des__content p { font-weight: 400; }
+
+.top-des.online { background-image: url(../../image/sub/bg-online.png); background-position: right 13.4rem center; }
+
+.top-des__inner { padding: 5rem 6rem; }
+
+.top-des dl { font-size: 1.8rem; }
+
+.top-des dl > div { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; }
+
+.top-des dl > div + div { margin-top: 1rem; }
+
+.top-des dl dt { min-width: 7rem; margin-right: 1.2rem; margin-bottom: 0; line-height: 3rem; }
+
+.top-des dl dd { margin-bottom: 0; line-height: 3rem; font-weight: 500; }
+
+.top-des dl dd ul li { font-size: 1.8rem; font-weight: 500; line-height: 3rem; }
+
+.top-des p { font-size: 2rem; font-weight: 600; line-height: 2.8rem; }
+
+/*===================================================================================================
+===========================================  responsive ==========================================
+==================================================================================================*/
+@media screen and (max-width: 1400px) { .sub-container__inner { padding: 0 2.4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .top-des.online { background-position: center bottom; padding-bottom: 31rem; }
+  .top-des.program { background-position: center bottom; padding-bottom: 31rem; } }
+
+@media screen and (max-width: 1200px) { .sub-tab__inner { overflow-x: scroll; }
+  .sub-tab ul { width: 100%; padding: 0 5rem; }
+  .sub-tab ul li { -webkit-box-flex: 0; -ms-flex: none; flex: none; } }
+
+@media screen and (max-width: 1024px) { .border-box__inner { padding: 5rem 3rem; }
+  .border-box__inner img { max-width: 100%; }
+  .top-des__inner { padding: 3rem; }
+  .top-des.program { padding-bottom: 19rem; background-size: 35.3rem 19.9rem; }
+  .top-des.online { padding-bottom: 22rem; background-size: 36rem 23rem; }
+  .top-des dl dt { -webkit-box-flex: 0; -ms-flex: none; flex: none; } }
+
+@media screen and (max-width: 720px) { .sub-visual { height: 19.2rem; padding: 0 2.4rem; font-size: 4rem; background-position: right center; background-size: cover; }
+  .sub-visual.businessInfo { background-image: url(../../image/sub/sub-visual__mobile.jpg); }
+  .sub-visual__inner { font-size: 4rem; }
+  .sub-container__inner { padding: 0 2.4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .sub-tab ul { padding: 0; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+  .sub-tab ul li a { padding: 0 2.5rem; }
+  .top-des.visitProgram { padding-top: 22rem; padding-left: 0; background-size: 28.5rem 18.6rem; background-position: center top 4rem; }
+  .top-des.visitProgram .top-des__inner { padding-left: 6rem; } }
