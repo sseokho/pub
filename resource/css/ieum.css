@@ -7168,5 +7168,12 @@ a.link-more:hover {
 
 .editor_view span{display:inline-block;}
 .tab-pane{
-    padding:4.3vw 4.3vw 0
+    padding:4.3vw 4.3vw 0;
+}
+
+.nav-tabs>li{width:9%; text-align: center;}
+.nav-tabs{display: flex; align-items: center;}
+.nav-tabs>li>a{font-size:1.3rem;}
+.nav>li>a {
+  padding: 20px 15px;
 }
