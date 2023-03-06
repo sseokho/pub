@@ -6,7 +6,7 @@
 
   <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
 
@@ -23,8 +23,10 @@
     <link rel="stylesheet" type="text/css" href="./resource/css/print.css">
     <link rel="stylesheet" type="text/css" href="./resource/css/slick.css">
     <link rel="stylesheet" type="text/css" href="./resource/css/slick-theme.css">
-    <link type="text/css" rel="stylesheet" href="./resource/css/ieum.css" />
+    
     <link rel="stylesheet" type="text/css" href="./resource/css/sub.css">
+    <link type="text/css" rel="stylesheet" href="./resource/css/sub_respond.css" />
+    <link type="text/css" rel="stylesheet" href="./resource/css/ieum.css" /> 
     <script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="./resource/js/swiper.min.js"></script>
     <script type="text/javascript" src="./resource/js/common.js"></script>
@@ -39,16 +41,18 @@
 <body>
 
     <div>
+        <h2>이음온라인 가이드</h2>
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">이슈[좌담]<span>type01</span></a></li>
-            <li><a href="#profile" data-toggle="tab">이슈<span>type02</span></a></li>
-            <li><a href="#messages" data-toggle="tab">인터뷰<span>type03</span></a></li>
-            <li><a href="#settings" data-toggle="tab">리뷰클럽<span>type04</span></a></li>
+            <li class="active"><a href="#type01" data-toggle="tab">이슈</br>[좌담]<span>type01</span></a></li>
+            <li><a href="#type02" data-toggle="tab">이슈</br>[일반]<span>type02</span></a></li>
+            <li><a href="#type03" data-toggle="tab">이슈</br>[인터뷰]<span>type03</span></a></li>
+            <li><a href="#type04" data-toggle="tab">이음광장</br>[리뷰클럽]<span>type04</span></a></li>
+            <li><a href="#type05" data-toggle="tab">인터뷰</br>[현장탐방]<span>type05</span></a></li>
         </ul>
         
         <div class="tab-content">
-            <!---home--->
-            <div class="tab-pane fade in active" id="home">
+            <!---type01--->
+            <div class="tab-pane fade in active" id="type01">
                 <div class="editor_view">
 
                     <div class="webzine_wrap">
@@ -282,10 +286,10 @@
 
                 </div>
             </div>
-            <!---home end--->
+            <!---type01 end--->
 
-            <!---Profile--->
-            <div class="tab-pane fade" id="profile">
+            <!---type02--->
+            <div class="tab-pane fade" id="type02">
                 <div class="editor_view">                    
                     <div>
 
@@ -559,10 +563,10 @@
                     <!-- 꼭 editor_view 안에 넣어주세요 -->
                 </div>
             </div>
-            <!---Profile end--->
+            <!---type02 end--->
 
-            <!---messages--->
-            <div class="tab-pane fade" id="messages">
+            <!---type03--->
+            <div class="tab-pane fade" id="type03">
                 <div class="editor_view">
 
                     
@@ -788,10 +792,10 @@
 
                 </div>
             </div>
-            <!---messages end--->
+            <!---type03 end--->
 
-            <!---settings--->
-            <div class="tab-pane fade" id="settings">
+            <!---type04--->
+            <div class="tab-pane fade" id="type04">
                 <div class="editor_view">
 
                     
@@ -810,58 +814,60 @@
                         </article>
                         <!-- 첫번째 리뷰 -->
 
-                        <article class="reviewClub-item"><span class="reviewClub-item__img"><img alt="[연극] 광부화가들" src="./resource/img/img_blog_20230208_0501.jpg"> </span>
+                        <article class="reviewClub-item"><span class="reviewClub-item__img"><img alt="[전시] 인공윤리(人工倫理)-인간의 길에 다시 서다
+                            " src="./resource/img/img_blog_20230111_0512.jpg" /> </span>
 
-                        <div class="reviewClub-item__info"><span class="item-info__tit">[연극] 광부화가들</span>
+                        <div class="reviewClub-item__info"><span class="item-info__tit">[전시] 인공윤리(人工倫理)-인간의 길에 다시 서다 </span>
 
                         <ul class="el-lists el-lists--bar">
-                        <li>2022.12.1.(목) ~ 2023.1.22.(일) | 두산아트센터 연강홀</li>
-                        <li><a class="item-info__link underline" href="https://www.doosanartcenter.com/ko/performance/1518" target="_blank">관련정보(링크)</a></li>
+                        <li>2022.12.4.(일) ~ 2.12.(일) | 서소문성지역사박물관</li>
+                        <li><a class="item-info__link underline" href="https://www.seosomun.org/exhibit/view.do?pNo=77" target="_blank">관련정보(링크)</a></li>
                         </ul>
 
-                        <p class="row reviewClub-item__bf"><span class="show-view__icon"><img alt="휠체어접근" src="./resource/img/ico_barrier_free_big7_red.jpg"></span></p>
+                        <p class="row reviewClub-item__bf"><span class="show-view__icon"><img alt="휠체어접근" src="./resource/img/ico_barrier_free_big7_red.jpg" /></span></p>
                         </div>
                         </article>
 
                         <article class="reviewClub-communicate">
                         <div class="comu-writer">
-                        <p class="comu-writer__profile"><span class="comu-writer__img"><img alt="" src="./resource/img/img_reviewClub_profile--heechul.png"> </span> <em class="comu-writer__name">희철</em></p>
+                        <p class="comu-writer__profile"><span class="comu-writer__img"><img alt="" src="./resource/img/img_reviewClub_profile--heeyeon.png" /> </span> <em class="comu-writer__name">희연</em></p>
 
-                        <p class="comu-writer__txt">연극 &lt;광부화가들&gt;을 종로5가 연강홀에서 보았습니다.<br>
-                        1930년대 영국 탄광촌 광부들이 그림을 그리면서 이야기 나누는 예술에 관한 여러 입장과 관점이 흥미롭게 다가왔던 작품입니다.<br>
-                        연극 속 그림도 편하게 감상할 수 있었고<br>
-                        오랜만에 간 연강홀인데, 휠체어석이 1층 중간으로 변경되어서 무대와 가까워 또한 좋았습니다.<br>
-                        공연은 좋았는데… 공연을 보러 가는 길이 좀 힘들었어요.<br>
-                        저녁 7시 30분 시작이라 조금 여유롭게 준비하고 4시에 장애인 콜택시를 불렀는데 4시 45분까지 기다려도 연결이 안 되는 거예요.<br>
-                        안 되겠다 싶어 전동휠체어를 타고 지하철을 탔고, 주안역에서 조금 더 빨리 가려고 용산행 급행을 탔어요. 그때가 5시 50분경.<br>
-                        용산역에서 일반행으로 갈아타려는데 웬걸, 엘리베이터 수리 중! 역무원 말대로 노량진역으로 다시 가서 갈아타고 극장에 도착하니 7시 18분.<br>
-                        화장실을 급하게 해결하고 들어가니 딱 7시 30분…<br>
-                        여유롭게 도착해서 간단하게 저녁 먹고 차도 한잔할 생각이었는데, 배는 고프고 몸은 춥고…<br>
-                        그래도 좋은 공연으로 위로를 받았습니다!<br>
-                        ps. 공연에서 ‘예술은 우리 각각의 인생 같은 것’이라고 하더라구요… 내 인생도 하나의 예술이겠지^^</p>
+                        <p class="comu-writer__txt">일이 있어 충정로에 갔다가 우연히 근사한 전시를 보고 왔어요.<br />
+                        조형물이 꽤 재미있었어요.<br />
+                        전에는 길을 가다 눈에 띄는 전시가 있으면 들어가 보고 그랬는데&hellip; 오랜만에 옛 느낌을 되새겼습니다.</p>
 
-                        <ul class="commu-writer__pics pics-list" style="width: 70%">
-                        <li class="pics-item pics-item--left" style="width: calc(50% - 0.2vw)"><img alt="연극 광부화가들의 공연장 포토존. 상단에 두산아트센터가 영문으로 써 있고, 가운데에 공연 타이틀이 크게 있다. 양 옆으로 오늘의 캐스트 배우들의 사진이 네 장씩 붙어 있다." src="./resource/img/img_blog_20230208_0502.jpg"></li>
-                        <li class="pics-item pics-item--right" style="width: calc(50% - 0.2vw)"><img alt="무대 위 커튼콜 모습. 테이블 및 의자들, 창문 모양의 조형물, 붉은색의 커다란 입간판이 뒤편에 있고, 분장한 채의 열 명 남짓 배우들이 둥글게 모여있다." src="./resource/img/img_blog_20230208_0503.jpg"></li>
+                        <ul class="commu-writer__pics pics-list pics-list-resize" style="width:70%;">
+
+
+                            <li class="pics-item pics-item--left"><img alt="갈색 벽돌로 된 전시장 벽면 앞에, 파란색의 가는 철사를 엉켜 만든 사람 전신 모양의 큰 조형물이 세워져 있다." src="./resource/img/img_blog_20230111_0513.jpg"></li>
+                            <li class="pics-item pics-item--right pics-item--top"><img alt="회색의 전시장 벽 앞. 은색 가는 철사를 엉켜 만든 사람 전신 모양의 조형물 여러 개가 각각 철제 선반 위에 올려져 있다." src="./resource/img/img_blog_20230111_0514.jpg"></li>
+                            <li class="pics-item pics-item--right pics-item--bottom"><img alt="" src="./resource/img/img_blog_20230111_0515.jpg"></li>
                         </ul>
 
-                        <div class="commu-writer__favor favor-list"><span class="favor-item favor-item--good"><img alt="" src="./resource/img/img_reviewClub_profile--myunga.png"> </span></div>
+                        <div class="commu-writer__favor favor-list"><span class="favor-item favor-item--good"><img alt="" src="./resource/img/img_reviewClub_profile--myunga.png" /> </span> <span class="favor-item favor-item--joy"><img alt="" src="./resource/img/img_reviewClub_profile--heechul.png" /> </span></div>
 
                         <div class="comu-reply">
-                        <div class="reply-item reply-item--dep01"><span class="reply-item__img"><img alt="" src="./resource/img/img_reviewClub_profile--heeyeon.png"> </span>
+                        <div class="reply-item reply-item--dep01"><span class="reply-item__img"><img alt="" src="./resource/img/img_reviewClub_profile--bingo.png" /> </span>
+
+                        <div class="reply-item__txt">
+                        <p class="reply-item__name">희철</p>
+                        <span class="reply-item__cont">무슨 전시예요?</span></div>
+                        </div>
+
+                        <div class="reply-item reply-item--dep02"><span class="reply-item__img"><img alt="" src="./resource/img/img_reviewClub_profile--heeyeon.png" /> </span>
 
                         <div class="reply-item__txt">
                         <p class="reply-item__name">희연</p>
-                        <span class="reply-item__cont">전 지금 연강홀이에요. 여기서 댓글을 씁니다ㅎㅎ</span></div>
+                        <span class="reply-item__cont"><em>@희철</em> 인공지능 시대를 주제로 한 미술작품 전시예요. 전시도 흥미롭지만, 공간도 상당히 좋아요.</span></div>
                         </div>
                         </div>
 
                         <div class="comu-reply" style="border-bottom:none;">
-                        <div class="reply-item reply-item--dep01"><span class="reply-item__img"><img alt="" src="./resource/img/img_reviewClub_profile--puryum.png"> </span>
+                        <div class="reply-item reply-item--dep01"><span class="reply-item__img"><img alt="" src="./resource/img/img_reviewClub_profile--myunga.png" /> </span>
 
                         <div class="reply-item__txt">
-                        <p class="reply-item__name">푸렴</p>
-                        <span class="reply-item__cont">저도 지난 토요일에 보고 왔어요. 예술에 대한 논쟁이 참 흥미로웠어요. 얘기를 풀어가는 과정도 무겁지 않고 재미있었고요. 혼자 공연 보러 다니면 안내받을 일이 많다 보니 재미있는 일들이 종종 있는데, 저도 공연 말고도 기억에 남는 일이 있었어요. 여기 극장에 제가 다니는 체육관에서 운동하는 분이 하우스어셔로 계시더라고요. 누가 갑자기 “혹시 유도하지 않냐” 물어봐서 놀라 나자빠질 뻔했네요ㅎ </span></div>
+                        <p class="reply-item__name">명아</p>
+                        <span class="reply-item__cont">사람이 부유하는 듯한 조형물의 모습이 인공지능 시대의 컴퓨터와 오버랩되는 것 같네요~~</span></div>
                         </div>
                         </div>
                         </div>
@@ -1020,7 +1026,7 @@
                         </article>
                         <!-- 일곱번째 리뷰 -->
 
-                        <article class="reviewClub-item"><span class="reviewClub-item__img"><img alt="[음악] 국립국악관현악단 <2023 신년 음악회>
+                        <article class="reviewClub-item"><span class="reviewClub-item__img"><img alt="[음악] 국립국악관현악단 
                                 " src="./resource/img/img_blog_20230208_0515.jpg"> </span>
 
                         <div class="reviewClub-item__info"><span class="item-info__tit">[음악] 국립국악관현악단 &lt;2023 신년 음악회&gt; </span>
@@ -1155,6 +1161,41 @@
                         정말로 그런 날이 온다면 우리는 아마 이곳 같은 인공자연을 여가가 아니라 필요에 의해 만들게 될지도 모르겠다는 생각을 해봤습니다. <span class="comu-writer__tags">#섬세이테라리움 #인공자연 #이색체험 #체험전시 #서울숲</span></p>
                         </div>
                         </article>
+
+                        <!-- 열한번째 리뷰 -->
+
+                        <article class="reviewClub-item"><span class="reviewClub-item__img"><img alt="[전시] 에르빈 부름: 나만 없어 조각" src="./resource/img/img_blog_20230111_0516.jpg" /> </span>
+
+                            <div class="reviewClub-item__info"><span class="item-info__tit">[전시] 에르빈 부름: 나만 없어 조각</span>
+                            
+                            <ul class="el-lists el-lists--bar">
+                                <li>2022.12.7.(수) ~ 2023.3.19.(일) | 수원시립미술관</li>
+                                <li><a class="item-info__link underline" href="https://suma.suwon.go.kr/exhi/current_view.do?lang=ko&amp;ge_idx=1197" target="_blank">관련정보(링크)</a></li>
+                            </ul>
+                            
+                            <p class="row reviewClub-item__bf"><span class="show-view__icon"><img alt="휠체어접근" src="./resource/img/ico_barrier_free_big7_red.jpg" /></span></p>
+                            </div>
+                            </article>
+                            
+                            <article class="reviewClub-communicate">
+                            <div class="comu-writer">
+                            <p class="comu-writer__profile"><span class="comu-writer__img"><img alt="" src="./resource/img/img_reviewClub_profile--myunga.png" /> </span> <em class="comu-writer__name">명아</em></p>
+                            
+                            <p class="comu-writer__txt">수원시립미술관의 《에르빈 부름: 나만 없어 조각》 전시에 다녀왔습니다.<br />
+                            역시 입체가 훨씬 더 눈에 잘 들어오고 실재감이 느껴지는 것 같습니다.<br />
+                            작가는 1980년대에 조각의 볼륨에 대해 의문을 던지는 작업부터 시작해 90년대, 2010년대까지<br />
+                            현대 조각사에서 조각의 끝은 어디까지인가 계속 질문하며 실험정신을 이어오고 있습니다.<br />
+                            그래서인지 현대 조각사를 한눈에 보는 느낌이 들었어요.<br />
+                            관객참여 전시도 있어서 저도 한 점 보태고 왔습니다^^</p>
+                            
+                            <ul class="commu-writer__pics pics-list pics-list-resize" style="width:92%;">
+                                <li class="pics-item pics-item--left" style="display:flex;"><img alt="전시 관람객의 드로잉 여섯 장이 벽에 붙어 있고, 그 아래 그림 도구들이 있다." src="./resource/img/img_blog_20230111_0517.jpg" style="width:50%" /> <img alt="여러 작품이 걸린 전시장 가운데에 있는 조형물. 분홍색을 띤 재료로, 몸통은 둥그렇게, 다리는 일자로 단순히 표현했고, 운동화를 신은 발 부분이 섬세하게 표현돼 있다. " src="./resource/img/img_blog_20230111_0518.jpg" style="width:50%; margin-left:0.2vw;" /></li>
+                                <li class="pics-item pics-item--right" style="width:20%; margin-left:0.4vw"><img alt="반투명한 노란색, 분홍색 바탕에 &lt;에르빈 부름: 나만 없어 조각&gt;이라는 전시명이 쓰여있는 통유리 입구가 보이는, 높은 천장의 전시장 안 모습." src="./resource/img/img_blog_20230111_0519.jpg" /> <img alt="전시장 벽 상단 스크린에는 스포츠카 사진이 떠 있고, 그 앞에 커다란 조형물이 있다. 풍선같이 둥글둥글 부푼 모양의 분홍색 스포츠카." src="./resource/img/img_blog_20230111_0520.jpg" style="margin-top:0.2vw" /></li>
+                            </ul>
+                            
+                            <div class="commu-writer__favor favor-list"><span class="favor-item favor-item--good"><img alt="" src="./resource/img/img_reviewClub_profile--heechul.png" /> </span> <span class="favor-item favor-item--heart"><img alt="" src="./resource/img/img_reviewClub_profile--puryum.png" /> </span> <span class="favor-item favor-item--good"><img alt="" src="./resource/img/img_reviewClub_profile--myunga.png" /> </span></div>
+                            </div>
+                            </article>
                         </section>
 
                         <div class="profile row" style="margin-top: 7vw">
@@ -1270,7 +1311,126 @@
 
                 </div>
             </div>
-            <!---settings end--->
+            <!---type04 end--->
+
+
+            <!---type05--->
+            <div class="tab-pane fade" id="type05">
+                <div class="editor_view">
+
+                        <div class="webzine_wrap">
+                        <div class="top">
+                        <h2 class="cate">인터뷰</h2>
+                        </div>
+                        
+                        <div class="cont">
+                        <div style="margin-top:3vw;">
+                        <ul class="img_list row" style="width:80%;margin:0 auto;">
+                            <li style="width:100%;margin: 0 auto;"><object data="https://www.youtube.com/embed/Pucte5QU8yU" style="height:30vw;" type=""></object></li>
+                        </ul>
+                        </div>
+                        
+                        <p class="tit f_bold underline" style="margin-top: 3vw">무대 위에서 세상을 바꾸는, 극단 춤추는 허리</p>
+                        
+                        <p class="txt">춤추는 허리는 &lsquo;장애여성공감&rsquo;에서 만든 극단이다. 장애여성공감은 장애여성을 배제하는 사회적 기준과 제도에 문제를 제기하고, 다양성이 인정되는 사회를 만들기 위해 노력하는 장애여성 인권운동 단체이다. 춤추는 허리에는 다섯 명의 상근활동가와 세 명의 반상근활동가가 단원으로 모여 있다. 이들은 연극을 통해 장애가 있는 몸과 젠더 문제에 대해 논의하고, 장애인 배우의 정체성과 노동을 고민한다.</p>
+                        
+                        <p class="txt">춤추는 허리에는 대중교통을 이용하는 단원도 있고 장애인콜택시로 출근하는 단원도 있다. 매일 아침 기약 없는 콜택시 배차를 기다리는 일이 녹록지 않지만, 단원들은 어김없이 장애여성공감에 모인다. 장애여성공감은 &lsquo;모두를 위한 공간&rsquo;을 만들기 위해, 문턱을 없앴고 자동문과 높낮이를 조절할 수 있는 책상, 터치식 모니터를 설치했다. 화장실 또한 휠체어 접근이 수월하도록 공간을 넓히고 변기의 높이도 달리했다.</p>
+                        
+                        <p class="tit f_bold underline">가장 나다운 움직임과 언어를 찾아서</p>
+                        
+                        <p class="txt">단원들은 주로 오전에 회의를 진행한다. 공연 준비과정의 경험을 공유하며 보완할 부분을 체크하고, 지난 공연에 대한 분석과 평가를 나눈다. 또 극단의 방향성을 토론하기도 한다. 점심시간에도 함께 모여 식사를 한다. 식사 준비, 설거지, 뒷정리 등 조력이 필요한 일은 지원하지만, 혼자 할 수 있는 일은 스스로 해나가며 서로 다른 몸과 함께 살아갈 수 있는 생활문화를 만들어 간다.</p>
+                        
+                        <p class="txt">오후 연습시간이 되면 단원들은 각자의 방식으로 공간을 세팅한다. 누구는 팔과 배의 힘으로 책상을 밀기도 하고, 누구는 전동휠체어 발판을 이용해 의자를 민다. 가지고 있는 장애가 다르기 때문에 단원들이 몸에 관해 느끼는 불편함과 움직임도 모두 다르다. 그들은 연습을 통해 긴장한 몸을 풀고, 자신의 장애를 자연스럽고 편안하게 드러내기 위해 움직이고, 나에게 가장 익숙한 대사를 찾기 위해 노력한다.</p>
+                        
+                        <p class="txt ta_r"><span class="f_bold" style="display:block;text-align:left;">&ldquo;일상과 무대가 분리되지 않고, 일상에서 춤추는 허리만의 언어와 움직임을 계속해서 찾고 토론하는 게 중요한 것 같아요.&rdquo;</span> - 진성선 춤추는 허리 단원</p>
+                        
+                        <p class="txt ta_r" style="margin-top:3vw"><span class="f_bold" style="display:block;text-align:left;">&ldquo;사실 어려워요. 그래도 동등한 관계가 뭐지? 계속 얘기하고, 고민하고, 물어보고 이런 게 함께 장애에 대해 알아가는 과정이라고 할 수 있어요.&rdquo;</span> - 서지원 춤추는 허리 단장</p>
+                        
+                        <p class="tit f_bold underline">더 시끄럽게, 예술로 인권 말하기</p>
+                        
+                        <p class="txt">춤추는 허리 단원들은 전문 연극배우는 아니지만, 그 누구보다 진지하고 절실하게 무대에 선다. 잘 보이지 않지만 존재하는 이야기, 반드시 해야만 하고 할 수밖에 없는 이야기가 바로 그들의 이야기이기 때문이다. 그래서 공연을 준비하는 과정은 매우 시끄럽고 치열하다. 춤추는 허리는 장애여성의 몸과 이야기를 낯설고 불편하게 보는 시선 앞에서도 두려워하지 않고, 적극적으로 자신을 드러내는 방식으로 세상을 변화시킨다. 예술로 인권을 말하고, 이야기로 연대하고 세상을 바꿔 나가는, 극단 춤추는 허리의 더 자세한 활동은 영상으로 확인해 보자.</p>
+                        
+                        <p class="txt ta_r"><span class="f_bold" style="display:block;text-align:left;">&ldquo;단순히 내가 경험하는 일을 말하는 것뿐만 아니라, 경험들이 또 다른 소수자들하고 어떻게 만나는지를 고민하면서, 한 면만을 기대하거나 보는 것에 대해 거부하고 있다.&rdquo; </span> - 진성선 춤추는 허리 단원</p>
+                        
+                        <p>&nbsp;</p>
+                        
+                        <div class="explain" style="margin-top: 2vw; border-bottom:1px solid #000; padding-bottom: 2vw;">
+                        <p class="txt f_bold" style="margin-bottom:1vw;">[관련 링크]</p>
+                        
+                        <ul class="lists dot">
+                            <li><span><a class="underline" href="https://wde.or.kr/" target="_blank">장애여성공감 홈페이지(링크)</a></span></li>
+                            <li><span><a class="underline" href="https://www.youtube.com/@WDE98/videos" target="_blank">장애여성공감 유튜브 채널(링크)</a></span></li>
+                        </ul>
+                        </div>
+                        
+                        <div class="row align_end">
+                        <div class="from_vol">
+                        <p class="from"><span>영상.</span> 박유미 미술작가 <a class="underline" href="mailto:gomako1983@gmail.com">gomako1983@gmail.com </a><br />
+                        <span>구성작가.</span> 조은지 <a class="underline" href="mailto:chotisse@naver.com">chotisse@naver.com </a><br />
+                        <span>정리.</span> 성효선 프로젝트 궁리 에디터 <a class="underline" href="mailto:hyosundream@gmail.com ">hyosundream@gmail.com</a><br />
+                        <span>자료 제공.</span> 극단 춤추는 허리</p>
+                        
+                        <p class="vol_tag">2023년 3월 (40호)</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+
+                        <div class="pics" style="width:100%;margin:0 auto;marign-top:10px">
+
+                        </div>
+
+                        <!-- sub_con -->
+                        <section class="sub_con blogger-new" style="padding:0;border-top:none;margin-top:30px;">
+                            <!-- view_container -->
+                            <div class="container view_container" style="padding:0;">
+                                <!-- sub_each -->
+                                <div class="sub_each">
+                                    <div class="blogger_info_border">
+                                        <!-- blogger_info_box -->
+
+                                        <div class="profile row">
+                                            <div class="img_wrap"><!-- <img alt="" src="/template/cms/user/images/sub/noprofile.png"> -->
+                                                <img src="/cmm/fms/getImage.do?atchFileId=" width="200" alt=" ">
+                                            </div>
+
+                                            <div class="info">
+                                                <p class="name">&nbsp;</p>
+
+                                                <p class="cont"><br>
+                                                    <a href="mailto:"></a>
+                                                    </p>
+
+                                                <!--
+                                                <p class="from"><span>메인사진 출처.</span>COME-IN! 웹페이지 (유럽연합 CEI)</p>
+
+                                                <p class="vol_tag">2021. 03월호</p>
+                                                -->
+                                            </div>
+                                        </div>
+                                        <div class="sns_list row"><a href="" target="_blank" title="클릭 블로그 새창 이동"> <img alt="" src="http://www.ieum.or.kr/template/cms/user/images/sub/webzine/icon_blog.png"> </a> <a href="" target="_blank" title="클릭 페이스북 새창 이동"> <img alt="" src="http://www.ieum.or.kr/template/cms/user/images/sub/webzine/icon_facebook.png"> </a> <a href="" target="_blank" title="클릭 트위터 새창 이동"> <img alt="" src="http://www.ieum.or.kr/template/cms/user/images/sub/webzine/icon_twitter.png"> </a> <a href="" target="_blank" title="클릭 카카오톡 새창 이동"> <img alt="" src="http://www.ieum.or.kr/template/cms/user/images/sub/webzine/icon_kakaotalk.png"> </a></div>
+
+                                        <!-- blogger_info_box -->
+                                    </div>
+                                </div>
+                                <!-- // sub_each -->
+                                <!-- sub_each -->
+
+                                <!-- // sub_each -->
+
+
+                            </div>
+                            <!-- // view_container -->
+                        </section>
+                        <!-- // sub_con -->
+
+                    </div>
+                    <!-- 꼭 editor_view 안에 넣어주세요 -->
+
+            </div>
+            
+            <!---type05 end--->
         </div>
 
 

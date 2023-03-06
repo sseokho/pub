@@ -4828,7 +4828,7 @@ p.txt {
   width: 100%;
 }
 .webzine_wrap .caption {
-  font-size: 1vw !important;
+  font-size: 1.5vw !important;
 }
 .webzine_wrap .poster {
   float: none;
@@ -7011,17 +7011,17 @@ a.link-more:hover {
   width: 100%;
 }
 .favor-item.favor-item--heart::before {
-  background-image: url("../img/img-emoticon--heart.png");
+  background-image: url("/resource/img/img-emoticon--heart.png");
   background-size: 1.8vw 1.8vw;
 }
 .favor-item.favor-item--good::before {
-  background-image: url("../img/img-emoticon--good.png");
+  background-image: url("/resource/img/img-emoticon--good.png");
 }
 .favor-item.favor-item--sad::before {
-  background-image: url("../img/img-emoticon--sad.png");
+  background-image: url("/resource/img/img-emoticon--sad.png");
 }
 .favor-item.favor-item--joy::before {
-  background-image: url("../img/img-emoticon--joy.png");
+  background-image: url("/resource/img/img-emoticon--joy.png");
 }
 .comu-reply {
   padding: 1.5vw 0;
