@@ -6927,10 +6927,7 @@ a.link-more:hover {
   align-items: center;
   margin-bottom: 1.5vw;
 }
-.comu-writer__img {
-  width: 4vw;
-  height: 4vw;
-}
+
 .comu-writer__img img {
   width: 100%;
 }

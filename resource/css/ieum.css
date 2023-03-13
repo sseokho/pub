@@ -3381,7 +3381,6 @@ ul.between_bar li + li:before {
 .editor_view p,
 .editor_view span {
   color: #000;
-  font-size: 1.2vw !important;
   line-height: 2em;
   font-weight: 400;
 }
@@ -4577,7 +4576,6 @@ p.txt {
 .webzine_wrap .cont > p.txt,
 .webzine_wrap .cont > div.txt,
 .webzine_wrap .cont > p {
-  font-size: 1.1vw !important;
   line-height: 2em;
   word-break: keep-all;
   color: #000;
@@ -4634,7 +4632,6 @@ p.txt {
   text-decoration: underline;
 }
 .webzine_wrap .cont > p.txt span {
-  font-size: 1.1vw !important;
   margin-right: 1vw;
   color: #000;
 }
@@ -4777,10 +4774,7 @@ p.txt {
   padding-bottom: 0;
   font-size: 1vw !important;
 }
-.webzine_wrap .from_vol p,
-.webzine_wrap .from_vol span {
-  font-size: 1vw !important;
-}
+
 .from_vol {
   margin-bottom: 2vw;
 }
@@ -6927,10 +6921,7 @@ a.link-more:hover {
   align-items: center;
   margin-bottom: 1.5vw;
 }
-.comu-writer__img {
-  width: 4vw;
-  height: 4vw;
-}
+
 .comu-writer__img img {
   width: 100%;
 }
@@ -7202,7 +7193,6 @@ h2{text-align: center; padding:33px 0;}
     letter-spacing: 0;
     display: block;
     margin-top: 20px;
-    font-size: 0.8vw !important;
     line-height: 2.2rem;
 }
 

@@ -15,14 +15,14 @@
   <script type="text/javascript" src="/resource/js/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="/resource/js/swiper.min.js"></script>
   <script type="text/javascript" src="/resource/js/common.js"></script>
-  <script type="text/javascript" src="/resource/js/main.js"></script>
   <script type="text/javascript" src="/resource/js/example.js"></script>
+  <script type="text/javascript" defer src="/resource/js/wheelzoom.js"></script>
 </head>
 
 
 <body>
-    <div class="wrap wonder">
-        <header id="header">
+    <div id="wrap" class="wonder">
+        <header id="header" class="head">
           <div class="h_logo">
             <span><img src="/resource/img/logo.svg" alt="logo"></span>
           </div>
@@ -48,18 +48,48 @@
 
         </header>
 
+
+        <div class="a_sns">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/wonderplace.co.kr/" target="_blank">
+                <i class="as_icon facebook"></i>
+              <span class="blind">Facebook</span>
+            </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/wonderplace_kr/" target="_blank"><i class="as_icon instagram"></i>
+              <span class="blind">Instagram</span>
+            </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCiDtZz3VpVauNGoAiOrqBfg" target="_blank">
+              <i class="as_icon youtube"></i>
+              <span class="blind">Youtube</span
+                ></a>
+            </li>
+          </ul>
+        </div>
+
+
         <section class="cm_hero">
           <div class="wrap">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide"></div>
+              <div class="swiper-slide" style="background: url('/resource/img/bg01.jpg') no-repeat; background-size:cover; background-size: center;"></div>
+              <div class="swiper-slide" style="background: url('/resource/img/bg02.jpg') no-repeat; background-size:cover; background-size: center;"></div>
+              <div class="swiper-slide" style="background: url('/resource/img/bg03.jpg') no-repeat; background-size:cover; background-size: center;"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+
+            
           </div>
+
+          <div class="swiper_arrow">              
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
           <div class="cmh_txt">
               <h2>
                   <span>NO.1</span>
@@ -74,7 +104,18 @@
               </p>
           </div>
         </div>
-      </section>
+        </section>
+
+        <div class="deep" style="height:3000px">
+          ddddddd
+        </div>
+
+
+        <div class="deep2" style="height:3000px; background-color: antiquewhite;"> 
+          ddddddd
+        </div>
+
+
     </div>
 </body>
 
