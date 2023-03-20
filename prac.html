@@ -73,25 +73,44 @@ h3 {
 .tabcontent{padding: 20px; height:244px; border:1px solid #ddd; border-top:none;}
 
 button{width:300px; padding:30px;}
-.row{width:500px; height:70px; border:1px solid #000;}
+.row{width:500px; height:70px; border:1px solid #000; margin:0 auto;}
 .row input{width:50px; height:50px;}
+
+
+.group-ul{padding:0; color:#000 !important; font-size:12px !important; display: flex;
+flex-direction: column; cursor: pointer;}
+.group-ul li{padding:3px 0;}
+.group-ul li a{margin-left:10px;}
+    .group-ul li.sel{background-color: #dae8ff;}
+    .group-ul li:hover{background-color: #dae8ff;}
+
+
 </style>
 
 
 <body>
     <div>
         <select id="select">
-          <option>11</option>
-          <option>22</option>
-          <option>33</option>
+          <option value="11" selected>11</option>
+          <option value="22">22</option>
+          <option value="33">33</option>
         </select>
         <button class="btn" onclick="myfunction()">fff</button>
     </div>
-    <div class="view" name="view">
+
+    <ul class="group-ul" id="view">
+             
+    </ul>
+
+
+    <div class="view" name="view" id="view">
       <div class="row">
           <input type="checkbox">
       </div>
     </div>
+
+
+    <button type="button" class="ui-button ui-basic-button ui-basic-button--normal button__min--65" id="del">삭제</button>
   <!-- script -->
   
   <script type="text/javascript" src="./assets/js/ui-script.js"></script>
@@ -111,23 +130,28 @@ button{width:300px; padding:30px;}
 
 function myfunction() {
 
+ 
+var x = document.getElementById("select");
+var y=  x.options[x.selectedIndex].text
+document.getElementById("view").innerHTML += `<li><a>${y}</a></li>`;
+
+$('.group-ul li').click(function(){
+    const $this = $(this);
+    $('.group-ul li').not($this).removeClass('sel')
+    $this.toggleClass('sel');
 
 
-var x = document.getElementById("select").value;
-
-document.getElementByClassName("view").innerHTML += `<div class="row"><a>${x}</a></div>`;
-
-$('.row').click(function(){
-  const $this = $(this);
-    $('.row').removeClass('sel');
-    $this.addClass('sel');
 });
+
+
+
+
 
 $("#del").click(function() {
 
     //체크된 행이 없을 경우.
     
-    $('.row.sel').remove();
+    $('.group-ul li.sel').remove();
 });
 
 }

@@ -43,24 +43,12 @@ function  click_event1(){
 } 
 
 function se1Box2_Swiper(){
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-  });
+    
 }
 
 
 function zoom(){
- 
+ /*
   $(window).scroll(function(){
 
     
@@ -69,24 +57,21 @@ function zoom(){
 
     var scroll = $(window).scrollTop();
         
-        if (scroll >= 210) {
+        if (scroll >= 375) {
             
-         
+          console.log("도착")
 
 
         } else {
+          
           var 높이 = $(window).scrollTop();
           console.log(높이);
         
-          var y =  5/100 * 높이 + 0/100;
-          $('.mySwiper').eq(0).css('position', 'relative');
-          $('.mySwiper').eq(0).css('top', y);
-          
+         
 
 
-          var z = (1/1000) * 높이 + 300/300;
+          var z = (1 / 1700) * 높이 + 100/100;
           $('.mySwiper').eq(0).css('transform', `scale( ${z} )`);
-    
 
           
 
@@ -95,10 +80,29 @@ function zoom(){
 
   });
 
+*/
+
+  window.addEventListener('scroll', function(e) {
+  var scTop = $(window).scrollTop();
+  calHero(scTop);
+
+  });
 
 
-
+  function calHero(scTop){
+    var scTop = $(window).scrollTop();
+    var ratio = 1 + scTop * 0.001;
+    var transY = scTop * 0.05;
+    if(ratio > 1.2)
+        ratio = 1.2;
+    
+    if(transY > 10)
+        transY = 10;
+    $('.owl-stage-outer').css({'transform':'translateY('+transY+'%) scale('+ratio+')'});
+  }
 
 
 
 }
+
+
