@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>레이어팝업</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap4.min.css">
+
+  <!-- //script -->
+
+  
+
+
+</head>
+<style>
+ html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+    .layer_popup{
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(0 0 0 / 48%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+    }
+    .layer_cont{
+      height:100%;
+      padding: 100px;
+    }
+    .btn_area{
+      max-width: 1400px;
+      position: absolute;
+      bottom: 6%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .btn_area button{
+      padding: 12px 37px;
+      background: none;
+      border-radius: 5px;
+      outline: none;
+      color: #fff;
+      font-size: 17px;
+      border: 1px solid #fff;
+    }
+    .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    bottom: 50px;
+    z-index: 10;
+    transform: translateX(-50%);
+    left: 50%;
+    }
+
+    .swiper-pagination-bullet + .swiper-pagination-bullet{margin-left:10px;}
+</style>
+
+
+<body>
+  
+  <div class="layer_popup">
+    <div class="layer_cont">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="http://jbedu.sctc.or.kr/" target="_blank"><img src="./resource/img/center_1.png"></a></div>
+          <div class="swiper-slide"><a href="http://jbedu.sctc.or.kr/" target="_blank"><img src="./resource/img/center_2.png"></a></div>
+          <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=gb7REM-o6yc" target="_blank"><img src="./resource/img/center_3.png"></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="btn_area">
+      <button class="close_btn">닫기</button>
+    </div>
+  </div>
+
+
+</body>
+  
+<script type="text/javascript" src="./resource/js/swiper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+
+ <!-- 헤더부분에 삽입 -->
+ <script type="text/javascript">
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  
+  
+
+    $(".close_btn").click(function(){
+      $(".layer_popup").fadeOut(50);
+    })
+  </script>
+  <!-- 헤더부분에 삽입 -->
+
+
+  
+
+  
+
+
+</html>

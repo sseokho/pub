@@ -59,3 +59,15 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'notokr';
+    src: url('../font/notokr-Black.eot');
+    src: url('../font/notokr-Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/notokr-Black.woff2') format('woff2'),
+    url('../font/notokr-Black.woff') format('woff'),
+    url('../font/notokr-Black.ttf') format('truetype'),
+    url('../font/notokr-Black.svg#notokr-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
