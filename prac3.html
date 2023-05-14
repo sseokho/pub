@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-  <title>법무부 - u Guard</title>
+  <title>5개 추가</title>
 
   <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
@@ -76,16 +76,28 @@ button{width:300px; padding:30px; }
 .row{width:500px; height:70px; border:1px solid #000;}
 .row input{width:50px; height:50px;}
 
+
+.input-file-button{
+  padding: 6px 25px;
+  background-color:#FF6600;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
 </style>
 
 
 <body>
-  <div>
+  <div claas="ob">
 
-		<input type="file" class="ob">
+		<input type="file"  for="input-file">
 
-	
+    <label class="input-file-button" for="input-file">
+      업로드
+    </label>
 
+    
 	</div>
 
 	<h1>최대 5개까지 추가 가능</h1>
@@ -115,19 +127,25 @@ button{width:300px; padding:30px; }
 
 $(function() {
 
-  
 
   $('#add').click(function(){
-    var n = $( '.ob' ).length;
-    console.log(n);
-    
-      if (n >= 4) return;
+    var n = $(".input-file-button").length;
+      if (n >= 4) {
+        alert("가")
+        return;
+        
+      } else{
+        $('div').append(
+          
 
+          '<input type="file"  for="input-file ' + n + '">' + 
 
-      $('div').append('<input type="file" class="ob">');
+          '<label class="input-file-button" for="input-file' + n + '">'+
+            '업로드'+
+          '</label>'
 
-
-
+        );
+      }
   });
 
   
