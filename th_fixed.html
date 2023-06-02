@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.css" integrity="sha512-rptDreZF629VL73El0GaBEH9tlYEKDJFUr+ysb+9whgSGbwYfGGA61dVtQFL0qC8/SZv/EQFW5JtwEFf+8zKYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js" integrity="sha512-HV1U44HR4mYVDcsxzJpghYyGEy2PvbePe9UFXlV3vnzf4yFhbKA9QNpnhy4VWwnaC2jKzijITVWHPZBCOuc51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+      $(document).ready(function() {
+       
+
+        new SimpleBar(document.getElementById('tble'), {
+            autoHide: false,
+            
+            classNames: {
+              resizeWrapper: 'simplebar-resize-wrapper',
+              content: 'simplebar-content',
+              offset: 'simplebar-offset',
+              mask: 'simplebar-mask',
+              wrapper: 'simplebar-wrapper',
+              placeholder: 'simplebar-placeholder',
+              scrollbar: 'simplebar-scrollbar',
+              track: 'simplebar-track',
+              heightAutoObserverWrapperEl: 'simplebar-height-auto-observer-wrapper',
+              heightAutoObserverEl: 'simplebar-height-auto-observer',
+              visible: 'simplebar-visible',
+              horizontal: 'simplebar-horizontal',
+              vertical: 'simplebar-vertical',
+              hover: 'simplebar-hover',
+              dragging: 'simplebar-dragging'
+            },
+            scrollbarMinSize: 1,
+            scrollbarMaxSize: 0,
+            direction: 'ltr',
+            timeout: 1000
+        })
+      });
+    </script>
+
+    <style>
+
+    #table {
+        border: 1px solid #e2e2e2;
+      }
+      .simplebar-scrollbar{
+    
+        background-color: #223b9b;
+      }
+      
+      .simplebar-track{
+        
+        margin-top:10px;
+        margin-right:30px;
+        margin-bottom:10px;
+        background-color: #e2e8ff;
+        width:2px !important;
+        
+      }
+
+
+      body {
+        width:500px;
+        margin: 0 auto;
+      }
+      caption {
+        position: absolute;
+        font-size: 0;
+        left: -99999px;
+      }
+      .table-box-wrap {
+          position: relative;
+          /*width:509px;*/
+          margin-top: 20px;
+          padding-top: 40px;
+          border: 1px solid #ccc;
+      }
+      .table-box-wrap .table-box {
+          max-height: 258px;
+          overflow: auto;
+          overflow-x: hidden;
+      }
+      .table-box-wrap .table-box table {
+          width: 100%;
+          table-layout: fixed;
+          border-spacing: 0;
+          border-collapse: collapse;
+      }
+      .table-box-wrap .table-box table thead tr {
+          position: absolute;
+          top: 0;
+      }
+      .table-box-wrap .table-box table thead tr th {
+          font-weight: normal;
+          width: 120px;
+          height: 40px;
+          background:rgb(49, 49, 49);
+          color:#fff;
+      }
+
+      .table-box-wrap .table-box table td {
+          text-align: center;
+          height: 40px;
+          border-top: 1px solid #ccc;
+      }
+
+      .table-box-wrap .table-box table tr {
+          display: inline-table;
+          width: 100%;
+          table-layout: fixed;
+      }
+
+      .table-box-wrap .table-box table tbody tr {
+        display: table-row;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="table-box-wrap">
+      <div class="table-box" id="table">
+        <table>
+          <caption>제목셀이 고정된 표입니다.</caption>
+          <colgroup>
+            <col width="33%">
+            <col width="34%">
+            <col width="33%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">NO44.</th>
+              <th scope="col">날짜</th>
+              <th scope="col">비고</th>
+            </tr>
+          </thead>
+    
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>0000-00-00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0000-00-00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0000-00-00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0000-00-00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0000-00-00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0000-00-00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0000-00-00</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

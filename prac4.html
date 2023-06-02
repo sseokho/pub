@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-  <title>select 추가</title>
+  <title>case</title>
 
   <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
@@ -25,7 +25,7 @@
 .js .slider-single > div:nth-child(1n+2) { display: none }
 
 .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
-
+*{background-color: #fff;}
 h3 {
 	background: #f0f0f0;
 	color: #3498db;
@@ -71,54 +71,27 @@ h3 {
 .tabnav li a:hover,
 .tabnav li a.active{background:#fff; color:#7ea21e; }
 .tabcontent{padding: 20px; height:244px; border:1px solid #ddd; border-top:none;}
-
-button{width:300px; padding:30px;}
-.row{width:500px; height:70px; border:1px solid #000; margin:0 auto;}
+.btn{border:1px solid #000;}
+button{width:300px; padding:30px; }
+.row{width:500px; height:70px; border:1px solid #000;}
 .row input{width:50px; height:50px;}
-
-
-.group-ul{padding:0; color:#000 !important; font-size:12px !important; display: flex;
-flex-direction: column; cursor: pointer;}
-.group-ul li{padding:3px 0;}
-.group-ul li a{margin-left:10px;}
-    .group-ul li.sel{background-color: #dae8ff;}
-    .group-ul li:hover{background-color: #dae8ff;}
-
 
 </style>
 
 
 <body>
-    <div>
-        <select id="select">
-          <option value="11" selected>11</option>
-          <option value="22">22</option>
-          <option value="33">33</option>
-        </select>
-        <button class="btn" onclick="myfunction()">fff</button>
-    </div>
+  <p id="exampleP" class="two ff">클릭시 시작</p>
 
-    <ul class="group-ul" id="view">
-             
-    </ul>
+  <button class="btn">dsadsds</button>
 
-
-    <div class="view" name="view" id="view">
-      <div class="row">
-          <input type="checkbox">
-      </div>
-    </div>
-
-
-    <button type="button" class="ui-button ui-basic-button ui-basic-button--normal button__min--65" id="del">삭제</button>
-  <!-- script -->
+</body>
   
-  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
-  <script type="text/javascript" src="./js/script.js"></script>
+ 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  
 
   <!-- //script -->
 
@@ -128,38 +101,33 @@ flex-direction: column; cursor: pointer;}
 
 
 
-function myfunction() {
+$(function() {
+  var select = $("#exampleP").attr('class');
 
- 
-var x = document.getElementById("select");
-var y=  x.options[x.selectedIndex].text
-document.getElementById("view").innerHTML += `<li><a>${y}</a></li>`;
-
-$('.group-ul li').click(function(){
-    const $this = $(this);
-    $('.group-ul li').not($this).removeClass('sel')
-    $this.toggleClass('sel');
+  const divNode = document.getEle
+  $("button").click(function(){
 
 
-});
+    switch(select){
+      case "one ff" : 
+        $("#exampleP").css("color","red");
+      break
 
+      case "two ff" : 
+        $("#exampleP").css("color","blue");
+      break
 
-
-
-
-$("#del").click(function() {
-
-    //체크된 행이 없을 경우.
-    
-    $('.group-ul li.sel').remove();
-});
-
-}
+      case "three" : 
+        $("#exampleP").css("color","green");
+      break
+      }
+  });
+})
 
 
 
 
-  </script>
-</body>
+</script>
+
 
 </html>
