@@ -91,12 +91,12 @@ button{width:300px; padding:30px; }
 <body>
   <div claas="ob">
 
-		<input type="file"  for="input-file">
-
+		
     <label class="input-file-button" for="input-file">
       업로드
     </label>
-
+    <input type="file" id="input-file"> 
+    
     
 	</div>
 
@@ -127,25 +127,100 @@ button{width:300px; padding:30px; }
 
 $(function() {
 
+  
 
-  $('#add').click(function(){
-    var n = $(".input-file-button").length;
-      if (n >= 4) {
+
+
+
+  $('.buprogram.file-add a').click(function(){
+    var a = $(".buprogram.add-area .file").length;
+    var b = $(".report.add-area .file").length;
+    var c = $(".trainee.add-area .file").length;
+    var d = $(".etcfile.add-area .file").length;
+      if (a >= 4) {
         alert("가")
         return;
         
       } else{
-        $('div').append(
-          
-
-          '<input type="file"  for="input-file ' + n + '">' + 
-
-          '<label class="input-file-button" for="input-file' + n + '">'+
-            '업로드'+
-          '</label>'
-
+        $('.buprogram.add-area .file').append(
+          '<div class="file">' +
+            '<div class="file__input" id="file__input">' +
+              '<label class="file__input--label" for="buprogram-'+ a +' ">파일찾기</label>' +
+              '<div class="file__value--wrap">' +
+                '<input class="file__input--file" id="buprogram-'+ a +'" type="file" multiple="multiple" name="files[]">' +
+                '<div class="file__value">' + 
+                  '<div class="file__value--text">' +
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>'          
         );
       }
+
+      if (b >= 4) {
+        alert("가")
+        return;
+        
+      } else{
+        $('.report.add-area .file').append(
+          '<div class="file">' +
+            '<div class="file__input" id="file__input">' +
+              '<label class="file__input--label" for="report-'+ b +' ">파일찾기</label>' +
+              '<div class="file__value--wrap">' +
+                '<input class="file__input--file" id="report-'+ b +'" type="file" multiple="multiple" name="files[]">' +
+                '<div class="file__value">' + 
+                  '<div class="file__value--text">' +
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>'          
+        );
+      }
+
+      if (c >= 4) {
+        alert("가")
+        return;
+        
+      } else{
+        $('.trainee.add-area .file').append(
+          '<div class="file">' +
+            '<div class="file__input" id="file__input">' +
+              '<label class="file__input--label" for="trainee-'+ c +' ">파일찾기</label>' +
+              '<div class="file__value--wrap">' +
+                '<input class="file__input--file" id="trainee-'+ c +'" type="file" multiple="multiple" name="files[]">' +
+                '<div class="file__value">' + 
+                  '<div class="file__value--text">' +
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>'          
+        );
+      }
+
+      if (d >= 4) {
+        alert("가")
+        return;
+        
+      } else{
+        $('.etcfile.add-area .file').append(
+          '<div class="file">' +
+            '<div class="file__input" id="file__input">' +
+              '<label class="file__input--label" for="etcfile-'+ d +' ">파일찾기</label>' +
+              '<div class="file__value--wrap">' +
+                '<input class="file__input--file" id="etcfile-'+ d +'" type="file" multiple="multiple" name="files[]">' +
+                '<div class="file__value">' + 
+                  '<div class="file__value--text">' +
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>'          
+        );
+      }
+
   });
 
   
