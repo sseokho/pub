@@ -1,2 +1,2 @@
-<p class="tit f_bold">자기소개와 함께 최근 온라인에서 예술 활동을 했던 경험을 이야기해주세요.</p>
-<p class="txt"><strong>김선영</strong></p>
+<p class="txt f_bold"></p>
+<p class="txt"><strong></strong></p>
