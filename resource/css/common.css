@@ -604,7 +604,6 @@ p.font-s {
 }
 
 h1 {
-  font-size: 3.2rem;
   margin: 0;
 }
 
@@ -614,9 +613,7 @@ h1 .caption {
   color: #747478;
 }
 
-h2 {
-  font-size: 3rem;
-}
+
 
 h2 .caption {
   display: block;
@@ -652,7 +649,6 @@ body {
 }
 
 header {
-  height: 18rem;
   background-color: #fff;
   overflow-x: clip;
 }

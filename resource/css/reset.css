@@ -30,7 +30,7 @@ time, mark, audio, video {
 
 select{-webkit-appearance: none;appearance: none;-moz-appearance: none;background: url('../images/common/search_select_arrow.png') no-repeat right 18px center;color: #888888;}
 select::-ms-expand {display:none}
-img {max-width:100%; max-height:100%; border:0 none; vertical-align:top;}
+img { border:0 none; vertical-align:top;}
 input, select{height: 50px;padding: 0;margin: 0;box-sizing: border-box;color: #000;vertical-align: middle; border:none; text-indent: 10px;}
 legend{font-size: 0;text-indent: -100000px;left: -10000px;top: auto;height: 0;overflow: hidden;}
 
