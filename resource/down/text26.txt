@@ -1,0 +1,63 @@
+<div style="margin-top: 2vw">
+    <ul class="img_list line-one row" style="width: 100%; margin: 0 auto">
+        <li><img alt="비 오는 저녁 주택가 골목길에 두 사람이 2인용 우산을 함께 쓰고 걷는다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0301.jpg">
+            <div class="line-one-con">
+                <p class="caption-title">&lt;비 오는 날&gt;</p>
+                <p class="caption">비 오는 날은 좋아하는 사람과 우산을 같이 쓰고 싶어요. 2인용 우산이 있었으면 좋겠어요.</p>
+            </div>
+        </li>
+        <li><img alt="한 아이가 양팔을 벌려 눈을 즐긴다. 그 옆에는 눈이 수북하게 쌓인 나무 한 그루가 서 있다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0302.jpg">
+            <div class="line-one-con">
+                <p class="caption-title">&lt;눈 오는 날&gt;
+                </p>
+                <p class="caption">눈오는 날이면 크리스마스가 기대돼요.</p>
+            </div>
+        </li>
+        <li><img alt="한 사람이 서 있다. 머리부터 발끝까지 분홍색이다. 옆에는 “나는 삭발밖에 못합니다. 존중해주세요. 나는 날씬 오빠입니다.”라고 쓰여 있다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0303.jpg">
+            <div class="line-one-con">
+                <p class="caption-title">&lt;존중해 주세요&gt;
+
+                </p>
+                <p class="caption">저는 발달장애인을 차별하지 말라고 투쟁하는 것을 좋아해요. 투쟁 없는 삶으로 돌아가고 싶지 않아요. 발달장애인의 권리를 위해 삭발식에 참여했어요. 발달장애인도 똑같은 사람입니다. 발달장애인을 존중해 주세요.</p>
+            </div>
+        </li>
+        <li><img alt="가열대 위에 커다란 프라이팬이 놓여 있고 닭, 파, 양파, 당근이 막 들어가는 모습이다. 벽에 걸린 원형시계 바늘이 12시를 가리키고 있다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0304.jpg">
+            <div class="line-one-con">
+                <p class="caption-title">&lt;닭갈비 먹어요&gt;
+
+                </p>
+                <p class="caption">자립을 준비하고 있어요. 내 인생은 나의 것이어서 부모님은 종로구에 살고, 저는 서대문구 공동체주택에서 자취하고 있어요. 전자레인지에 밥을 돌리고, 3분 카레를 먹어요. 닭갈비 밀키트를 사서 먹을 때도 있어요.</p>
+            </div>
+        </li>
+        <li><img alt="왼쪽을 향해 서 있는 고양이 세 마리가 고개만 돌려 정면을 바라보고 있다. 입이 빙그레 웃는 모습이다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0305.jpg">
+            <div class="line-one-con">
+                <p class="caption-title">&lt;친구를 만나서 즐거운 고양이&gt;
+
+                </p>
+                <p class="caption">세종문화회관에서 뮤지컬 &lt;캣츠&gt;를 봤어요.<br>
+                    고양이들이 모여서 춤추고 노래 불렀어요.<br>
+                    배우들의 고양이 분장이 대단했어요.<br>
+                    ‘메모리’ 노래가 기억에 남아요.</p>
+            </div>
+        </li>
+        <li><img alt="커다란 하트와 작은 하트를 배경으로 왕자와 공주처럼 입은 신랑과 신부가 양손을 번쩍 들고 활짝 웃고 있다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0306.jpg">
+            <div class="line-one-con">
+                <p class="caption-title">&lt;결혼식&gt;
+
+                </p>
+                <p class="caption">친한 형의 결혼식에 다녀왔어요. 30살이 되면 친절한 여자와 결혼할 거예요.<br>
+                    저는 한국 나이로 27살이고, 다정다감한 신랑감, 남편감이에요. </p>
+            </div>
+        </li>
+        <li><img alt="다섯 사람이 서 있다. 다들 활짝 웃는 모습이다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0307.jpg">
+            <div class="line-one-con">
+                <p class="caption-title">&lt;친구들아 모여라&gt;
+
+                </p>
+                <p class="caption">저는 혼자가 아니라 다 같이 그림을 그리고 싶어요. 스페셜아트에서 다른 작가들하고 같이 하면 행복해요.<br>
+                    예쁜 그림을 그리는 작가가 되고 싶어요. 그리고 그림을 팔고 싶어요.<br>
+                    사람들에게 ‘이 작품의 작가가 마음에 들어요’라는 말을 듣고 싶어요.</p>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>swiper</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+<style>
+  img{width:100%;}
+  .swiper{width:600px;}
+  .aa{width:1200px;}
+  .aa .swiper-slide{height:300px; }
+  .aa .swiper-slide.swiper-slide-active{border:1px solid red}
+  .aa .swiper-pagination-bullet{width:30px; height:30px;}
+</style>
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../resource/img/bg_comoninoz.jpg"></div>
+      <div class="swiper-slide"><img src="../resource/img/bg_gola.jpg"></div>
+      <div class="swiper-slide"><img src="../resource/img/bg_w.standard.jpg"></div>
+      <div class="swiper-slide"><img src="../resource/img/bg01.jpg"></div>
+      <div class="swiper-slide"><img src="../resource/img/bg02.jpg"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+
+  <!-- script -->
+  
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+
+  <script>
+
+
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var currentDate = new Date();
+    //두번째가 사라져야 정상
+    if (currentDate.toISOString().slice(0, 10) === '2023-07-06') {
+      var slideIndex = 0; // Replace with the actual slide index
+      var slide = swiper.slides[slideIndex];
+
+      var image = document.createElement('img');
+      image.src = '../resource/img/bg_gola.jpg';
+      slide.appendChild(image);
+    }
+
+
+  </script>
+  <!-- //script -->
+</body>
+
+</html>

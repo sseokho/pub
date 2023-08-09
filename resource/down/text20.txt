@@ -1,16 +1,17 @@
-<div style="margin-top: 3vw">
-<ul class="img_list row" style="width: 90%; margin: 0 auto;margin-top:-1vw;">
-	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 화면의 절반에는 여러 작품이 썸네일처럼 늘어서 있고, 나머지 반에는 선택한 작품의 수어해설을 언어 옵션으로 선택할 수 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0101.jpg"></li>
-	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 벨기에-프랑스 수어(LSFB), 플랑드르 수어(VGT), 국제 수어(ISL) 선택 옵션이 보인다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0102.jpg"></li>
-</ul>
+<div style="margin-top: 2vw">
+    <ul class="img_list row" style="width: 100%; margin: 0 auto">
+        <li><img alt="천장부터 바닥까지, 벽면에 사람 그림 가계도가 층을 이뤄 삼각형 모양으로 붙어 있고, 그림 중앙에는 모니터에서 그림을 하나씩 보여준다. 그림 앞에는 그간의 작업물이 쌓여 있다." src="/template/cms/user/images/sub/webzine/44/img_review_20230726_0701.jpg">
+        </li>
+        <li><img alt="벽면의 한 공간을 채운 김진국 작가의 그림. 오일파스텔과 마카를 사용한 선 긋기, 마스킹 테이프 찢어 붙이기 동작으로 이루어져 있다. " src="/template/cms/user/images/sub/webzine/44/img_review_20230726_0702.jpg">
+        </li>
+    </ul>
 </div>
-
-
-<div style="margin-top: 1vw">
-<ul class="img_list row" style="width: 90%; margin: 0 auto;margin-top:-1vw;">
-	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 작품을 배경으로 왼편에 수어해설사 모습이 나타나있다. 하단에는 선택할 수 있는 다른 메뉴가 떠 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0103.jpg"></li>
-	<li style="width:50%"><img alt="벨기에왕립미술관의 수어해설 비디오 가이드 패드. 작품을 배경으로 왼편에 수어해설사 모습. '눈을 감았다'를 설명하고 있다." src="/template/cms/user/images/sub/webzine/35/img_blog_20221011_0104.jpg"></li>
-</ul>
-
-<p class="caption ta_c">벨기에왕립미술관의 수어해설 비디오 가이드 (사진. 필자)</p>
+<div style="margin-top: 0">
+    <ul class="img_list row" style="width: 100%; margin: 0 auto">
+        <li><img alt="정은혜 작가가 자소상 앞에서 포즈를 취하고 있다. 벽면에는 기획의도가 적혀 있다: “지역사회 장애인식 개선 문화예술 캠페인 ‘예술도 노동’ 나 호롤 집에 NO! 여기서 예술로 노동한다!”" src="/template/cms/user/images/sub/webzine/44/img_review_20230726_0703.jpg">
+        </li>
+        <li><img alt="전시장 전경. 벽면에 가득 작가들의 그림이 가득 붙어 있고, 그림 중앙에 있는 모니터에서 그림을 하나씩 보여준다." src="/template/cms/user/images/sub/webzine/44/img_review_20230726_0704.jpg">
+        </li>
+    </ul>
+	<p class="caption ta_c">벨기에왕립미술관의 수어해설 비디오 가이드 (사진. 필자)</p>
 </div>

@@ -1,28 +1,26 @@
 <div class="gray_box">
     <p class="txt" style="line-height: 2em;">
-        진정한 의미로 예술을 누리기 위해서는 다양한 문화예술 정보를 접하고, 각자의 관심과 취향에 따라 작품과 활동을 선택하고, 편리한 이동 경로와 교통편을 자유롭게 이용하고, 즐겁게 관람과 활동을 마친 후 안전하게 집으로 돌아오기까지 모든 과정이 보장되어야 한다. 예술을 만나러 가는 길에는 어떤 다양한 경로가 있을까. 그 길에 걸림돌이 있다면 무엇일까. 예술을 향한 여정이 더욱 풍성한 의미와 즐거움으로 채워지려면 무엇이 필요할지 들어보았다. 
+        예술가의 삶은 작업실, 연습실, 무대와 전시장에서만 이뤄지지 않는다. 예술활동에 영감을 주고 기반이 되는 일상의 루틴은 무엇일까? 창작의 즐거움과 고통 이전에 일상적으로 맞닥뜨리는 다양한 삶의 장면을 포착해 보자.
     </p>
 
 
     <div class="row" style="justify-content: center; align-items: center; margin-top:1rem">
 
-    <p class="txt f_bold" style="line-height: 2em;">① 혼자서</p>
+    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=531" style="line-height: 2em;">예측 못한 원고 청탁을 받은 하루</a></p>
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
 
-    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=525" style="line-height: 2em;">② 친구와 함께</a></p>
+    
+    <p class="txt f_bold" style="line-height: 2em;">활동지원 받으며 연극하는 하루</p>
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
 
-    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=524" style="line-height: 2em;">③ 자녀와 함께</a></p>
+    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=533" style="line-height: 2em;">존중받고 존중하며 함께 그리는 하루</a></p>
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
 
-    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=523" style="line-height: 2em;">④ 대안학교에서</a></p>
+    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=534" style="line-height: 2em;">손잡으면 힘들지 않은 하루</a></p>
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-
-    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=522" style="line-height: 2em;">⑤ 복지관에서</a></p>
 
     </div>
 </div>
