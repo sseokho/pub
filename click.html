@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>swiper</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+<style>
+
+  
+</style>
+<body>
+  <form></form>
+  <button>0</button>
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <span></span>
+  
+
+  <!-- script -->
+  
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+
+  <script>
+  $(document).on("click", ".leach_tit", (e) => {
+			const $e = $(e.target);
+			const text = $e.text();
+			if (text === "문화소식") {
+				location.href = "/user/show/list.do";
+			} else if (text === "뉴스") {
+				location.href = "/user/news/list.do";
+			} else if (text === "미디어") {
+				location.href = "/user/movie/list.do?t=1";
+			} else if (text === "웹진이음") {
+				location.href = "/user/webzine/list.do";
+			} else if (text === "큐레이션") {
+				location.href = "/user/curation/list.do";
+			} else if (text === "참여와제안") {
+				location.href = "/user/notice/list.do";
+			} else {
+				console.log("NO");
+			}
+		})
+
+    $(document).on("click", "button", (e) => {
+
+
+        var form = document.forms.abc;
+        const $e = $(e.target);
+        const text = $e.text();
+        if (text === "문화소식") {
+          location.href = "/user/show/list.do";
+        } else if (text === "뉴스") {
+          location.href = "/user/news/list.do";
+        } else if (text === "미디어") {
+          location.href = "/user/movie/list.do?t=1";
+        } else if (text === "웹진이음") {
+          location.href = "/user/webzine/list.do";
+        } else if (text === "큐레이션") {
+          location.href = "/user/curation/list.do";
+        } else if (text === "참여와제안") {
+          location.href = "/user/notice/list.do";
+        } else {
+          console.log("NO");
+        }
+		})
+  </script>
+  <!-- //script -->
+</body>
+
+</html>

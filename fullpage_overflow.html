@@ -1,0 +1,74 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
+
+  
+
+</head>
+
+<style>
+
+.section {
+  text-align:center;
+  font-size: 3em;
+}
+.scrollable-content{
+  background: white;
+  overflow: scroll;
+  margin: 0 auto;
+  width: 500px;
+  height: 100vh;
+}
+
+@media screen and (max-height: 300px) {
+  .scrollable-content{
+      height: 80px;
+  }
+  h4{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+</style>
+<body>
+  <div id="fullpage">
+    <div class="section">
+      Section 1
+      <div class="scrollable-content">
+        <h4>Scroll me</h4><h4>Scroll me</h4><h4>Text here</h4>
+        <h4>Scroll me</h4><h4>Scroll me</h4><h4>Text here</h4><h4>Text here</h4><h4>Text here</h4><h4>Text here</h4><h4>Text here</h4><h4>Scroll me</h4><h4>Scroll me</h4><h4>Text here</h4><h4>Text here</h4><h4>Text here</h4><h4>Text here</h4><h4>Text here</h4>
+      </div>
+      
+      
+    
+    </div>
+    
+    <div class="section">
+  
+
+    </div>
+    <div class="section">Section 4</div>
+</div>
+  
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+
+<script>
+
+
+new fullpage('#fullpage', {
+  sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+  scrollOverflow: true,
+   // normalScrollElements: '.scrollable-content'
+});
+
+
+</script>
+</html>

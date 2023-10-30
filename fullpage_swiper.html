@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>select 추가</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="./resource/css/jquery.mCustomScrollbar.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap4.min.css">
+</head>
+<style>
+#fullpage {
+  width:100%;
+  height:100%;
+}
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+#menu li.active a:hover {
+  color: #000;
+}
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+#menu li.active a {
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.section {font-size: 3vw; text-align:center}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;  
+}
+.sec1{
+  overflow-y: hidden;
+}
+.box{
+  width: 550px;
+    height: 1618px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* word-wrap: break-word; */
+    word-break: break-word;
+}
+</style>
+
+
+<body>
+  <ul id="menu">
+    <li data-menuanchor="sec1" class="active"><a href="#sec1">Section1</a></li>
+    <li data-menuanchor="sec2"><a href="#sec2">Section2</a></li>
+    <li data-menuanchor="sec3"><a href="#sec3">Section3</a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section sec1 active">
+        <h1>Section1</h1>
+    </div>
+    <div class="section sec2">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><h1>Section2</h1>Slide 1</div>
+                <div class="swiper-slide"><h1>Section2</h1>Slide 2</div>
+                <div class="swiper-slide"><h1>Section2</h1>Slide 3</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="section sec3">
+        <h1>Section3</h1>
+    </div>   
+</div>
+  <!-- script -->
+  
+  <script type="text/javascript" src="./resource/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+
+  <!-- //script -->
+
+
+
+  <script>
+  $(document).ready(function() {
+  // fullpage
+  $('#fullpage').fullpage({		      
+    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+    anchors: ['sec1', 'sec2', 'sec3'],
+    menu: '#menu',
+    scrollingSpeed: 1000,
+    // scrollBar: true,
+    onLeave: function(origin, destination, direction) {
+      // 빠른전환으로 이벤트중복시 fullpage와 swiper전환시점 분리막기
+      $('#fullpage').on('scroll touchmove mousewheel', function(event) {                    
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      });
+      swiper.mousewheel.disable();
+    },
+    afterLoad: function(anchorLink, index) {      
+      // 전환이 끝난후 이벤트풀기                               
+      $('#fullpage').off('scroll mousewheel');      
+      if(!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove'); // 모바일분기
+      if(swiper) swiper.mousewheel.enable();    
+      if(!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); // 슬라이드 섹션을 벗어나면 휠풀어주기
+    }
+  });           
+
+  // swiper
+  var length = $(".sec2 .swiper-slide").length;
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    freeMode: false,
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    mousewheel: true,
+    on: {
+      slideChange: function(){        
+        var idx = this.activeIndex;
+        // 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
+        if(this.activeIndex != 0 && idx != length) $.fn.fullpage.setAllowScrolling(false);
+        if(length == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) //슬라이드가 2개밖에 없을때
+        // console.log('즉시 : ' + idx);
+      },  
+      slideChangeTransitionEnd: function(){
+        var idx = this.activeIndex;
+        // 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
+        if(idx == 0 || idx >= length-1) $.fn.fullpage.setAllowScrolling(true);
+        // console.log('전환후 : ' + idx);     
+      },
+      touchMove: function(e) {        
+        var startY = e.touches.startY;
+        setTimeout(function(){
+          if(startY > e.touches.currentY) swiper.slideNext();  
+          else swiper.slidePrev();
+        },100);        
+      },
+    }, 
+  });            
+});
+
+  </script>
+</body>
+
+</html>

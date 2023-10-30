@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>swiper</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+<style>
+html,
+    body {
+      position: relative;
+      height: 100%;
+      overflow:hidden;
+    }
+
+    body {
+      width:100%;
+      height:100%;
+      background: url(../resource/img/bg_comoninoz.jpg) no-repeat 0 0;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+    }
+    .swiper {
+      overflow:initial;
+      width: 50%;
+      height: 50%;
+      POSITION: ABSOLUTE;
+      left:200px;
+      TOP: 25%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      transition: all 0.4s;
+      align-items: center;
+
+      border-right:1px solid #000;
+ 
+
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-slide p{
+        border-bottom:3px solid #fff;
+
+    }
+
+    .swiper-wrapper{
+      
+    transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  }
+
+  iframe{
+    height:100%;
+
+  }
+  
+</style>
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide aa">
+
+
+        <iframe src="https://www.jbedu.or.kr/user/announce/view.do">
+          <p>현재 사용 중인 브라우저는 iframe 요소를 지원하지 않습니다!</p>
+      </iframe>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+
+  <!-- script -->
+  
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+
+  <script>
+const contacts = {
+
+  famlliy : '이',
+  name: '영희',
+  age: 22,
+};
+
+
+let {famlliy, name, age } = contacts;
+
+
+
+console.log(famlliy);
+console.log(name);
+console.log(age);
+
+
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+        var dDay = new Date( "8/24/2023 10:09:00" );
+        var nowDay = new Date();
+        var tiTile = $( ".aa" );
+
+        if( nowDay.getTime() > dDay.getTime() )
+        {
+            tiTile.remove();
+        }
+
+
+      
+
+
+     
+  </script>
+  <!-- //script -->
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>select 추가</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+
+</head>
+<style>
+.inner {
+  width: 50%;
+  position: relative;
+  background-color: red;
+}
+
+.inner:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.inner div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
+
+
+<body>
+  <div class="square">
+    <div class="inner">
+      <div>
+      </div>
+    </div>
+    <p>fffff</p>
+  </div>
+  <!-- script -->
+  
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- //script -->
+
+
+
+  <script>
+$(window).scroll(function(){
+  var scrT = $(window).scrollTop();
+  console.log(scrT); //스크롤 값 확인용
+  if(scrT == $(document).height() - $(window).height()){
+  	alert('스크롤 동작 감지')
+
+  } else {
+  	//아닐때 이벤트
+  }
+});
+
+alert("ffff");
+
+
+  </script>
+</body>
+
+</html>

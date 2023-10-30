@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>swiper</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+<style>
+  /* swiper :: [컨텐츠 공통] */
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+}
+
+.wrap_thumb_layout {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  z-index: 2;
+  margin-left: 275px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  /* margin: 20px auto; */
+}
+
+.wrap_thumb_layout .swiper-container {
+  margin: 0 auto;
+}
+
+.swiper-slide-container {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 100%;
+  max-width: 800px;
+  margin: auto;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.gallery-top {
+  position: relative;
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  overflow: hidden;
+  width: 250px;
+  height: 170px;
+  border: 2px solid #999;
+}
+
+.gallery-thumbs .swiper-slide {
+  /* width: 20%; */
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+/* navigation */
+.wrap_thumb_layout .swiper-button-next,
+.wrap_thumb_layout .swiper-button-prev {
+  top: 75%;
+}
+
+.wrap_thumb_layout .swiper-button-prev,
+.wrap_thumb_layout .swiper-rtl .swiper-button-next {
+  left: -40px;
+}
+
+.wrap_thumb_layout .swiper-button-next,
+.wrap_thumb_layout .swiper-rtl .swiper-button-prev {
+  right: -40px;
+}
+
+/* pagination */
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -35px;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+/* progress-bar */
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: crimson;
+}
+
+</style>
+<body>
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="swiper-slide-container">Slide 1</div></div>
+      <div class="swiper-slide"><div class="swiper-slide-container">Slide 2</div></div>
+      <div class="swiper-slide"><div class="swiper-slide-container">Slide 3</div></div>
+      <div class="swiper-slide"><div class="swiper-slide-container">Slide 4</div></div>
+      <div class="swiper-slide"><div class="swiper-slide-container">Slide 5</div></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div class="wrap_thumb_layout">
+      <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="swiper-slide-container">Slide 1</div></div>
+              <div class="swiper-slide"><div class="swiper-slide-container">Slide 2</div></div>
+              <div class="swiper-slide"><div class="swiper-slide-container">Slide 3</div></div>
+              <div class="swiper-slide"><div class="swiper-slide-container">Slide 4</div></div>
+              <div class="swiper-slide"><div class="swiper-slide-container">Slide 5</div></div>
+          </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+  
+
+  <!-- script -->
+  
+  <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+
+
+  <script>
+
+
+    var swiperTopNum = $('.gallery-top').find('.swiper-slide');
+    var swiperSubNum = $('.gallery-thumbs').find('.gallery-thumbs');
+
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,	//슬라이드 간격
+      pagination: {	//페이징 사용자 설정
+        el: ".swiper-pagination",	//페이징 태그 클래스 설정 
+        clickable: true,	//버튼 클릭 여부
+      },
+      loop: true,	//슬라이드 반복
+      loopedSlides: swiperTopNum.length	//loop 시 파라미터 duplicate 개수 - 정적으로 숫자 4 표현 가능
+    });
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 0,	//슬라이드 간격
+      navigation: {	//네비게이션 사용자 설정
+        nextEl: '.swiper-button-next',	//다음 버튼 클래스 설정
+        prevEl: '.swiper-button-prev',	//이전 버튼 클래스 설정
+      },
+      centeredSlides: true,	//슬라이드 중앙 배치
+      slidesPerView: 'auto',	//한번에 보여지는 슬라이드 개수(auto 가능)
+      touchRatio: 0.2,	//드래그 비율 설정(기본값: 1, 기본값을 0으로 설정할 경우 드래그 불가능)
+      slideToClickedSlide: true,	//슬라이드가 여러개 나열되어 있을 경우, 클릭 시 해당 슬라이드 위치로 이동
+      loop: true,	//슬라이드 반복
+      loopedSlides: swiperSubNum.length //loop 시 파라미터 duplicate 개수 - 정적으로 숫자 4 표현 가능
+    });
+
+    //Main Swiper와 Thumbnail Swiper가 연동제어 서로를 제어
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
+  </script>
+  <!-- //script -->
+</body>
+
+</html>
