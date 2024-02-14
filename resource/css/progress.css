@@ -1,0 +1,120 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #000;
+}
+
+.swiper-slide-duplicate,
+.swiper-slide {
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Slide content */
+}
+.swiper-slide-duplicate .description,
+.swiper-slide-duplicate .title,
+.swiper-slide .description,
+.swiper-slide .title {
+  display: block;
+  opacity: 0;
+  -webkit-transition: 0.5s ease 0.5s;
+  transition: 0.5s ease 0.5s;
+}
+.swiper-slide-duplicate-active .description,
+.swiper-slide-duplicate-active .title,
+.swiper-slide-active .description,
+.swiper-slide-active .title {
+  opacity: 1;
+}
+.swiper-slide-duplicate-active .title,
+.swiper-slide-active .title {
+  margin-bottom: 0.5rem;
+  font-size: 24px;
+  color: #000;
+  -webkit-transition: opacity 0.5s ease 0.5s;
+  transition: opacity 0.5s ease 0.5s;
+}
+.swiper-slide-duplicate-active .description,
+.swiper-slide-active .description {
+  font-size: 16px;
+  color: #777;
+  -webkit-transition: opacity 0.5s ease 0.75s;
+  transition: opacity 0.5s ease 0.75s;
+}
+
+.swiper-progress-bar {
+  position: relative;
+  width: 100%;
+  display: block;
+  z-index: 1;
+  height: 30px;
+}
+.swiper-progress-bar .slide_progress-bar {
+  position: absolute;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  width: auto;
+  clear: both;
+  opacity: 0;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+}
+.swiper-progress-bar .slide_progress-bar:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 100%;
+  width: 0;
+  content: "";
+  -webkit-transition: 0.1s width linear;
+  transition: 0.1s width linear;
+}
+.swiper-progress-bar.active .slide_progress-bar {
+  opacity: 1;
+}
+.swiper-progress-bar.animate .slide_progress-bar:after {
+  -webkit-transition: width linear;
+  transition: width linear;
+  -webkit-transition-delay: unset;
+          transition-delay: unset;
+  width: 100%;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+}

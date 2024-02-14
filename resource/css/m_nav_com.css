@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : default.css
+ * description : reset / common / editor CSS
+ * date : 2022-07-26
+******************************************************** */
+
+
+/* *******************
+ * description : reset tag
+ * date : 2021-03-29
+******************* */
+html {
+	overflow-y:scroll;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary {
+	display:block;
+}
+audio, canvas, video {
+    display:inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+audio, canvas, img, video {
+	vertical-align:middle;
+}
+body {
+	line-height:1;
+}
+ol, ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:"";
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img, fieldset {
+	border:0;
+}
+input, select, textarea {
+	line-height:1.2;
+	vertical-align:middle;
+}
+body, table, th, td, input,
+textarea, button, select {
+	font-family:"돋움", Dotum, Arial, sans-serif;
+	font-size:12px;
+	color:#222;
+}
+button, select {
+	text-transform:none;
+}
+button, input {
+	line-height:normal;
+}
+textarea {
+	resize:vertical;
+	overflow:auto;
+}
+address, caption, cite, code,
+dfn, em, var {
+	font-style:normal;
+	font-weight:normal;
+}
+label {
+	cursor:pointer;
+}
+/* For Screen Reader */
+legend {
+	display:none;
+	visibility:hidden;
+}
+/* For Screen Reader */
+caption {
+	display:none;
+	visibility:hidden;
+}
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+	margin:1em 0;
+	padding:0;
+}
+a {
+	color:#222;
+	text-decoration:none;
+}
+a:active, a:hover, a:focus {
+	text-decoration:none;
+}
+button{
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+	border:0px;
+	background:none;
+}
+body.mouse a:focus, 
+body.mouse button:focus{
+	outline:none;
+}
+
+/* input 기본 스타일 초기화 */
+input[type="text"],input[type="password"],input[type="file"],input[type="search"],input[type="email"],
+select,
+textarea{
+   -webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+	margin:0;
+	padding:0;
+}
+input::-ms-clear, 
+select::-ms-expand{ display: none; }
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='opacity:0.5'  viewBox='0 0 6.42 4'><path d='M6.42.69,3.21,4,0,.69.71,0l2.5,2.57L5.71,0Z'/></svg>") no-repeat;
+	background-size: 10px;
+	background-position: calc(100% - 10px) 50%;
+	background-repeat: no-repeat;
+}
+textarea{resize:none;}
+@media all and (max-width:800px){
+	.ios-os input[type="text"],
+	.ios-os input[type="search"],
+	.ios-os input[type="password"],
+	.ios-os input[type="file"],
+	.ios-os input[type="email"],
+	.ios-os select,
+	.ios-os textarea{
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+			appearance: none;
+			border-radius:0;
+	}
+}
+
+
+
+body{ padding:50px; }
+.cate{ 
+  width:300px;
+  position:relative;
+  border-style:solid;
+  border-width:1px 1px 0 1px;
+  border-color:#000;
+}
+.cate:last-child{
+  border-bottom:1px solid #000;
+}
+.cate .menu{
+  display:block;
+  position:relative;
+  width:100%;
+  background:gray;
+  height:80px;
+}
+.cate .menu .menulink{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  width:70%;
+  padding-left:15px;
+  line-height:80px;
+}
+.cate .menu .subopen{
+  position:absolute;
+  width:8px;
+  height:8px;
+  right:15px;
+  padding:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  border-right:1px solid #fff;
+  border-bottom:1px solid #fff;
+  transform:rotate(45deg);
+}
+
+.cate ul li{
+  padding:5px 10px;
+}
+.cate ul li:first-child{
+  padding-top:20px;
+}
+.cate ul li:last-child{
+  padding-bottom:20px;
+}

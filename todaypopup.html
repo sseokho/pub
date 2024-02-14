@@ -1,156 +1,109 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
-  <title>법무부 - u Guard</title>
-
-  <meta charset="utf-8" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
-  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
-  
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap4.min.css">
-
-  <!-- //script -->
-
-  
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title> 
+    
+    <!-- jQuery 선언 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<style>
-
-</style>
-
 
 <body>
-  <script type="text/javascript">
-		function hideMe(s) {
-		  var divObj = document.getElementById(s);
-		  divObj.style.display = "none";
-		} 
+    <!-- 팝업 공지사항 -->
+    <div class="main_notice_pop" name="popup1" style="position:fixed; left:50px; top:63px; display:none; z-index:999;">
+        <div style="width: 300px;height:300px;">팝업창 입니다</div>         
+        <a href="#" class="btn_close">x</a> <br> 
+        <input type="checkbox" name="today_close1" />오늘만 이 창을 열지 않음
+    </div> 
+    
+    <!-- css -->
+    <style type="text/css">
+        .main_notice_pop .btn_close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    </style> 
+    
+    <!-- Javascript -->
+    <script type="text/javascript">
 
-		function showMe(s) { 
-		  document.s.visibility="show"; 
-		} 
+        $(document).ready(function () {
+            // 팝업창에 주어진 이름을 변수로 던져 저장된 쿠키가 있는지 확인 
+            var popup1 = getCookie('popup1');
 
-		//document.onmousedown=ddInit; 
-		document.onmouseup=Function("ddEnabled=false"); 
+            // 변수가 없을경우 팝업 출력 
+            if (!popup1) {
+                popUpAction('popup1');
+            }
+        });
 
-		//쿠키 가져오기
-		function divpop_getCookie( name ){
-			var nameOfCookie = name + "=";
-			var x = 0;
-			
-			while ( x <= document.cookie.length )
-			{
-				var y = (x+nameOfCookie.length);
-				if ( document.cookie.substring( x, y ) == nameOfCookie ) {
-				if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
-				endOfCookie = document.cookie.length;		
-				return unescape( document.cookie.substring( y, endOfCookie ) );
-			}
-			x = document.cookie.indexOf( " ", x ) + 1;
-			if ( x == 0 )
-				break;
-			}
-			return "";
-		}
+        // 쿠키 가져오기 
+        function getCookie(name) {
+            var nameOfCookie = name + "=";
+            var x = 0;
+            while (x <= document.cookie.length) {
+                var y = (x + nameOfCookie.length);
 
-		//쿠키굽기
-		function divpop_setCookie_OLD( name, value, expiredays )
-		{
-			var todayDate = new Date(); 
-			var expiretime = 23-todayDate.getHours();
-			var expireminutes = 60-todayDate.getMinutes(); 
+                if (document.cookie.substring(x, y) == nameOfCookie) {
+                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                        endOfCookie = document.cookie.length;
+                    return unescape(document.cookie.substring(y, endOfCookie));
+                }
 
-			todayDate.setHours( todayDate.getHours() + expiretime ); 
-			todayDate.setMinutes(todayDate.getMinutes() + expireminutes);
-			document.cookie = name + "=" + escape( value ) + "; path=/main/; expires=" + todayDate.toGMTString() + ";";
-		}
+                x = document.cookie.indexOf(" ", x) + 1;
 
-		function divpop_setCookie( name, value, expiredays ){
-			var todayDate = new Date();   
-			todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);  
-			if ( todayDate > new Date() ){  
-				expiredays = expiredays - 1;  
-			}  
-			todayDate.setDate( todayDate.getDate() + expiredays );   
-			 document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"   
-		}
+                if (x == 0) break;
+            }
 
+            return "";
+        } // 24시간 기준 쿠키 설정하기 
 
+        // expiredays 후의 클릭한 시간까지 쿠키 설정 
+        function setCookie24(name, value, expiredays) {
+            var todayDate = new Date();
 
-		function divpop_closeWin(obj){
+            todayDate.setDate(todayDate.getDate() + expiredays);
 
-		  var todayDate = new Date(); 
-		  var expiretime = 23-todayDate.getHours();
-		  var expireminutes = 60-todayDate.getMinutes(); 
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+        }
 
-		  todayDate.setHours( todayDate.getHours() + expiretime ); 
-		  todayDate.setMinutes(todayDate.getMinutes() + expireminutes);
+        // 00:00 시 기준 쿠키 설정하기 // expiredays 의 새벽 00:00:00 까지 쿠키 설정 
+        function setCookie00(name, value, expiredays) {
+            var todayDate = new Date(); todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);
 
-		  divpop_setCookie( obj, 'done' , 1);
+            if (todayDate > new Date()) {
+                expiredays = expiredays - 1;
+            }
 
-		  //query_frm.location.href="divpop_status.asp?div_name="+obj+"&exdate="+todayDate.toGMTString();
-		  hideMe(obj);
-		}
+            todayDate.setDate(todayDate.getDate() + expiredays);
 
-		function divpop_status(obj) 
-		{		
-			if(divpop_getCookie(obj) == 'done'){				
-				document.getElementById(obj).style.display = "none";
-			}		
-		}
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+        }
 
-		//$(function() {
-		//    divpop_status("divpop1");
-		//});
+        // 팝업출력
+        function popUpAction(name) {
+            // name으로 해당 팝업창 열기 
+            $("div[name=" + name + "]").fadeIn();
+        }
 
-	</script>
-	<!-- #################################################     팝업관련 소스 시작  ############################################################### -->
-	<style type="text/css">
+        // 닫기버튼 클릭 이벤트 
+        $('.btn_close').click(function () {
+            $(this).parent('.main_notice_pop').fadeOut();
 
-	div#divpop2 {display:block;position:absolute; left:0; top:70px;z-index:900;width:400px;height:auto;}
-	div#divpop2 div.con_box2 {position:relative;width:400px;height:auto;background:#fff;}
-	div#divpop2 div.bo_box {position:relative;width:100%;height:30px;background:#757575;}
-	div#divpop2 div.bo_box span {color:#fff; display:inline-block;margin:6px 0 0 10px;width:200px;line-height:15px;letter-spacing:-0.05em;  font-size:12px;}
-	div#divpop2 div.bo_box span em {color:#fff; }
-	div#divpop2 div.bo_box input {vertical-align:middle;float:left;display:inline-block;width:13px;height:13px;margin-top:1px;margin-right:7px;line-height:15px;}
-	div#divpop2 div.bo_box a.btn_close {display:block;height:auto;padding:0;line-height:15px;position:absolute;top:6px;right:9px;color:#fff;  font-size:12px;}
-	</style>
-	<!-- #################################################     divpop2  ############################################################### -->
+            // 오늘하루 보지않기 체크 확인 
+            if ($("input:checkbox[name=today_close1]").is(":checked") == true) {
+                setCookie00('popup1', "done", 1);
+            }
 
-	<script type="text/javascript" language="Javascript">
-		 divpop_status("divpop2");
-	</script>
-
-	
-	<div id="divpop2" onload="startTime01();">
-		<form name="notice_form01">
-			<div class="con_box2">
-				<img src="https://iecc.kist.re.kr/common/attachfile/attachfileDownload.do?attachNo=00004921" border="0" style="width:100%" />      
-			</div>
-
-			<div class="bo_box">
-			<span><input type="checkbox" name="chkbox" onclick="javascript:divpop_closeWin('divpop2');" value="checkbox"> 오늘 하루 이 창을 열지 않음</span>
-			<a href="javascript:hideMe('divpop2');" class="btn_close">[닫기]</a>
-			</div>
-		</form>
-	</div>
+            // name으로 해당 팝업창 닫기 
+            $(this).parent("div[name=" + name + "]").fadeOut();
+        }) 
+    </script>
 </body>
-
-
-  
-
-  
-
 
 </html>

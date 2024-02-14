@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+
+
+<body>
+  
+
+<header id="header">
+
+</header>
+ 
+<footer id="footer">
+  
+  
+</footer>
+
+</body>
+<script>
+
+import PixelEditor from './PixelEditor.js';
+
+class PixelArtDemo extends HTMLElement {
+  constructor() {
+    super();
+
+    this.shadow = this.attachShadow({ mode: 'closed' });
+    this.render();
+
+    const resolution = Number(this.getAttribute('resolution')) || 100;
+    const size = { w: resolution, h: resolution };
+
+    const alice = new PixelEditor(this.shadow.querySelector('#alice'), size);
+    const bob = new PixelEditor(this.shadow.querySelector('#bob'), size);
+
+    alice.debug = bob.debug = this.hasAttribute('debug');
+  }
+
+  render() {
+    this.shadow.innerHTML = `
+      <div class="wrapper">
+        <canvas class="canvas" id="alice"></canvas>
+        <canvas class="canvas" id="bob"></canvas>
+        <input class="color" type="color" value="#000000" />
+      </div>
+
+      <style>
+        .wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr auto;
+          gap: 1rem;
+          margin: 2rem 0 3rem;
+        }
+
+        .canvas {
+          grid-row: 1;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          border: 0.25rem solid #eeeeee;
+          border-radius: 0.25rem;
+          cursor: crosshair;
+        }
+
+        .color {
+          grid-column: 1 / span 2;
+        }
+      </style>
+    `;
+  }
+}
+
+customElements.define('pixelart-demo', PixelArtDemo);
+
+
+</script>
+
+</html>

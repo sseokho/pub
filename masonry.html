@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>case</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./css/sh.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap4.min.css">
+</head>
+<style>
+.grid{width:500px; max-width:100%; border:1px solid #ccc; text-align:center;}
+.griditem{ width:200px;height:300px;border:1px solid #222; margin-bottom:40px;}
+.griditem.gt2{height:200px;}
+.griditem.gt3{height:150px;}
+.griditem.gt4{height:200px;}
+
+</style>
+
+
+<body>
+    <div class="grid">
+        <div class="griditem">1</div>
+        <div class="griditem gt2">2</div>
+        <div class="griditem gt3">3</div>
+        <div class="griditem gt4">4</div>
+        
+        
+      </div>
+
+</body>
+  
+ 
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  
+
+  <!-- //script -->
+
+
+
+  <script>
+jQuery(document).ready(function () {
+    function masonryResp() {
+		//pc 56
+        if (jQuery(window).width() > 1640) {
+            jQuery('.grid').masonry({
+                itemSelector: '.griditem',
+                gutter: 56,
+                horizontalOrder: true,
+				percentPosition: true,
+				transitionDuration: '0.7s'
+            });
+        } else {
+			//mobile 32
+            jQuery('.grid').masonry({
+                itemSelector: '.griditem',
+                gutter: 32,
+                horizontalOrder: true,
+				percentPosition: true,
+				transitionDuration: '0.7s'
+            });
+        }
+    }
+    masonryResp();
+
+    window.addEventListener('resize', () => {
+        masonryResp();
+    });
+	window.addEventListener('load', () => {
+        masonryResp();
+    });
+});
+
+
+
+
+
+</script>
+
+
+</html>

@@ -1,26 +1,11 @@
 <div class="gray_box">
-    <p class="txt" style="line-height: 2em;">
-        예술가의 삶은 작업실, 연습실, 무대와 전시장에서만 이뤄지지 않는다. 예술활동에 영감을 주고 기반이 되는 일상의 루틴은 무엇일까? 창작의 즐거움과 고통 이전에 일상적으로 맞닥뜨리는 다양한 삶의 장면을 포착해 보자.
-    </p>
+<p class="txt" style="line-height: 2em;">코로나19로 바뀐 팬데믹 세상은 어느덧 엔데믹을 준비하며 일상을 새롭게 재편한다. 접촉이 제한되었던 시간 동안 온라인을 통한 접속은 시행착오를 거치며 조금씩 또 다른 방식의 소통 경험을 제공하고 새로운 감각의 연결을 제안한다. 온라인은 장애예술에 어떻게 영향을 미치고 새로운 변화를 가져왔을까? 도전하고 실험하며 새로운 가상세계로 확장하는 다양한 활동을 해온 일곱 명의 예술가에게 온라인 예술활동의 의미와 가능성에 관해 서면으로 이야기를 들어보았다.</p>
 
+<div class="row" style="justify-content: center;margin-top: 2vw;align-items: center;">
+<p class="txt underline" style="line-height: 2em;">① 더 자유로운 창작의 장</p>
 
-    <div class="row" style="justify-content: center; align-items: center; margin-top:1rem">
+<p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
 
-    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=531" style="line-height: 2em;">예측 못한 원고 청탁을 받은 하루</a></p>
-
-    <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
-
-    
-    <p class="txt f_bold" style="line-height: 2em;">활동지원 받으며 연극하는 하루</p>
-
-    <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
-
-    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=533" style="line-height: 2em;">존중받고 존중하며 함께 그리는 하루</a></p>
-
-    <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
-
-    <p class="txt underline"><a href="https://www.ieum.or.kr/user/webzine/view.do?idx=534" style="line-height: 2em;">손잡으면 힘들지 않은 하루</a></p>
-
-
-    </div>
+<p class="txt"><a href="https://ieum.or.kr/user/webzine/view.do?idx=388" style="line-height: 2em;" target="_blank">② 더 넓은 발표의 장</a></p>
+</div>
 </div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ko">
+<title>Insert title here</title>
+<script src="https://unpkg.com/vue@2.3.3"></script>
+</head>
+<body>
+
+	<div id="account">
+		<input type="text" v-model="amount">
+		<h2 v-if="amount<0" > 마이너스</h2>
+		<h2 v-else-if="amount>0" > 플러스</h2>
+		<h2 v-else="amount>0" >문자 혹은0</h2>
+	</div>
+	  
+	<script>
+
+		var simple = new Vue({
+			el : "#account",
+			data : {
+				amount : 0
+			}
+		})
+
+
+
+	</script>
+
+
+</body>
+</html>

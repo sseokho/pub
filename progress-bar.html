@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>case</title>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./resource/css/progress.css" />
+
+</head>
+<style>
+
+
+</style>
+
+
+<body>
+  <!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="title">Slider with slide progressbar</div>
+        <div class="description">Lorem ipsum dolor sit amet</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title">Slide 2</div>
+        <div class="description">Lorem ipsum dolor sit amet</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title">Slide 3</div>
+        <div class="description">Lorem ipsum dolor sit amet</div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- Progressbar -->
+    <div class="swiper-progress-bar">
+      <span class="slide_progress-bar"></span>
+    </div>
+  </div>
+
+</body>
+  
+ 
+
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  
+
+  <!-- //script -->
+
+
+
+  <script>
+
+
+
+$(document).ready(function () {
+  var swiper = new Swiper(".swiper-container", {
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    observer: true,	// 추가
+  observeParents: true,	// 추가
+    
+    speed: 500,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    on: {
+      init: function () {
+        $(".swiper-progress-bar").removeClass("animate");
+        $(".swiper-progress-bar").removeClass("active");
+        $(".swiper-progress-bar").eq(0).addClass("animate");
+        $(".swiper-progress-bar").eq(0).addClass("active");
+      },
+      slideChangeTransitionStart: function () {
+        $(".swiper-progress-bar").removeClass("animate");
+        $(".swiper-progress-bar").removeClass("active");
+        $(".swiper-progress-bar").eq(0).addClass("active");
+      },
+      slideChangeTransitionEnd: function () {
+        $(".swiper-progress-bar").eq(0).addClass("animate");
+      }
+    }
+  });
+  /*
+  $(".swiper-container").hover(function () {
+    swiper.autoplay.stop();
+    $(".swiper-progress-bar").removeClass("animate");
+  }, function () {
+    swiper.autoplay.start();
+    $(".swiper-progress-bar").addClass("animate");
+  });
+  */
+});
+
+
+
+
+</script>
+
+
+</html>

@@ -1,11 +1,11 @@
-<div class="gray_box v1" style="margin-top:3vw;"><img alt="" src="/template/cms/user/images/sub/webzine/27/img_issue_20231229_0301.jpg" style="width:11vw;">
+<div class="gray_box v1" style="margin-top:2vw;"><img alt="" src="/template/cms/user/images/sub/webzine/27/img_issue_20231229_0301.jpg" style="width:11vw;">
 	<p class="txt"><span class="f_bold">이야기를 계속 하겠습니다</span><br>
 	사단법인 에이블아트 | 2021.11.17.~11.28. | 화인페이퍼 갤러리, 에이블아트센터, 사비나미술관<br>
 	<span class="txt"><insight festival="">이라는 이름의 프로젝트로 2021년 5월부터 현대미술작가들의 멘토링 워크숍을 함께 진행한 결과물이 전시된다. 프로젝트의 목적은 미술이 한정적·한계적 예술이 되는 것이 아니라, 장애를 가진 작가들이 하는 작업에 대한 과정과 작품들을 있는 그대로 나타내기 위함이다.<br>
 	[이미지 출처] 에이블아트센터 <a href="http://ableart.or.kr/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&amp;bmode=view&amp;idx=8967818&amp;t=board" style="text-decoration: underline;" target="_blank" title="새창열림">바로가기(링크)</a></insight></span></p>
 	</div>
 
-    <div class="gray_box v1" style="margin-top:3vw;"><img alt="" src="/template/cms/user/images/sub/webzine/27/img_issue_20231229_0302.jpg" style="width:11vw;">
+    <div class="gray_box v1" style="margin-top:2vw;"><img alt="" src="/template/cms/user/images/sub/webzine/27/img_issue_20231229_0302.jpg" style="width:11vw;">
 	<p class="txt"><span class="f_bold">권태웅 작가 개인전</span><br>
 	시스플래닛 | 2021.10.5.~10.9. | 뉴스프링 프로젝트<br>
 	<span class="txt">주요 소재인 비행기와 다양하고 이국적인 풍경의 작업을 만나볼 수 있다. 캔버스 평면 작업 약 30점이 전시되었고, 그의 과감한 자유로움이 가득 담긴 작업이 한 자리에 모두 펼쳐진다.<br>

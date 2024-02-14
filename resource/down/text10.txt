@@ -1,23 +1,9 @@
-<div style="margin-top: 2vw">
-        <ul class="img_list row" style="width: 100%; margin: 0 auto">
-            <li><img alt="큰 도화지에 하루 계획이 삐뚤빼뚤 적혀 있다 : 6월 30일. 1 요가하기. 2, 3 카페 가기, 4 편지하기, 그림일기 정리하기 아이패드" src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0401.jpg">
-            <p class="caption ta_c">우리가 만든 달력! 열심히 기억하기 위한 방법들</p>
-            </li>
-            <li><img alt="큰 도화지에 하루 계획이 삐뚤빼뚤 적혀 있다 : 6월 30일. 1 요가하기. 2, 3 카페 가기, 4 편지하기, 그림일기 정리하기 아이패드로, 5 센김한 선생님." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0402.jpg">
-            <p class="caption ta_c">무수한 계획 중 하루</p>
-            </li>
-            <li><img alt="소정이 바닥에 큰 종이를 펼쳐놓고 물감으로 알록달록한 색감으로 빼곡하게 그림을 그리고 있다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0403.jpg">
-                <p class="caption ta_c">그림 그리기</p>
-            </li>
-        </ul>
-</div>
-<div style="margin-top: 1vw">
-        <ul class="img_list row" style="width: 100%; margin: 0 auto">
-            <li><img alt="소정이 야광 마이크를 들고 핸드폰을 보며 노래하고 있다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0404.jpg">
-                <p class="caption ta_c">노래방 연습하기</p>
-            </li>
-            <li><img alt="소정이 우체국 문앞에 서서 손가락으로 우체국을 가리키고 있다. 소정 앞에는 빨간 우체통이 있다." src="/template/cms/user/images/sub/webzine/44/img_issue_20230726_0405.jpg">
-            <p class="caption ta_c">우체국 탐방</p>
-            </li>
-        </ul>
+<div style="margin-top:3vw;">
+<ul class="img_list row" style="width:100%;margin:0 auto;">
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0102.jpg"> <span class="caption ta_c" style="display:block;">박지선</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0104.jpg"> <span class="caption ta_c" style="display:block;">오세형</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0103.jpg"> <span class="caption ta_c" style="display:block;">이진희</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0105.jpg"> <span class="caption ta_c" style="display:block;">문영민</span></li>
+	<li><img alt="" src="/template/cms/user/images/sub/webzine/29/img_issue_20230223_0106.jpg"> <span class="caption ta_c" style="display:block;">최선영</span></li>
+</ul>
 </div>

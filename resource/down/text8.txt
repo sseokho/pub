@@ -1,5 +1,8 @@
-<ul class="img_list row" style="margin-top:2vw !important">
-	<li style="width:50%;"><img alt="4개의 장면이 하나의 사진으로 구성되어 있다. 각 장면에는 필자가 오브제를 한쪽 팔꿈치에 착용하고 두 팔을 벌리거나 수평으로 교차하며 다양한 움직임을 만들고 있다." src="/template/cms/user/images/sub/webzine/44/img_blog_20230809_1001.jpg" style="width:100%;border: 1px solid #ddd;">
-	<p class="caption ta_c" style="display: block">&lt;무성한성무&gt; 워크숍</p>
-	</li>
+<ul class="img_list row" style="margin-top:3vw !important">
+	<li style="width:50%;"><img alt="" src="/template/cms/user/images/sub/webzine/35/img_blog_20220928_1001.jpg" style="width:100%;border: 1px solid #ddd;">
+		<span class="caption ta_c" style="display: block">
+		
+		</span>
+
+</li>
 </ul>
